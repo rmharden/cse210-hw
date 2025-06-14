@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 class Program
 {
@@ -11,10 +12,14 @@ class Program
         Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
 
+        
+
         Console.Write("What is your favorite number? ");
         string favorite = Console.ReadLine();
         int number = int.Parse(favorite);
 
-        Console.Write($"{name}, the square of your number is {number}.");
+        int square = number * number;
+
+        Console.Write($"{name}, the square of your number is {square}.");
     }
 }
