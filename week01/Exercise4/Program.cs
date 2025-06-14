@@ -29,7 +29,8 @@ class Program
             sum += number;
         }
 
-        Console.WriteLine($"The sume is: {sum}");
+        Console.WriteLine($"The sum is: {sum}");
+        
 
     }
 }
