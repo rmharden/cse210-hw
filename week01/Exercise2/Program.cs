@@ -17,7 +17,7 @@ class Program
         {
             lettergrade = "A";
         }
-        if (number >= 80)
+        else if (number >= 80)
         {
             lettergrade = "B";
         }
