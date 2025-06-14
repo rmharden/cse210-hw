@@ -13,7 +13,8 @@ class Program
 
         //Part 3
 
-        
+        Random randomnumber = new Random();
+        int magicnumber = randomnumber.Next(1, 101);
 
         int guess = -1;
 
