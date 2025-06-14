@@ -15,6 +15,6 @@ class Program
         string favorite = Console.ReadLine();
         int number = int.Parse(favorite);
 
-        Console.Write($"{name}, the square of your number is {number}.")
+        Console.Write($"{name}, the square of your number is {number}.");
     }
 }
