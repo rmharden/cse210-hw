@@ -29,6 +29,10 @@ class Program
         {
             lettergrade = "D";
         }
+        else
+        {
+            lettergrade = "F";
+        }
 
         Console.WriteLine($"Your grade is: {lettergrade}");
 
