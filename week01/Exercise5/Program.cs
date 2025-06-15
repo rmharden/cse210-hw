@@ -10,11 +10,9 @@ class Program
         string usersName = AskUsersName();
         int usersFavoriteNo = AskUsersNumber();
 
-        int squaredNumber = SquareNumber(number);
+        int squaredNumber = SquareNumber(usersFavoriteNo);
 
         DisplayResult(usersName, squaredNumber);
-
-
     }
 
     static void DisplayProgramMessage()
@@ -35,7 +33,7 @@ class Program
 
         Console.Write("What is your favorite number? ");
         string favorite = Console.ReadLine();
-        int number = int.Parse(favorite);
+        int number = int.Parse(Console.ReadLine());
 
         return number;
     }
