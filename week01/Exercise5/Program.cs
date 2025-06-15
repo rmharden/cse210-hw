@@ -10,7 +10,7 @@ class Program
         string usersName = AskUsersName();
         int usersFavoriteNo = AskUsersNumber();
 
-        int squaredNumber = SquareNumber(squaredNumber);
+        int squaredNumber = SquareNumber(number);
 
         DisplayResult(usersName, squaredNumber);
 
@@ -22,10 +22,12 @@ class Program
         Console.WriteLine("Welcome to the Program!");
     }
 
-    static string AskUsersName(string name)
+    static string AskUsersName()
     {
         Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
+
+        return name;
     }
 
     static int AskUsersNumber()
