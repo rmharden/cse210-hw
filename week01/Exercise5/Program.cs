@@ -32,7 +32,6 @@ class Program
     {
 
         Console.Write("What is your favorite number? ");
-        string favorite = Console.ReadLine();
         int number = int.Parse(Console.ReadLine());
 
         return number;
