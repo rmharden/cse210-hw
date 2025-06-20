@@ -13,21 +13,21 @@ class Program
 
         //Part 3
 
-        Random randomnumber = new Random();
-        int magicnumber = randomnumber.Next(1, 101);
+        Random randomNumber = new Random();
+        int magicNumber = randomNumber.Next(1, 101);
 
         int guess = -1;
 
-        while (guess != magicnumber)
+        while (guess != magicNumber)
         {
             Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
 
-            if (magicnumber > guess)
+            if (magicNumber > guess)
             {
                 Console.WriteLine("Higher");
             }
-            else if (magicnumber < guess)
+            else if (magicNumber < guess)
             {
                 Console.WriteLine("Lower");
             }
