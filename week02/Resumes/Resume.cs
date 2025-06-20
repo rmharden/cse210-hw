@@ -8,7 +8,7 @@ public class Resume
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine($"Jobs:");
 
-        //used the example for blings to know how to write this.
+        //used the example for blinds to know how to write this.
         foreach (Job job in _jobs)
         {
             job.Display();
