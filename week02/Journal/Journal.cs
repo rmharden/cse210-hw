@@ -10,7 +10,7 @@ public class Journal
     {
 
     }
-    public void SavetoFile()
+    public void SaveToFile(string file)
     {
 
     }
