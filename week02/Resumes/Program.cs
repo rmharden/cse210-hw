@@ -17,7 +17,7 @@ class Program
         job2._endYear = 2023;
 
         Resume myResume = new Resume();
-        myResume._jobs[0]._jobTitle;
+        myResume._jobs[0]._jobTitle();
 
         //job1.Display();
         //job2.Display();
