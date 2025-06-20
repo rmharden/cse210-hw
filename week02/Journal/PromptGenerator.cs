@@ -1,7 +1,4 @@
-//Added this because it was in the example for lists in our
-//Week 01 lesson. I don't understand what it does yet.
-using System;
-using System.Collections.Generic;
+
 
 public class PromptGenerator
 {
@@ -13,5 +10,6 @@ public class PromptGenerator
     prompts.Add("How did I see the hand of the Lord in my life today?");
     prompts.Add("What was the strongest emotion I felt today?");
     prompts.Add("If I had one thing I could do over today, what would it be?");
+
 
 }
