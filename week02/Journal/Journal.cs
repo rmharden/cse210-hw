@@ -6,9 +6,16 @@ public class Journal
     {
 
     }
-
     public void DisplayAll()
     {
-        
+
+    }
+    public void SavetoFile()
+    {
+
+    }
+    public void LoadFromFile()
+    {
+
     }
 }
