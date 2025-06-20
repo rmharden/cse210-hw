@@ -14,7 +14,7 @@ public class Journal
     {
 
     }
-    public void LoadFromFile()
+    public void LoadFromFile(string file)
     {
 
     }
