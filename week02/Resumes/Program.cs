@@ -19,8 +19,11 @@ class Program
         Resume myResume = new Resume();
         //I don't understand Step 7. I don't know how to use the
         //myResume._jobs[0]._jobTitle.
+        myResume._name = "Allison Rose";
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
 
-        
+        myResume.Display();        
 
         //job1.Display();
         //job2.Display();
