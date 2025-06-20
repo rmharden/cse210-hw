@@ -19,10 +19,8 @@ class Program
         Resume myResume = new Resume();
         //I don't understand Step 7. I don't know how to use the
         //myResume._jobs[0]._jobTitle.
+
         
-
-
-
 
         //job1.Display();
         //job2.Display();
