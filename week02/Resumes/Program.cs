@@ -17,7 +17,12 @@ class Program
         job2._endYear = 2023;
 
         Resume myResume = new Resume();
-        myResume._jobs[0]._jobTitle();
+        //I don't understand Step 7. I don't know how to use the
+        //myResume._jobs[0]._jobTitle.
+        
+
+
+
 
         //job1.Display();
         //job2.Display();
