@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World.");
+        Journal theJournal = new Journal();
+        Entry anEntry = new Entry();
+        anEntry.Display();
+
+        //Console.WriteLine("Hello World.");
     }
 }
