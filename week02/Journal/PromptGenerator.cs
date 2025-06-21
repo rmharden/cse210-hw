@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+
 public class PromptGenerator
 {
     public List<string> _prompts;
@@ -12,10 +13,10 @@ public class PromptGenerator
         "What was the strongest emotion I felt today?",
         "If I had one thing I could do over today, what would it be?"
     };
+
     public string GetRandomPrompt()
     {
-        //Temporarilly returns an empty string for now.
+        //Temporarily returns an empty string for now.
         return "";
     }
-
 }

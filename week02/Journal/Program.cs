@@ -8,6 +8,6 @@ class Program
         Entry anEntry = new Entry();
         anEntry.Display();
 
-        //Console.WriteLine("Hello World.");
+        Console.WriteLine("Hello World.");
     }
 }
