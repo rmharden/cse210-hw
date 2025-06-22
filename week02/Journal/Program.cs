@@ -7,7 +7,5 @@ class Program
         Journal theJournal = new Journal();
         Entry anEntry = new Entry();
         anEntry.Display();
-
-        Console.WriteLine("Hello World.");
     }
 }
