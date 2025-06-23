@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        //used this program to practice code for the journal
+        //program.
         List<string> promptsList = new List<string>
         {
             "Who was the most interesting person I interacted with today?",
