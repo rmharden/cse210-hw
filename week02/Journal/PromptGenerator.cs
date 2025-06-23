@@ -19,7 +19,7 @@ public class PromptGenerator
             "If I had one thing I could do over today, what would it be?"
         };
         //random is the object.
-        //Random is a class and it generates a random indexes
+        //Random is a class and it generates random indexes
         //for the questions in the list.
         Random random = new Random();
         /*
