@@ -3,21 +3,25 @@ using System.Collections.Generic;
 
 public class PromptGenerator
 {
-    public List<string> _prompts;
+    //public List<string> _prompts;
 
-    List<string> prompts = new List<string>
+    public PromptGenerator()
     {
-        "Who was the most interesting person I interacted with today?",
-        "What was the best part of my day?",
-        "How did I see the hand of the Lord in my life today?",
-        "What was the strongest emotion I felt today?",
-        "If I had one thing I could do over today, what would it be?"
-   };
+        List<string> promptsList = new List<string>
+        {
+            "Who was the most interesting person I interacted with today?",
+            "What was the best part of my day?",
+            "How did I see the hand of the Lord in my life today?",
+            "What was the strongest emotion I felt today?",
+            "If I had one thing I could do over today, what would it be?"
+        };
+        Random random = new Random();
+        int promptIndex = random.Next(promptsList.Count);
+        string promptText = promptsList[promptIndex];
 
-    public string GetRandomPrompt()
-    {
-        Random rnd = new();
+        Console.WriteLine(promptText);
+
         //Temporarily returns an empty string for now.
-        return "";
+        //return "";
     }
 }
