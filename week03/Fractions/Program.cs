@@ -73,15 +73,21 @@ class Program
         //Step 6: Create methods to return the
         //representations.
         Fraction f1 = new Fraction();
+        f1.GetFractionString();
+        f1.GetDecimalValue();
         Console.WriteLine(f1.GetFractionString());
         Console.WriteLine(f1.GetDecimalValue());
 
         Fraction f2 = new Fraction();
-        Console.WriteLine(f1.GetFractionString());
-        Console.WriteLine(f1.GetDecimalValue());
+        f2.GetFractionString();
+        f2.GetDecimalValue();
+        Console.WriteLine(f2.GetFractionString());
+        Console.WriteLine(f2.GetDecimalValue());
 
-        Fraction f3 = new Fraction();
-        Console.WriteLine(f1.GetFractionString());
-        Console.WriteLine(f1.GetDecimalValue());
-    }
+        Fraction f3 = new Fraction(3, 4);
+        f3.GetFractionString();
+        f3.GetDecimalValue();
+        Console.WriteLine(f3.GetFractionString());
+        Console.WriteLine(f3.GetDecimalValue());
+    }    
 }
