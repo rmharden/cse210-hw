@@ -25,6 +25,7 @@ public class Word
         return true;
     }
 
+    //This is a getter.
     public string GetDisplayText()
     {
         //Returns an empty string.

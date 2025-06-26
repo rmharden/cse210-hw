@@ -7,7 +7,7 @@ public class Reference
 
     public Reference(string book, int chapter, int verse)
     {
-        
+
     }
 
     public Reference(string book, int chapter, int startVerse, int endVerse)
@@ -15,10 +15,10 @@ public class Reference
 
     }
 
+    //This is a getter.
     public string GetDisplayText()
     {
-        //Returns an empty string.
-        return "";       
+        return _book + " " + _chapter + ":" + _verse;
     }
 
 }
