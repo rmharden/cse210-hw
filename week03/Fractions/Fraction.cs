@@ -22,11 +22,36 @@ public class Fraction
 
     /*
     This is the Fraction constructor, I think.
-    It has no parameters and initializes the number to 1/1.
+    It "has no parameters and initializes the number to 1/1."
+    Is this the "no-argument constructor"?
     */
     public Fraction()
     {
         _top = 1;
         _bottom = 1;
     }
+
+    /*
+    This is the constructor that has one parameter for
+    the top and initializes the denominator as "1".
+    "wholeNumber" is a value that is passed through
+    the constructor for the _top member variable. The
+    member variable name is given to us from the Fraction
+    class diagram and is passed through the constructor.
+    */
+    public Fraction(int wholeNumber)
+    {
+        _top = wholeNumber;
+        _bottom = 1;
+    }
+
+    /*
+    This constructor allows the top and bottom parameters
+    to be passed through it.
+    */
+    public Fraction(int top, int bottom)
+    {
+
+    }
+
 }
