@@ -37,8 +37,16 @@ class Program
         Fraction f3 = new Fraction(6, 7);
         */
 
+
+        /*Step 5: Create the Getters and Setters
+        1. verifing that I can call on the methods and get
+        the correct values, using setters to change the
+        values and getters to retrieve the new values and
+        display them to the console.
+        */
+
         //Attempt for Step 5, No. 2
-        
+        /*
         Fraction f1 = new Fraction();
         f1.GetFractionString();
         f1.GetDecimalValue();
@@ -59,15 +67,11 @@ class Program
         Console.WriteLine(f3.GetFractionString());
         Console.WriteLine(f3.GetDecimalValue());
         Console.WriteLine();
-
-        /*Step 5: Create the Getters and Setters
-        1. verifing that I can call on the methods and get
-        the correct values, using setters to change the
-        values and getters to retrieve the new values and
-        display them to the console.
         */
 
-        /*
+
+        //Step 6: Create methods to return the
+        //representations.
         Fraction f1 = new Fraction();
         Console.WriteLine(f1.GetFractionString());
         Console.WriteLine(f1.GetDecimalValue());
@@ -79,6 +83,5 @@ class Program
         Fraction f3 = new Fraction();
         Console.WriteLine(f1.GetFractionString());
         Console.WriteLine(f1.GetDecimalValue());
-        */
     }
 }
