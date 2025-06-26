@@ -110,6 +110,9 @@ public class Fraction
         "local variable" and not a "member variable".
         It is recomputed each time it is called.
         */
+
+        //Is this is step 5 because it is a getter and a
+        //setter for text?
         string text = $"{_top}/{_bottom}";
         return text;
     }
