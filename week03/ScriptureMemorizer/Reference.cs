@@ -18,7 +18,7 @@ public class Reference
     //This is a getter.
     public string GetDisplayText()
     {
-        return _book + " " + _chapter + ":" + _verse;
+        return _book + " " + _chapter + ":" + _verse + "-" + _endVerse;
     }
 
 }
