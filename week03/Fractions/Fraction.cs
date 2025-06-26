@@ -77,24 +77,34 @@ public class Fraction
     {
         /*
         This is going to return the string.
+        
         I don't understand this part as much.
+        
         I believe this is a getter and setter or
-        accessor and mutator".
+        an "accessor and mutator".
+        
         I had to look at the example for this. I didn't
         know how to do it from the example given in our
         lesson.
+        
         Why do we do it this way? is this how it is
         temporary and console.writeline is permanant?
+        
         I don't understand.
-        So, is "text" is an object or an instance?
+        
+        So, is "text" an object or an instance?
         Or is it a variable?
-        When we "return" this "text" it is sent to the
+        
+        When we "return" this "text", it is sent to the
         class in the Program.cs, right? Is this format of
-        the code specifically for getters and setters
+        the code specifically for getters and setters?
+        
+        The comments in the example say that it is a 
+        "local variable" and not a "member variable".
+        It is recomputed each time it is called.
         */
         string text = $"{_top}/{_bottom}";
         return text;
-
     }
 
     /*
@@ -108,7 +118,22 @@ public class Fraction
 
     public double GetDecimalValue()
     {
-
+        /*
+        The comments also say that this is a local
+        variable and not a member variable, and it
+        is recomputed each time it's called.
+        
+        I don't know how I would know to write this
+        from the lesson. I think I understand return
+        but I don't know what the code is doing here.
+        Is it making the variables _top and _bottom,
+        temporarially doubles and returning them?
+        
+        When I looked it up, it looks like it is changing
+        _top and _bottom temporarially to the double data
+        type and dividing it, so a decimal is returned?
+        */
+        return (double)_top / (double)_bottom;
     }
 
 
