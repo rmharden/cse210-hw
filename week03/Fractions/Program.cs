@@ -84,10 +84,18 @@ class Program
         Console.WriteLine(f2.GetFractionString());
         Console.WriteLine(f2.GetDecimalValue());
 
+        // Step. 6, no. 1.
         Fraction f3 = new Fraction(3, 4);
         f3.GetFractionString();
         f3.GetDecimalValue();
         Console.WriteLine(f3.GetFractionString());
         Console.WriteLine(f3.GetDecimalValue());
+
+        //Step 6, no. 3.
+        Fraction f4 = new Fraction(1, 3);
+        f4.GetFractionString();
+        f4.GetDecimalValue();
+        Console.WriteLine(f4.GetFractionString());
+        Console.WriteLine(f4.GetDecimalValue());
     }    
 }
