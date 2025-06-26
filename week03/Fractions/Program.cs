@@ -29,9 +29,30 @@ class Program
         */
 
         //Step 4: Create the Constructors
+        /*
+        //This was my original stes for step four:
+
         Fraction f1 = new Fraction();
         Fraction f2 = new Fraction(6);
         Fraction f3 = new Fraction(6, 7);
+        */
 
+        /*Step 5: Create the Getters and Setters
+        1. verifing that I can call on the methods and get
+        the correct values, using setters to change the
+        values and getters to retrieve the new values and
+        display them to the console.
+        */
+        Fraction f1 = new Fraction();
+        Console.WriteLine(f1.GetFractionString());
+        Console.WriteLine(f1.GetDecimalValue());
+
+        Fraction f2 = new Fraction();
+        Console.WriteLine(f1.GetFractionString());
+        Console.WriteLine(f1.GetDecimalValue());
+
+        Fraction f3 = new Fraction();
+        Console.WriteLine(f1.GetFractionString());
+        Console.WriteLine(f1.GetDecimalValue());
     }
 }

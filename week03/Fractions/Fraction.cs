@@ -73,6 +73,13 @@ public class Fraction
     will be used for the getters and setters?
     */
 
+    /*
+    I don't know if the follwing is actually Step 5.
+    I think the example is not step 5 and it is actually
+    Step 6. I don't know if the example given to us shows
+    Step .5
+    */
+
     public string GetFractionString()
     {
         /*
@@ -132,6 +139,7 @@ public class Fraction
         When I looked it up, it looks like it is changing
         _top and _bottom temporarially to the double data
         type and dividing it, so a decimal is returned?
+        "/" is dividing.
         */
         return (double)_top / (double)_bottom;
     }
