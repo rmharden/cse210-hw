@@ -9,20 +9,24 @@ Followed the class diagram for the setup.
 //Creates the Fraction class
 public class Fraction
 {
-    //This is an atrribute for the numerator. 
+    /*
+    This is a private member variable/atrribute 
+    for the numerator. 
+    */
     private int _top;
-    //This is an attribute for the denominator.
+    /*
+    This is a private member variable/attribute 
+    for the denominator.
+    */
     private int _bottom;
 
-    //Does this make a method?
+    /*
+    This is the Fraction constructor, I think.
+    It has no parameters and initializes the number to 1/1.
+    */
     public Fraction()
     {
-        Console.Write("What is the numerator? ");
-        string top = Console.ReadLine();
-
-        Console.Write("What is the denominator? ");
-        string bottom = Console.ReadLine();
-
-        Console.WriteLine($"Your fraction is {top}/{bottom}.");
+        _top = 1;
+        _bottom = 1;
     }
 }
