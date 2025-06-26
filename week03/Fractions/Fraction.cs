@@ -65,4 +65,38 @@ public class Fraction
         Console.WriteLine($"{top}/{bottom}");
     }
 
+    /*
+    Step 5: Create the Getters and Setters
+    
+    Used the class diagram for the names of these 
+    constructors. They are constructors, right? That
+    will be used for the getters and setters?
+    */
+
+    public string GetFractionString()
+    {
+        /*
+        This is going to return the string.
+        I don't understand this part as much.
+        I believe this is a getter and setter or
+        accessor and mutator".
+        */
+
+    }
+
+    /*
+    "double" is is a value type. It is a .NET type. It
+    allows about 15-17 digits. It's a real number 
+    "floating-point numeric type".
+    
+    This is from the "Floating-point numeric types 
+    (C# reference)" on the learn.microsoft.com website.
+    */
+
+    public double GetDecimalValue()
+    {
+
+    }
+
+
 }
