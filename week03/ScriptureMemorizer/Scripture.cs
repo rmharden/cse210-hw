@@ -1,10 +1,10 @@
 public class Scripture
 {
-    public Reference _reference;
+    private Reference _reference;
 
-    public List<Word> _words;
+    private List<Word> _words;
 
-    public Scripture(Reference reference, string text)
+    private Scripture(Reference reference, string text)
     {
 
     }

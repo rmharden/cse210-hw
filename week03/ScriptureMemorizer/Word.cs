@@ -2,8 +2,8 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Word
 {
-    public string _text;
-    public bool _isHidden;
+    private string _text;
+    private bool _isHidden;
 
     public Word(string text)
     {
