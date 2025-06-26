@@ -31,7 +31,7 @@ public class Fraction
         _bottom = 1;
         /*This is allowing me to see that the fractions
         were created for the constructor.*/
-        Console.WriteLine($"{_top}/{_bottom}");
+        //Console.WriteLine($"{_top}/{_bottom}");
     }
 
     /*
@@ -48,7 +48,7 @@ public class Fraction
         _bottom = 1;
         /*This is allowing me to see that the fractions
         were created for the constructor.*/
-        Console.WriteLine($"{_top}/{_bottom}");
+        //Console.WriteLine($"{_top}/{_bottom}");
     }
 
     /*
@@ -62,7 +62,7 @@ public class Fraction
         _bottom = bottom;
         /*This is allowing me to see that the fractions
         were created for the constructor.*/
-        Console.WriteLine($"{top}/{bottom}");
+        //Console.WriteLine($"{top}/{bottom}");
     }
 
     /*
