@@ -7,12 +7,19 @@ public class Reference
 
     public Reference(string book, int chapter, int verse)
     {
-
+        Reference reference = new Reference();
+        reference._book = "John";
+        reference._chapter = 3;
+        reference._verse = 16;
     }
 
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
-
+        Reference reference = new Reference();
+        reference._book = "Proverbs";
+        reference._chapter = 3;
+        reference._verse = 5;
+        reference._endVerse = 6;
     }
 
     //This is a getter.
