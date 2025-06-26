@@ -29,6 +29,9 @@ public class Fraction
     {
         _top = 1;
         _bottom = 1;
+        /*This is allowing me to see that the fractions
+        were created for the constructor.*/
+        Console.WriteLine($"{_top}/{_bottom}");
     }
 
     /*
@@ -43,15 +46,23 @@ public class Fraction
     {
         _top = wholeNumber;
         _bottom = 1;
+        /*This is allowing me to see that the fractions
+        were created for the constructor.*/
+        Console.WriteLine($"{_top}/{_bottom}");
     }
 
     /*
     This constructor allows the top and bottom parameters
-    to be passed through it.
+    to be passed through it. I think, they are being
+    called from the Program.cs file, right?
     */
     public Fraction(int top, int bottom)
     {
-
+        _top = top;
+        _bottom = bottom;
+        /*This is allowing me to see that the fractions
+        were created for the constructor.*/
+        Console.WriteLine($"{top}/{bottom}");
     }
 
 }
