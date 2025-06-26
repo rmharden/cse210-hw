@@ -14,9 +14,15 @@ public class Fraction
     //This is an attribute for the denominator.
     private int _bottom;
 
-    //Does this make a ?
+    //Does this make a method?
     public Fraction()
     {
+        Console.Write("What is the numerator? ");
+        string top = Console.ReadLine();
 
+        Console.Write("What is the denominator? ");
+        string bottom = Console.ReadLine();
+
+        Console.WriteLine($"Your fraction is {top}/{bottom}.");
     }
 }
