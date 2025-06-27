@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Data;
 
 public class Reference
 {
@@ -18,9 +19,22 @@ public class Reference
         _endVerse = 0;
     }
 
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+    }
+   
+    public Reference(string book, int chapter, int startVerse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _startVerse = startVerse;
+        _endVerse = endVerse;
+    }
     public string GetDisplayText()
     {
-        string text = $"{_book} {_chapter}:{_verse}";
-        return text;
+        return $"{_book} {_chapter}:{_verse} and {_book} {_chapter}:{_endVerse}-{_startVerse}";       
     }
 }
