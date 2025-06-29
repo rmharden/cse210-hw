@@ -25,14 +25,24 @@ class Program
         {
             Console.WriteLine(p._firstName);
         }
+        SaveToFile(people);
     }
     public static void SaveToFile(List<Person> people)
     {
+        Console.WriteLine("Saving to file...");
         string filename = "people.txt";
 
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
-            
+            foreach (Person p in people)
+            {
+                outputFile.WriteLine($"{p._firstName}~~{p._lastName}~~{p._age}");
+            }
         }
+    }
+    public static List<Person> ReadFromFile()
+    {
+        
+        string filename = "people.txt";
     }
 }
