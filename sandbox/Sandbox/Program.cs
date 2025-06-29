@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -23,6 +24,11 @@ class Program
         {
             Console.WriteLine(p._firstName);
         }
+    }
+    public static void SaveToFile(List<Person> people)
+    {
+        string filename = "people.txt";
 
+        using ()
     }
 }
