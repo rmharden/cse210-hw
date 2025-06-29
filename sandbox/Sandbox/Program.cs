@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using System.IO;
 
 class Program
 {
@@ -29,6 +30,9 @@ class Program
     {
         string filename = "people.txt";
 
-        using ()
+        using (StreamWriter outputFile = new StreamWriter(filename))
+        {
+            
+        }
     }
 }
