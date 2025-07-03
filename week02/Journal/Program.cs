@@ -8,7 +8,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Welcome to the Journal Program!");
 
-        //Journal theJournal = new Journal();
+        Journal theJournal = new Journal();
         //Entry anEntry = new Entry();
         //anEntry.Display();
 
@@ -31,40 +31,41 @@ class Program
 
             response = Console.ReadLine();
 
+            // 1. Write
             if (response == "1")
             {
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
             }
+            // 2. Display
             else if (response == "2")
             {
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
             }
+            // 3. Load
             else if (response == "3")
             {
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
+                theJournal.DisplayAll();
+
             }
-            else if (response == "3")
-            {
-                Console.WriteLine("");
-                Console.WriteLine($"You chose {response}.");
-                Console.WriteLine("");
-            }
+            // 4. Save 
             else if (response == "4")
             {
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
             }
+            // 5. Quit
             else if (response == "5")
             {
                 Console.WriteLine("\nThank you for using the Journal Program!");
-                Console.WriteLine(""); 
+                Console.WriteLine("");
             }
             else
             {

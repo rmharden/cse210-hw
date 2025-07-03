@@ -1,3 +1,5 @@
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 public class Journal
 {
     public List<Entry> _entries;
@@ -19,7 +21,7 @@ public class Journal
 
     public void LoadFromFile(string file)
     {
-
+        
     }
-    
+
 }
