@@ -28,7 +28,6 @@ class Program
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
             Console.Write("What would you like to do? ");
-            Console.Write("What would you like to do? ");
 
             response = Console.ReadLine();
 
