@@ -1,16 +1,13 @@
 using System;
 using System.Net;
 
+// Handles most of the user interaction.
 class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine();
         Console.WriteLine("Welcome to the Journal Program!");
-
-        Journal theJournal = new Journal();
-        //Entry anEntry = new Entry();
-        //anEntry.Display();
 
         // 1. Write
         // 2. Display
@@ -51,7 +48,7 @@ class Program
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
-                theJournal.DisplayAll();
+                Journal theJournal = new Journal();
 
             }
             // 4. Save 
@@ -72,7 +69,7 @@ class Program
                 Console.WriteLine("\nInvalid number.");
                 Console.WriteLine("");
             }
-        } 
-   
+        }
+
     }
 }
