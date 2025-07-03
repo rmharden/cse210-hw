@@ -8,6 +8,6 @@ class Program
 
         Journal theJournal = new Journal();
         Entry anEntry = new Entry();
-        anEntry.Distplay();
+        anEntry.Display();
     }
 }
