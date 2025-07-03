@@ -4,8 +4,8 @@ public class Entry
     public string _promptText;
     public string _entryText;
 
-    public void Distplay()
+    public void Display()
     {
-        
+
     }
 }
