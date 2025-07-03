@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 public class Entry
 {
     public string _date;
@@ -6,6 +8,11 @@ public class Entry
 
     public void Display()
     {
+        DateTime theCurrentTime = DateTime.Now;
+        string dateText = theCurrentTime.ToShortDateString();
+        _date = dateText;
 
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText} ");
+        Console.WriteLine(_entryText);
     }
 }
