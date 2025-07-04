@@ -5,29 +5,35 @@ class Program
 {
     static void Main(string[] args)
     {
+        // This is here so I can have an initial space.
+        Console.WriteLine("");
+
         Video video1 = new Video();
-        video1._title = "Introduction to Oil Painting";
+        video1._title = "'Introduction to Oil Painting'";
         video1._author = "Erastus Madsen";
         video1._length = 300;
+        //video1._comentName = "Linda";
+        //video1._commentText = "Wonderful! I learned so much!";
 
         Video video2 = new Video();
-        video2._title = "Preparing a Canvas";
+        video2._title = "'Preparing a Canvas'";
         video2._author = "Matthias Krumeich";
         video2._length = 210;
 
         Video video3 = new Video();
-        video3._title = "Improving Intensity in Color Mixing";
+        video3._title = "'Improving Intensity in Color Mixing'";
         video3._author = "Hugh Falconer";
         video3._length = 1380;
 
         Comment theComment = new Comment();
         theComment._commentName = "Sam";
+        theComment._commentText = "Great Video!";
 
-        theComment._videos.Add(video1);
-        theComment._videos.Add(video2);
-        theComment._videos.Add(video3);
+        //theComment._videos.Add(video1);
+        //theComment._videos.Add(video2);
+        //theComment._videos.Add(video3);
 
-        theComment.Display();
+        //theComment.Display();
     }
 }
 

@@ -1,13 +1,28 @@
 using System;
+using System.Collections.Generic;
 public class Video
 {
     public string _title;
     public string _author;
     public int _length;
 
+    public List<Comment> _comments = new List<Comment>();
+    public List<Video> _videos = new List<Video>();
+
     public void Display()
     {
-        Console.WriteLine($"Video: {_title} by: {_author}, Video Length: {_length}");
+        Console.WriteLine($"{_title} by {_author}");
+        Console.WriteLine($"Video Length: {_length} seconds");
+        //Console.WriteLine($"Number of comments: {Comment}");
+        Console.WriteLine("");
+
+        //Console.WriteLine($"\nName: {_commentName}");
+        Console.WriteLine("Videos:");
+
+        foreach (Video video in _videos)
+        {
+            video.Display();
+        }
     }
 }
 
