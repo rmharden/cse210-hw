@@ -11,15 +11,19 @@ public class Video
 
     public void Display()
     {
+        // There is a blank default display of this that 
+        // shouldn't be there and I don't know why
         Console.WriteLine($"{_title} by {_author}");
         Console.WriteLine($"Video Length: {_length} seconds");
+
+        // This is not giving the right count of comments.
         Console.WriteLine($"Number of comments: {_comments.Count}");
         Console.WriteLine("");
 
         foreach (Video video in _videos)
         {
             video.Display();
-        }
+        }        
     }
 }
 
