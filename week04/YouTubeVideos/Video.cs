@@ -2,21 +2,35 @@ public class Video
 {
     private string _title;
     private string _author;
-    private int _lengthSeconds;
-    List<Comment> _comments = new List<Comment>();
+    private int _length;
+    public List<Comment> _comments = new List<Comment>();
 
-    public int GetCommentCount(List<Comment> comments)
+    public void Display()
     {
-        return 0;
+        Console.WriteLine($"Title: {_title}, Author: {_author}, Video Length: {_length}");
+        Console.WriteLine(${Comments});
     }
 
-    public Video(string _title, string _author, int _lengthSeconds)
+    foreach (Comment comment in _comments)
     {
-
+        comment.Display();
     }
 
-    public void DisplayAll()
-    {
-        
-    }
 }
+
+/*
+1.  Abstraction: Video Class:
+A Video class exists and has a way to track
+the title, author, and length.
+
+3. Class Composition:
+The Video class stores a list of Comment class
+objects.
+
+4. Class Behaviors:
+
+The Video class contains a method that returns the
+number of comments directly from the way comments
+are stored (for example: returns the length of the
+list.)
+*/
