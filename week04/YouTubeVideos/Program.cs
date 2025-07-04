@@ -23,9 +23,9 @@ class Program
         Comment theComment = new Comment();
         theComment._commentName = "Sam";
 
-        theComment.videos.Add(video1);
-        theComment.videos.Add(video2);
-        theComment.videos.Add(video3);
+        theComment._videos.Add(video1);
+        theComment._videos.Add(video2);
+        theComment._videos.Add(video3);
 
         theComment.Display();
     }
