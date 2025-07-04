@@ -1,21 +1,14 @@
+using System;
 public class Video
 {
-    private string _title;
-    private string _author;
-    private int _length;
-    public List<Comment> _comments = new List<Comment>();
+    public string _title;
+    public string _author;
+    public int _length;
 
     public void Display()
     {
-        Console.WriteLine($"Title: {_title}, Author: {_author}, Video Length: {_length}");
-        Console.WriteLine(${Comments});
+        Console.WriteLine($"Video: {_title} by: {_author}, Video Length: {_length}");
     }
-
-    foreach (Comment comment in _comments)
-    {
-        comment.Display();
-    }
-
 }
 
 /*

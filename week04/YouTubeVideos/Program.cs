@@ -1,10 +1,33 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
+        Video video1 = new Video();
+        video1._title = "Introduction to Oil Painting";
+        video1._author = "Erastus Madsen";
+        video1._length = 300;
+
+        Video video2 = new Video();
+        video2._title = "Preparing a Canvas";
+        video2._author = "Matthias Krumeich";
+        video2._length = 210;
+
+        Video video3 = new Video();
+        video3._title = "Improving Intensity in Color Mixing";
+        video3._author = "Hugh Falconer";
+        video3._length = 1380;
+
+        Comment theComment = new Comment();
+        theComment._commentName = "Sam";
+
+        theComment.videos.Add(video1);
+        theComment.videos.Add(video2);
+        theComment.videos.Add(video3);
+
+        theComment.Display();
     }
 }
 

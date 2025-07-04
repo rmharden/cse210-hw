@@ -1,13 +1,19 @@
 public class Comment
 {
-    private string _commentPerson;
-    private string _commentText;
+    public string _commentName;
+
+    public List<Video> _videos = new List<Video>();
 
     public void Display()
     {
-        Console.WriteLine($"Name: {_commentPerson}, Comment: {_commentText}");
-    }
+        Console.WriteLine($"Name: {_commentName}");
+        Console.WriteLine("Videos:");
 
+        foreach (Video video in _videos)
+        {
+            video.Display();
+        }
+    }
 }
 
 /*
