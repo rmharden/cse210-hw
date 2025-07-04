@@ -13,36 +13,71 @@ class Program
         video1._author = "Erastus Madsen";
         video1._length = 300;
 
+        Comment video1Comment1 = new Comment();
+        video1Comment1._commentName = "Sam";
+        video1Comment1._commentText = "Great Video!";
+
+        Comment video1Comment2 = new Comment();
+        video1Comment2._commentName = "Lilli";
+        video1Comment2._commentText = "Fantastic!";
+
+        Comment video1Comment3 = new Comment();
+        video1Comment3._commentName = "Edmund";
+        video1Comment3._commentText = "Wonderful!";
+
         Video video2 = new Video();
         video2._title = "'Preparing a Canvas'";
         video2._author = "Matthias Krumeich";
         video2._length = 210;
+
+        Comment video2Comment1 = new Comment();
+        video2Comment1._commentName = "Sebastion";
+        video2Comment1._commentText = "Lovely!";
+
+        Comment video2Comment2 = new Comment();
+        video2Comment2._commentName = "Russell";
+        video2Comment2._commentText = "Very Cool!";
+
+        Comment video2Comment3 = new Comment();
+        video2Comment3._commentName = "Miyuki";
+        video2Comment3._commentText = "I'm inspired!";
 
         Video video3 = new Video();
         video3._title = "'Improving Hue Intensity in Color Mixing'";
         video3._author = "Hugh Falconer";
         video3._length = 1380;
 
-        Comment comment1 = new Comment();
-        comment1._commentName = "Sam";
-        comment1._commentText = "Great Video!";
+        Comment video3Comment1 = new Comment();
+        video3Comment1._commentName = "Miyazaki";
+        video3Comment1._commentText = "I never knew that about chroma color!";
 
-        Comment comment2 = new Comment();
-        comment2._commentName = "Lilli";
-        comment2._commentText = "Fantastic!";
+        Comment video3Comment2 = new Comment();
+        video3Comment2._commentName = "Em";
+        video3Comment2._commentText = "I've learned a lot!";
 
-        Comment comment3 = new Comment();
-        comment3._commentName = "Edmund";
-        comment3._commentText = "Wonderful!";
+        Comment video3Comment3 = new Comment();
+        video3Comment3._commentName = "Frank";
+        video3Comment3._commentText = "Thanks for the video!";
 
         Video displayVideos = new Video();
         displayVideos._videos.Add(video1);
         displayVideos._videos.Add(video2);
         displayVideos._videos.Add(video3);
 
+        Comment displayComments = new Comment();
+        displayComments._comments.Add(video1Comment1);
+        displayComments._comments.Add(video1Comment2);
+        displayComments._comments.Add(video1Comment3);
+        displayComments._comments.Add(video2Comment1);
+        displayComments._comments.Add(video2Comment2);
+        displayComments._comments.Add(video2Comment3);
+        displayComments._comments.Add(video3Comment1);
+        displayComments._comments.Add(video3Comment2);
+        displayComments._comments.Add(video3Comment3);
+
+
         displayVideos.Display();
-
-
+        displayComments.DisplayComments();
     }
 }
 

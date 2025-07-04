@@ -7,7 +7,6 @@ public class Video
     public int _length;
 
     public List<Comment> _comments = new List<Comment>();
-
     public List<Video> _videos = new List<Video>();
 
     public void Display()
@@ -21,7 +20,6 @@ public class Video
         {
             video.Display();
         }
-
     }
 }
 

@@ -4,6 +4,20 @@ public class Comment
 {
     public string _commentName;
     public string _commentText;
+
+    public List<Comment> _comments = new List<Comment>();
+
+    public void DisplayComments()
+    {
+        Console.WriteLine(_commentName);
+        Console.WriteLine(_commentText);
+
+        foreach (Comment comment in _comments)
+        {
+            comment.DisplayComments();
+        }
+    }
+
 }
 
 
