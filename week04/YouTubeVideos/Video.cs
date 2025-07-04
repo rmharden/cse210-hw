@@ -13,11 +13,8 @@ public class Video
     {
         Console.WriteLine($"{_title} by {_author}");
         Console.WriteLine($"Video Length: {_length} seconds");
-        //Console.WriteLine($"Number of comments: {Comment}");
+        Console.WriteLine($"Number of comments: {_comments.Count}");
         Console.WriteLine("");
-
-        //Console.WriteLine($"\nName: {_commentName}");
-        Console.WriteLine("Videos:");
 
         foreach (Video video in _videos)
         {

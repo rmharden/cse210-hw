@@ -12,8 +12,6 @@ class Program
         video1._title = "'Introduction to Oil Painting'";
         video1._author = "Erastus Madsen";
         video1._length = 300;
-        //video1._comentName = "Linda";
-        //video1._commentText = "Wonderful! I learned so much!";
 
         Video video2 = new Video();
         video2._title = "'Preparing a Canvas'";
@@ -21,19 +19,28 @@ class Program
         video2._length = 210;
 
         Video video3 = new Video();
-        video3._title = "'Improving Intensity in Color Mixing'";
+        video3._title = "'Improving Hue Intensity in Color Mixing'";
         video3._author = "Hugh Falconer";
         video3._length = 1380;
 
-        Comment theComment = new Comment();
-        theComment._commentName = "Sam";
-        theComment._commentText = "Great Video!";
+        Comment comment1 = new Comment();
+        comment1._commentName = "Sam";
+        comment1._commentText = "Great Video!";
 
-        //theComment._videos.Add(video1);
-        //theComment._videos.Add(video2);
-        //theComment._videos.Add(video3);
+        Comment comment2 = new Comment();
+        comment2._commentName = "Lilli";
+        comment2._commentText = "Fantastic!";
 
-        //theComment.Display();
+        Comment comment3 = new Comment();
+        comment3._commentName = "Edmund";
+        comment3._commentText = "Wonderful!";
+
+        Video displayVideos = new Video();
+        displayVideos._videos.Add(video1);
+        displayVideos._videos.Add(video2);
+        displayVideos._videos.Add(video3);
+
+        displayVideos.Display();
     }
 }
 
