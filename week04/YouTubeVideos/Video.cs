@@ -7,6 +7,7 @@ public class Video
     public int _length;
 
     public List<Comment> _comments = new List<Comment>();
+
     public List<Video> _videos = new List<Video>();
 
     public void Display()
@@ -20,6 +21,7 @@ public class Video
         {
             video.Display();
         }
+
     }
 }
 
@@ -33,7 +35,6 @@ The Video class stores a list of Comment class
 objects.
 
 4. Class Behaviors:
-
 The Video class contains a method that returns the
 number of comments directly from the way comments
 are stored (for example: returns the length of the
