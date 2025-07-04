@@ -34,6 +34,7 @@ class Program
                 Console.WriteLine("");
                 Console.WriteLine($"You chose {response}.");
                 Console.WriteLine("");
+
             }
             // 2. Display
             else if (response == "2")

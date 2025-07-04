@@ -12,7 +12,7 @@ public class Journal
     // the Entry display method.
     public void AddEntry(Entry newEntry)
     {
-        newEntry.Display();
+        //newEntry.Display();
     }
 
     // Displays all the entries.

@@ -17,7 +17,7 @@ public class Entry
     {
         Entry newEntry = new Entry();
         _date = DateTime.Now.ToShortDateString();
-        _promptText = PromptGenerator.GetRandomPrompt();
+        //_promptText = PromptGenerator.GetRandomPrompt();
         Console.WriteLine(_promptText);
         _promptText = Console.ReadLine();
     }
@@ -28,6 +28,6 @@ public class Entry
         _entryText = entryText;
 
         Console.WriteLine($"Date: {dateText} - Prompt: {promptText} ");
-        Console.WriteLine(entryText);
+        Console.WriteLine(entryText);       
     }
 }
