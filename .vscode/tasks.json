@@ -16,18 +16,6 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build-sandbox2-Sandbox",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/sandbox2/Sandbox/Sandbox.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
             "label": "build-week01-Exercise1",
             "command": "dotnet",
             "type": "process",
