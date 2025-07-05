@@ -17,6 +17,19 @@
         },
 
         {
+            "name": "Sandbox Project 2",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox2-Sandbox",
+            "program": "${workspaceFolder}/sandbox2/Sandbox/bin/Debug/net8.0/Sandbox.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox2/Sandbox",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
+        {
             "name": "Week 01: C# Exercise 1",
             "type": "coreclr",
             "request": "launch",
