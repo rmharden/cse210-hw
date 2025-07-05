@@ -4,9 +4,9 @@ public class Blind
     public double _height;
     public string _color;
 
-    public void GetArea()
+    public double GetArea()
     {
-        
+        return _width * _height;
     }
 
 }
