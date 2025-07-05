@@ -90,3 +90,47 @@ class Program
         return people;
     }
 }
+
+/*
+Week 03: ENCAPSULATION 
+using System;
+using System.Security.Principal;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
+
+
+        First Step:
+        Account savings = new Account(); // This an instance of the account class.
+        savings._balance = 50;
+        savings.Deposit(100);
+
+
+        Second Step:
+        Account savings = new Account(); // This is an instance of the account class.
+        savings._balance = 50 // This doesn't work now
+        savings.Deposit(100);
+
+
+        Video: Encapsulation:
+        Account savings = new Account();
+        // This is an instance of the Account class.
+        //savings._balance = 50 // This will not work when the _balance is set to "private".
+        //savings.SetBalance(50); // This is an Access Modifier.
+        // It has access to the _balance. It is a setter?
+        // This is not great. It exposes the private data.
+
+        //int money = savings.GetBalance(); // This is a getter.
+        // it has access to _balance.
+        // We don't need to update this area. We 
+        //update the internal area to make changes.
+
+        savings.Deposit(50);
+
+    }
+
+}
+*/
