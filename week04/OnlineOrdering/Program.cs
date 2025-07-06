@@ -4,15 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Product order1 = new Product();
-        order1._price = 50;
-        order1._quantity = 5;
-        order1._name = "lamps";
+        Product productTotal1 = new Product();
+        productTotal1._productPrice = 50;
+        productTotal1._productId = "la1234";
+        productTotal1._productQty = 5;
+        productTotal1._productName = "lamps";
 
-        Product order2 = new Product();
-        order2._price = 250;
-        order2._quantity = 2;
-        order2._name = "chairs";
+        Product productTotal2 = new Product();
+        productTotal2._productName = "chairs";
+        productTotal2._productId = "ch1234";
+        productTotal2._productPrice = 250;
+        productTotal2._productQty = 2;
+
 
         /*
         Console.WriteLine(order1._price);
@@ -20,10 +23,10 @@ class Program
         Console.WriteLine(order1._name);
         */
 
-        double firstOrderCost = order1.GetTotal();
+        double firstOrderCost = productTotal1.GetTotal();
         Console.WriteLine(firstOrderCost);
 
-        double secondOrderCost = order1.GetTotal();
+        double secondOrderCost = productTotal2.GetTotal();
         Console.WriteLine(secondOrderCost);
 
     }

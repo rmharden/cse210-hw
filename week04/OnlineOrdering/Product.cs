@@ -1,12 +1,14 @@
 public class Product
 {
-    public double _price;
-    public double _quantity;
-    public string _name;
+    public string _productName;
+    public string _productId;
+    public double _productPrice;
+    public double _productQty;
+
 
     public double GetTotal()
     {
-        return _price * _quantity;
+        return _productPrice * _productQty;
     }
 
 
