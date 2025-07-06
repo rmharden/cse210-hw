@@ -10,8 +10,4 @@ public class Product
     {
         return _productPrice * _productQty;
     }
-
-
-
-
 }
