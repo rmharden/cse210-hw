@@ -6,7 +6,7 @@ public class Product
     public double _productQty;
 
 
-    public double GetTotal()
+    public double GetTotalProductCost()
     {
         return _productPrice * _productQty;
     }

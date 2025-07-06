@@ -23,10 +23,10 @@ class Program
         Console.WriteLine(order1._name);
         */
 
-        double firstOrderCost = productTotal1.GetTotal();
+        double firstOrderCost = productTotal1.GetTotalProductCost();
         Console.WriteLine(firstOrderCost);
 
-        double secondOrderCost = productTotal2.GetTotal();
+        double secondOrderCost = productTotal2.GetTotalProductCost();
         Console.WriteLine(secondOrderCost);
 
     }
