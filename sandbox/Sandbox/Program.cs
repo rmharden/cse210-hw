@@ -7,7 +7,6 @@ class Program
     {
         //Console.WriteLine("\nHello Sandbox World!\n");
 
-/*
         Blind kitchen = new Blind();
         kitchen._width = 60;
         kitchen._height = 48;
@@ -27,7 +26,7 @@ class Program
         double materialAmountLr = livingRoom.GetArea();
 
         Console.WriteLine(livingRoom.GetArea());
-*/
+
         House johnsonHome = new House();
         johnsonHome._owner = "Johnson Family";
 
@@ -35,10 +34,11 @@ class Program
 
         Console.WriteLine(johnsonHome._kitchen._width);
 
+
+        foreach (Blind b in johnsonHome._blinds)
+        {
+            double amount = b.GetArea();
+        }
     }
 }
 
-
-/*
-For now, I just put everything back to the way it was before I duplicated the sandbox folder. I'll try again a different day. I'm just going to use the first sandbox file for practice so I can figure out what I need to do so I can finish my assignment. Thank you for all your help!
-*/
