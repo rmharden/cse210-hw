@@ -29,5 +29,12 @@ class Program
         double secondOrderCost = productTotal2.GetTotalProductCost();
         Console.WriteLine(secondOrderCost);
 
+        Address a = new Address();
+        a._country = "Denmark";
+
+        string orderShipping = a.IsAddressUSA();
+        Console.WriteLine(orderShipping);
+
+
     }
 }
