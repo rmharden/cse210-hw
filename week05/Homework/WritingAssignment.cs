@@ -6,7 +6,7 @@ public class WritingAssignment : Assignment
     // private string _studentName;
     // private string _topic;
 
-    public string _title;
+    private string _title;
 
     // this is the constructor with a base
     public WritingAssignment(string studentName, string topic, string title) : base(studentName, topic)
@@ -27,7 +27,7 @@ public class WritingAssignment : Assignment
     {
         string studentName = GetStudentName();
 
-        return $"{title} by {studentName}";
+        return $"{_title} by {studentName}";
     }
 }
 
