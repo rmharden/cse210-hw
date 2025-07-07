@@ -10,9 +10,10 @@ public class MathAssignment
     private string _problems;
 
     // This is the constructor that stores each value:
-    public MathAssignment(string studentName, string topic, string _textbookSection, string proplems)
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName, topic)// added the base in Step 4
     {
-
+        _textbookSection = textbookSection;
+        _problems = problems;
     }
 
     // This method is going to be apart of the base now
