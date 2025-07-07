@@ -7,7 +7,7 @@ public class WritingAssignment
     // this is the constructor
     public WritingAssignment(string studentName, string topic, string title)
     {
-        
+
     }
 
     public string GetSummary()
@@ -35,5 +35,11 @@ Constructor:
     - topic
     - title of the assignment
 
-
+Method:
+- A summary of the assignment that contains:
+    - student name
+    - topic
+    - has a method to get the writing info
+        - title
+        - student's name
 */
