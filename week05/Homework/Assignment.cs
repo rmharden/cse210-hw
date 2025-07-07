@@ -12,7 +12,19 @@ public class Assignment
         _topic = topic;
     }
 
-    
+    // Step 5:
+    public string GetStudentName()
+    {
+        return _studentName;
+    }
+
+    // This was in the sample. I did not see the part in the
+    // instructions to add this.
+    public string GetTopic()
+    {
+        return _topic;
+    }
+
     public string GetSummary()
     {
         return _studentName + " - " + _topic;
