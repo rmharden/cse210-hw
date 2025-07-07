@@ -9,7 +9,7 @@ public class MathAssignment
     // This is the constructor that stores each value:
     public MathAssignment(string studentName, string topic, string _textbookSection, string proplems)
     {
-        
+
     }
 
     public string GetSummary()
@@ -35,5 +35,7 @@ A Math assignment needs to store:
 
 It has a constructor
 - requires a value for each of the items that it stores
+
+Method
 
 */
