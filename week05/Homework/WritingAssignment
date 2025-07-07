@@ -1,7 +1,10 @@
 public class WritingAssignment
 {
-    private string _studentName;
-    private string _topic;
+    // These attributes are used in both classes they are 
+    // going to be part of the base now.
+    // private string _studentName;
+    // private string _topic;
+
     private string _title;
 
     // this is the constructor
@@ -10,10 +13,14 @@ public class WritingAssignment
 
     }
 
+    // This method is going to be apart of the base now
+    // because it is used in both classes.
+    /*
     public string GetSummary()
     {
         return "";
     }
+    */
 
     public string GetWritingInformation()
     {

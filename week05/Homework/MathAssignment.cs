@@ -1,8 +1,11 @@
 
 public class MathAssignment
 {
-    private string _studentName;
-    private string _topic;
+    // These attributes are used in both classes they are 
+    // going to be part of the base now.
+    // private string _studentName;
+    // private string _topic;
+
     private string _textbookSection;
     private string _problems;
 
@@ -12,10 +15,14 @@ public class MathAssignment
 
     }
 
+    // This method is going to be apart of the base now
+    // because it is used in both classes.
+    /*
     public string GetSummary()
     {
         return "";
     }
+    */
 
     public string GetHomeworkList()
     {
