@@ -4,6 +4,12 @@ public class WritingAssignment
     private string _topic;
     private string _title;
 
+    // this is the constructor
+    public WritingAssignment(string studentName, string topic, string title)
+    {
+        
+    }
+
     public string GetSummary()
     {
         return "";
@@ -14,3 +20,20 @@ public class WritingAssignment
         return "";
     }
 }
+
+/*
+Class: WritingAssignment
+
+Stores:
+- student's name
+- the topic
+- title of the assignment
+
+Constructor:
+- requires a value for each item it stores
+    - student's name
+    - topic
+    - title of the assignment
+
+
+*/

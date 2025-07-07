@@ -36,6 +36,11 @@ A Math assignment needs to store:
 It has a constructor
 - requires a value for each of the items that it stores
 
-Method
+Assignment Summary Method that contains:
+- Student's name
+- Topic
+- Display Method
+    - Displays the math homeworl list
+        -Section number and the problems
 
 */
