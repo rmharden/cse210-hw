@@ -7,9 +7,9 @@ public class MathAssignment
     private string _problems;
 
     // This is the constructor that stores each value:
-    public MathAssignment()
+    public MathAssignment(string studentName, string topic, string _textbookSection, string proplems)
     {
-
+        
     }
 
     public string GetSummary()
