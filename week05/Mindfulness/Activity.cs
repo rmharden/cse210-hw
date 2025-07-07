@@ -14,13 +14,13 @@ public class Activiy()
 
     }
 
-    public void ShowSpinner(in seconds)
+    public void ShowSpinner(int seconds)
     {
-        return 0;
+
     }
 
     public void ShowCountDown(int seconds)
     {
-        return 0;
+
     }
 }
