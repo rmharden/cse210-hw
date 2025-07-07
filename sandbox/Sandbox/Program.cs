@@ -39,6 +39,45 @@ class Program
         {
             double amount = b.GetArea();
         }
+
+        int[] numbers = { 10, 30, 44, 21, 51, 21, 61, 24, 14 };
+        Array.IndexOf(numbers, 21);
+        int ans = Array.IndexOf(numbers, 21);
+        Console.WriteLine(ans);
+
+        int[] source = { 12, 1, 5, -2, 16, 14 };
+        int[] dest = { 1, 2, 3, 4 };
+
+        Array.Copy(source, dest, 3);
+
+        int[] numbers2 = { 12, 1, 5, -2, 16, 14 };
+        Array.Sort(numbers2);
+
+        string message = "Hello World";
+        string anotherMessage = "";
+        string myName = "Hello World, " + "name is Jamie";
+        string myName2 = "Hello world, my name is Jamie";
+
+        Console.WriteLine("Hello World".Length);
+
+        string newMessage = message.Substring(2, 5);
+        Console.WriteLine(newMessage);
+
+        string firstString = "This is Jamie";
+        string secondString = "Hello.";
+
+        firstString.Equals("This is Jamie");
+        secondString.Equals("This is Jamie");
+
+        string[] separator = { ",", ";" };
+        string names = "Peter, John, Andy, , David";
+        string[] substrings = names.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        Console.WriteLine(names);
+
+        List<string> _prompts = new List<string> { "Who was the most interesting person I interacted with today?", "What was the best part of my day?", "How did I see the hand of the Lord in my life today?", "What was the strongest emotion I felt today?", "If I had one thing I could do over today, what would it be?" };
+
+        Console.WriteLine(_prompts[0] + _prompts[1] + _prompts[2] + _prompts[3] + _prompts[4]);
+        Console.WriteLine(_prompts.Count);
     }
 }
 
