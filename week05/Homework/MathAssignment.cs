@@ -10,7 +10,8 @@ public class MathAssignment
     private string _problems;
 
     // This is the constructor that stores each value:
-    public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName, topic)// added the base in Step 4
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName,
+        topic)// added the base in Step 4
     {
         _textbookSection = textbookSection;
         _problems = problems;
@@ -27,7 +28,7 @@ public class MathAssignment
 
     public string GetHomeworkList()
     {
-        return "";
+        return $"Section {_textbookSection} Problems {_problems}";
     }
 }
 
