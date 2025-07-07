@@ -1,5 +1,5 @@
-
-public class MathAssignment
+// I forgot to add the Assignment as a parent.
+public class MathAssignment : Assignment
 {
     // These attributes are used in both classes they are 
     // going to be part of the base now.
