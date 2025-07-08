@@ -23,6 +23,7 @@ public class ReflectingActivity : Activity
 
         Console.WriteLine("\nNow ponder on each of the following questions as they related to this experience.");
         Console.WriteLine("You may being in: ");
+        GetRandomQuestion();
 
         Console.Read();
 
@@ -44,5 +45,25 @@ public class ReflectingActivity : Activity
         int pIndex = displayPrompt.Next(_prompts.Count);
         Console.WriteLine($"--- {_prompts[pIndex]} ---");
         return _prompts[pIndex];
+    }
+
+        public string GetRandomQuestion()
+    {
+        Random displayQuestion = new Random();
+        List<string> _questions = new List<string>()
+            {
+                "> 1. Why was this experience meaningful to you?",
+                "> 2. Have you ever done anything like this before?",
+                "> 3. How did you get started?",
+                "> 4. How did you feel when it was complete?",
+                "> 5. What made this time different than other times when you were not as successful?",
+                "> 6. What is your favorite thing about this experience?",
+                "> 7. What could you learn from this experience that applies to other situations?",
+                "> 8. What did you learn about yourself through this experience?",
+                "> 9. How can you keep this experience in mind in the future?"
+            };
+        int qIndex = displayQuestion.Next(_questions.Count);
+        Console.WriteLine($"--- {_questions[qIndex]} ---");
+        return _questions[qIndex];
     }
 }
