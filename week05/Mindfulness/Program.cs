@@ -56,9 +56,7 @@ class Program
             else if (response == "3")
             {
                 Console.WriteLine("\nYou chose the Listing Activity\n");
-                ListingActivity la = new ListingActivity();
-                la.GetListFromUser();
-                Console.WriteLine("");
+                ListingActivity la1 = new ListingActivity();
             }
             else if (response == "4")
             {
