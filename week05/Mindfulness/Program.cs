@@ -34,7 +34,8 @@ class Program
         string response = "";
         while (response != "4")
         {
-            Console.WriteLine("\nMenu Options:");
+            Console.Clear();
+            Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Start the breathing activity");
             Console.WriteLine("2. Start reflecting activity");
             Console.WriteLine("3. Start listing Activity");
