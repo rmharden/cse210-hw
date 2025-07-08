@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
@@ -21,7 +22,25 @@ class Program
         */
 
         // This repeats and there is no end.
+
+        /*
+        Menu Options:
+        1. Start the breathing activity
+        2. Start reflecting activity
+        3. Start listing activity
+        4. Quit
+        Select a choice from the menu: 
+*/
+        Console.WriteLine("Menu Options:");
+        Console.WriteLine("1. Start the breathing activity");
+        Console.WriteLine("2. Start reflecting activity");
+        Console.WriteLine("3. Start listing Activity");
+        Console.WriteLine("4. Quit");
+        Console.WriteLine("Select a choice from the menu");
+
         ListingActivity la = new ListingActivity();
         la.GetListFromUser();
+        
+
     }
 }
