@@ -31,16 +31,40 @@ class Program
         4. Quit
         Select a choice from the menu: 
 */
-        Console.WriteLine("Menu Options:");
-        Console.WriteLine("1. Start the breathing activity");
-        Console.WriteLine("2. Start reflecting activity");
-        Console.WriteLine("3. Start listing Activity");
-        Console.WriteLine("4. Quit");
-        Console.WriteLine("Select a choice from the menu");
+        string response = "";
+        while (response != "4")
+        {
+            Console.WriteLine("\nMenu Options:");
+            Console.WriteLine("1. Start the breathing activity");
+            Console.WriteLine("2. Start reflecting activity");
+            Console.WriteLine("3. Start listing Activity");
+            Console.WriteLine("4. Quit");
+            Console.Write("Select a choice from the menu: ");
 
-        ListingActivity la = new ListingActivity();
-        la.GetListFromUser();
-        
-
+            response = Console.ReadLine();
+            if (response == "1")
+            {
+                Console.WriteLine("\nYou chose the Breathing Activity.\n");
+            }
+            else if (response == "2")
+            {
+                Console.WriteLine("\nYou chose the Reflecting Activity\n");
+            }
+            else if (response == "3")
+            {
+                Console.WriteLine("\nYou chose the Listing Activity\n");
+                ListingActivity la = new ListingActivity();
+                la.GetListFromUser();
+                Console.WriteLine("");
+            }
+            else if (response == "4")
+            {
+                Console.WriteLine("\nThank you for using the Mindfulness Program!\n");
+            }
+            else
+            {
+                Console.WriteLine("\nInvalid number.\n");
+            }
+        }
     }
 }
