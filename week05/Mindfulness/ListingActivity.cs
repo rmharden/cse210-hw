@@ -4,21 +4,25 @@ public class ListingActivity : Activity
     {
         Console.Clear();
         Console.WriteLine("\nWelcome to the Listing Activity.");
-        Console.WriteLine("\nThis activity will help you reflect on the good things \nin your life by having you list as \nmany things as you can in a certain area.");
+        Console.WriteLine("\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
 
         Console.Write("\nHow long, in seconds, would you like for your session? ");
         string userInput = Console.ReadLine();
 
         Console.Clear();
         Console.WriteLine("Get ready...");
-        Console.Read();
 
-        Console.WriteLine("Breathe in...");
-        Console.WriteLine("Now breathe out...");
+        Console.WriteLine("--- This is where the random propmt will go. ---");
+        Console.WriteLine("List as many responses you can to the following prompt:");
+        Console.WriteLine("You may begin in: ");
+        Console.WriteLine("> ");
+
+        int newListNumber = 0;
+        Console.WriteLine($"You listed {newListNumber} items!");
 
         Console.WriteLine("\nWell done!!");
 
-        Console.WriteLine($"\nYou have completed another {userInput} seconds of the Breathing Activity.\n");
+        Console.WriteLine($"\nYou have completed another {userInput} seconds of the Listing Activity.\n");
         Console.Read();
     }
 }
