@@ -1,8 +1,8 @@
-public class Student : Activity
+public class BreathingActivity : Activity
 {
 
     private string _number;
-    public Student(string name, string number) : base(name)
+    public BreathingActivity(string name, string number) : base(name)
     {
         _number = number;
     }
