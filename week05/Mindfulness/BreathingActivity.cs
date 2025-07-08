@@ -18,4 +18,14 @@ public class BreathingActivity : Activity
         return _name + " " + _number; 
     }
     */
+
+    public BreathingActivity()
+    {
+
+    }
+
+    public void Run()
+    {
+        
+    }
 }
