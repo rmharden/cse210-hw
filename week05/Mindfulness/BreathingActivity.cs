@@ -8,6 +8,9 @@ public class BreathingActivity : Activity
 
         Console.Write("\nHow long, in seconds, would you like for your session? ");
         string userInput = Console.ReadLine();
+
+        Console.Clear();
+        Console.WriteLine("Get ready...");
     }
 
     public void Run()
