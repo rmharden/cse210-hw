@@ -11,5 +11,9 @@ class Program
         string number = student.GetNumber();
         Console.WriteLine(name);
         Console.WriteLine(number);
+        // This is in the lesson but I don't know where
+        // it goes.
+        // string number = base.GetName();
+        Console.WriteLine($"Student Number: {number}");
     }
 }
