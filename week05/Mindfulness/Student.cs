@@ -11,4 +11,9 @@ public class Student : Activity
     {
         return _number;
     }
+
+    public string GetStudentInfo()
+    {
+        return _name + " " + _number; 
+    }
 }

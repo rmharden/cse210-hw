@@ -1,6 +1,6 @@
 public class Activity
 {
-    private string _name;
+    protected string _name;
     public Activity(string name)
     {
         _name = name;
