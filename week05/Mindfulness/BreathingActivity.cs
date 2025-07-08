@@ -4,9 +4,9 @@ public class BreathingActivity : Activity
     public BreathingActivity()
     {
         Console.WriteLine("Welcome to the Breathing Activity.");
-        Console.WriteLine("This activity will help you relax by walking you through breathing in and out slowly. Cear your mind and focus on your breathing.");
+        Console.WriteLine("This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.");
 
-         Console.Write("\nHow long, in seconds, would you like for your session? ");
+        Console.Write("\nHow long, in seconds, would you like for your session? ");
         string userInput = Console.ReadLine();
     }
 

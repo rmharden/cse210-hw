@@ -45,6 +45,7 @@ class Program
             if (response == "1")
             {
                 Console.WriteLine("\nYou chose the Breathing Activity.\n");
+                BreathingActivity ba1 = new BreathingActivity();
             }
             else if (response == "2")
             {
