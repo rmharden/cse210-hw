@@ -51,6 +51,7 @@ class Program
             else if (response == "2")
             {
                 Console.WriteLine("\nYou chose the Reflecting Activity\n");
+                ReflectingActivity ra1 = new ReflectingActivity();
             }
             else if (response == "3")
             {
