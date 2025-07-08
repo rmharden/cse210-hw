@@ -1,5 +1,6 @@
 public class Activity
 {
+    /*
     protected string _name;
     public Activity(string name)
     {
@@ -9,4 +10,8 @@ public class Activity
     {
         return _name;
     }
+    */
+
+
+    
 }

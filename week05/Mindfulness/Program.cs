@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        /*
         Console.WriteLine("\nHello World! This is the Mindfulness Project.\n");
         BreathingActivity bActivity = new BreathingActivity("Brigham", "234");
         string name = bActivity.GetName();
@@ -15,5 +16,6 @@ class Program
         // it goes.
         // string number = base.GetName();
         Console.WriteLine($"Breathing Activity Number: {number}\n");
+        */
     }
 }

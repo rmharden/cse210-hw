@@ -1,6 +1,7 @@
 public class BreathingActivity : Activity
 {
 
+    /*
     private string _number;
     public BreathingActivity(string name, string number) : base(name)
     {
@@ -16,4 +17,5 @@ public class BreathingActivity : Activity
     {
         return _name + " " + _number; 
     }
+    */
 }
