@@ -12,6 +12,13 @@ public class BreathingActivity : Activity
         Console.Clear();
         Console.WriteLine("Get ready...");
         Console.Read();
+
+        Console.WriteLine("Breathe in...");
+        Console.WriteLine("Now breathe out...");
+
+        Console.WriteLine("Well done!!");
+
+        Console.WriteLine($"You have completed another {userInput} seconds of the Breathing Activity.");
     }
 
     public void Run()
