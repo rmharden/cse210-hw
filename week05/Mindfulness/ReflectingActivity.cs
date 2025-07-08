@@ -47,7 +47,7 @@ public class ReflectingActivity : Activity
         return _prompts[pIndex];
     }
 
-        public string GetRandomQuestion()
+    public string GetRandomQuestion()
     {
         Random displayQuestion = new Random();
         List<string> _questions = new List<string>()
@@ -67,3 +67,8 @@ public class ReflectingActivity : Activity
         return _questions[qIndex];
     }
 }
+
+/*
+I used this link to learn how to do random prompt generators:
+https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0
+*/
