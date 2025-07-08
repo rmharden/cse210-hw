@@ -5,9 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
-
-
-        Activity activity = new Activity();
+        Console.WriteLine("\nHello World! This is the Mindfulness Project.\n");
+        Student student = new Student("Brigham", "234");
+        string name = student.GetName();
+        string number = student.GetNumber();
+        Console.WriteLine(name);
+        Console.WriteLine(number);
     }
 }
