@@ -3,8 +3,9 @@ public class BreathingActivity : Activity
 {
     public BreathingActivity()
     {
-        Console.WriteLine("Welcome to the Breathing Activity.");
-        Console.WriteLine("This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.");
+        Console.Clear();
+        Console.WriteLine("\nWelcome to the Breathing Activity.");
+        Console.WriteLine("\nThis activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.");
 
         Console.Write("\nHow long, in seconds, would you like for your session? ");
         string userInput = Console.ReadLine();
@@ -16,9 +17,9 @@ public class BreathingActivity : Activity
         Console.WriteLine("Breathe in...");
         Console.WriteLine("Now breathe out...");
 
-        Console.WriteLine("Well done!!");
+        Console.WriteLine("\nWell done!!");
 
-        Console.WriteLine($"You have completed another {userInput} seconds of the Breathing Activity.");
+        Console.WriteLine($"\nYou have completed another {userInput} seconds of the Breathing Activity.\n");
     }
 
     public void Run()
