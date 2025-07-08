@@ -1,6 +1,24 @@
+using System;
 public class BreathingActivity : Activity
 {
+    public BreathingActivity()
+    {
+        Console.WriteLine("Welcome to the Breathing Activity.");
+        Console.WriteLine("This activity will help you relax by walking you through breathing in and out slowly. Cear your mind and focus on your breathing.");
 
+         Console.Write("\nHow long, in seconds, would you like for your session? ");
+        string userInput = Console.ReadLine();
+    }
+
+    public void Run()
+    {
+
+    }
+}
+
+   
+   
+   
     /*
     private string _number;
     public BreathingActivity(string name, string number) : base(name)
@@ -18,14 +36,3 @@ public class BreathingActivity : Activity
         return _name + " " + _number; 
     }
     */
-
-    public BreathingActivity()
-    {
-
-    }
-
-    public void Run()
-    {
-        
-    }
-}
