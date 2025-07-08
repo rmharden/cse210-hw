@@ -11,6 +11,7 @@ public class BreathingActivity : Activity
 
         Console.Clear();
         Console.WriteLine("Get ready...");
+        Console.Read();
     }
 
     public void Run()
