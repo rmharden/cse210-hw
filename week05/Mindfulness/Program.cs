@@ -14,6 +14,6 @@ class Program
         // This is in the lesson but I don't know where
         // it goes.
         // string number = base.GetName();
-        Console.WriteLine($"Student Number: {number}");
+        Console.WriteLine($"Student Number: {number}\n");
     }
 }
