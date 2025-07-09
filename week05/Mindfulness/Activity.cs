@@ -23,7 +23,10 @@ public class Activity
 
         Console.WriteLine($"\n{_description}");
 
-        Console.Write("How long, in seconds, would you like your session? ");
+        Console.Write("\nHow long, in seconds, would you like for your session? ");
+        string _duration = Console.ReadLine();
+        int seconds = int.Parse(_duration);
+
     }
 
     public void DisplayEndingMessage()
@@ -31,10 +34,8 @@ public class Activity
         Console.WriteLine($"Well done!!");
     }
 
-    public void ShowSpinner(int seconds)
+    public void ShowSpinner()
     {
-        Console.WriteLine("Get Ready...");
-
         List<string> animationStrings = new List<string>();
         animationStrings.Add("|");
         animationStrings.Add("/");
@@ -44,17 +45,30 @@ public class Activity
         animationStrings.Add("/");
         animationStrings.Add("\\");
 
-        foreach (string s in animationStrings)
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(8);
+
+        int i = 0;
+
+        while (DateTime.Now < endTime)
         {
+
+            string s = animationStrings[i];
             Console.Write(s);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+
+            i++;
+
+            if (i >= animationStrings.Count)
+            {
+                i = 0;
+            }
         }
-        
     }
 
     public void ShowCountDown(int seconds)
     {
-        
+
     }
 }
