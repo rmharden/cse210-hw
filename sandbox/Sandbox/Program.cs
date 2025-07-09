@@ -49,19 +49,19 @@ class Program
         // Console.Write("\b");  // "Does a back arrow"
         // Console.Write("\b \b");  // "Does a back arrow, overrides it, and goes back"
         // this works for single digits. Need to do two back arrows if there are more digits.
-        for (int i = 5; i > 0; i--)
-        {
-            Console.Write(i);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-        }
+        // for (int i = 5; i > 0; i--)
+        // {
+        //     Console.Write(i);
+        //     Thread.Sleep(1000);
+        //     Console.Write("\b \b");
+        // }
 
         // This one displays a count of dots:
-        for (int i = 5; i > 0; i--)
-        {
-            Console.Write(".");
-            Thread.Sleep(1000);
-        }
+        // for (int i = 5; i > 0; i--)
+        // {
+        //     Console.Write(".");
+        //     Thread.Sleep(1000);
+        // }
 
         // This is a spinner animation:
         // because a backslash is a special character, we have to add two in the quotes so it will display one for this special situation:
@@ -75,16 +75,16 @@ class Program
         animationStrings.Add("/");
         animationStrings.Add("\\");
 
-        foreach (string s in animationStrings)
-        {
-            Console.Write(s);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-        }
+        // foreach (string s in animationStrings)
+        // {
+        //     Console.Write(s);
+        //     Thread.Sleep(1000);
+        //     Console.Write("\b \b");
+        // }
 
         // This creates a way to display by a specific time:
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(10);
+        DateTime endTime = startTime.AddSeconds(5);
 
         // This is starting at the 0 of the index of the list:
 
@@ -97,6 +97,17 @@ class Program
             Console.Write(s);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+
+            // Advances the "i":
+            i++;
+
+            // This prevents the error. It takes the number of items in the index and stops the count when it gets to that number; in this case, the number "8":
+            // However, because we have a while loop, it will loop through that animation until it reaches the seconds provided.
+
+            if (i >= animationStrings.Count)
+            {
+                i = 0;
+            }
         }
 
         Console.WriteLine("Done.");
