@@ -31,9 +31,11 @@ class Program
 
         // Here is another way to do a countdown:
 
-        
-
-
+        for (int i = 5; i > 0; i--)
+        {
+            Console.WriteLine(i);
+            Thread.Sleep(1000);
+        }
 
         Console.WriteLine("Done.");
     }
