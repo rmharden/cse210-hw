@@ -10,12 +10,14 @@ public class ListingActivity : Activity
         string userInput = Console.ReadLine();
 
         Console.Clear();
-        Console.WriteLine("Get ready...");
+        Console.WriteLine("Get ready...\n");
 
-        Console.WriteLine("--- This is where the random propmt will go. ---");
         Console.WriteLine("List as many responses you can to the following prompt:");
-        Console.WriteLine("You may begin in: ");
+        GetRandomPrompt();
+        Console.WriteLine("You may begin in: (a number countdown is here.)");
+        Console.Read();
         Console.WriteLine("> ");
+        Console.ReadLine();
 
         int newListNumber = 0;
         Console.WriteLine($"You listed {newListNumber} items!");
@@ -23,6 +25,7 @@ public class ListingActivity : Activity
         Console.WriteLine("\nWell done!!");
 
         Console.WriteLine($"\nYou have completed another {userInput} seconds of the Listing Activity.\n");
+        Console.WriteLine("There is a counter above this line.");
         Console.Read();
     }
     public string GetRandomPrompt()
@@ -42,4 +45,3 @@ public class ListingActivity : Activity
         return _prompts[pIndex];
     }
 }
-   

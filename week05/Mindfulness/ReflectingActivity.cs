@@ -14,15 +14,23 @@ public class ReflectingActivity : Activity
 
         Console.Clear();
         Console.WriteLine("Get ready...");
+        Console.WriteLine("The spinner is under this");
         Console.Read();
 
-        Console.WriteLine("Consider the following prompt:");
+        Console.WriteLine("Consider the following prompt:\n");
         GetRandomPrompt();
         Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
         Console.Read();
 
         Console.WriteLine("\nNow ponder on each of the following questions as they related to this experience.");
-        Console.WriteLine("You may being in: ");
+        Console.WriteLine("You may being in: (will display numbers counting down here)");
+        Console.Read();
+
+        Console.Clear();
+        GetRandomQuestion();
+        Console.WriteLine("This spinner is on the same line after the question here.");
+        Console.Read();
+        Console.WriteLine("The program is counting and then it asks another question.");
         GetRandomQuestion();
 
         Console.Read();
@@ -30,6 +38,7 @@ public class ReflectingActivity : Activity
         Console.WriteLine("\nWell done!!");
 
         Console.WriteLine($"\nYou have completed another {userInput} seconds of the Reflecting Activity.\n");
+        Console.WriteLine("The spinner is shown here too.");
         Console.Read();
     }
     public string GetRandomPrompt()
