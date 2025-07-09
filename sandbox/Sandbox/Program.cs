@@ -48,11 +48,19 @@ class Program
 
         // Console.Write("\b");  // "Does a back arrow"
         // Console.Write("\b \b");  // "Does a back arrow, overrides it, and goes back"
+        // this works for single digits. Need to do two back arrows if there are more digits.
         for (int i = 5; i > 0; i--)
         {
             Console.Write(i);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+        }
+
+        // This one displays a count of dots.
+        for (int i = 5; i > 0; i--)
+        {
+            Console.Write(".");
+            Thread.Sleep(1000);
         }
 
         Console.WriteLine("Done.");
