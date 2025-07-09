@@ -2,11 +2,20 @@ using System;
 using System.Security.Cryptography.X509Certificates;
 
 // Practice as of July 9, 2025 at 11:19 AM
+// Display Animations Video from CSE 210 W05 Project:
+// Mindfulness Program
 class Program
 {
     static void Main(string[] args)
     {
-        Console.Write
+        Console.WriteLine("Hello Sandbox World");
+
+        // Pausing, sleeping, waiting... 1000 milliseconds.
+        // 1000 Milliseconds = 1 Second
+        
+        Thread.Sleep(1000);
+
+        Console.WriteLine("Done.");
     }
 }
 
