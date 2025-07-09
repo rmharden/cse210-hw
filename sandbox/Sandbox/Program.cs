@@ -17,16 +17,21 @@ class Program
 
         // This is a way to do a countdown:
 
-        Console.WriteLine("5");
-        Thread.Sleep(1000);
-        Console.WriteLine("4");
-        Thread.Sleep(1000);
-        Console.WriteLine("3");
-        Thread.Sleep(1000);
+        // Console.WriteLine("5");
+        // Thread.Sleep(1000);
+        // Console.WriteLine("4");
+        // Thread.Sleep(1000);
+        // Console.WriteLine("3");
+        // Thread.Sleep(1000);
+        // Cmd + / allows me to comment more than one highlighted line.
         // Console.WriteLine("2");
         // Thread.Sleep(1000);
         // Console.WriteLine("1");
         // Thread.Sleep(1000);
+
+        // Here is another way to do a countdown:
+
+        
 
 
 
