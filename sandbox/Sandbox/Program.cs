@@ -10,10 +10,10 @@ class Program
     {
         Console.WriteLine("Hello Sandbox World");
 
-        // Pausing, sleeping, waiting... 1000 milliseconds.
+        // Pausing, sleeping, waiting... 3000 milliseconds.
         // 1000 Milliseconds = 1 Second
-        
-        Thread.Sleep(1000);
+
+        Thread.Sleep(3000);
 
         Console.WriteLine("Done.");
     }
