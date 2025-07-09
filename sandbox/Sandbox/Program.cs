@@ -82,6 +82,23 @@ class Program
             Console.Write("\b \b");
         }
 
+        // This creates a way to display by a specific time:
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(10);
+
+        // This is starting at the 0 of the index of the list:
+
+        int i = 0;
+
+        while (DateTime.Now < endTime)
+        {
+            // This is telling the while loop to use the List with the index at 0:
+            string s = animationStrings[i];
+            Console.Write(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+        }
+
         Console.WriteLine("Done.");
     }
 }
