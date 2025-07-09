@@ -1,6 +1,17 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 
+// Practice as of July 9, 2025 at 11:19 AM
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write
+    }
+}
+
+/*
+// Practice prior to July 9, 2025 at 11:15 AM
 class Program
 {
     static void Main(string[] args)
@@ -79,5 +90,6 @@ class Program
         Console.WriteLine(_prompts[0] + _prompts[1] + _prompts[2] + _prompts[3] + _prompts[4]);
         Console.WriteLine(_prompts.Count);
     }
-}
 
+}
+*/
