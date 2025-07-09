@@ -40,10 +40,19 @@ class Program
         // }
 
         // Changed to writing the numbers on one line.
+        // for (int i = 5; i > 0; i--)
+        // {
+        //     Console.Write(i);
+        //     Thread.Sleep(1000);
+        // }
+
+        // Console.Write("\b");  // "Does a back arrow"
+        // Console.Write("\b \b");  // "Does a back arrow, overrides it, and goes back"
         for (int i = 5; i > 0; i--)
         {
             Console.Write(i);
             Thread.Sleep(1000);
+            Console.Write("\b \b");
         }
 
         Console.WriteLine("Done.");
