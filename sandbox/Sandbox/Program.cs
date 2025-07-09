@@ -56,11 +56,30 @@ class Program
             Console.Write("\b \b");
         }
 
-        // This one displays a count of dots.
+        // This one displays a count of dots:
         for (int i = 5; i > 0; i--)
         {
             Console.Write(".");
             Thread.Sleep(1000);
+        }
+
+        // This is a spinner animation:
+        // because a backslash is a special character, we have to add two in the quotes so it will display one for this special situation:
+
+        List<string> animationStrings = new List<string>();
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("\\");
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("\\");
+
+        foreach (string s in animationStrings)
+        {
+            Console.Write(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
         }
 
         Console.WriteLine("Done.");
