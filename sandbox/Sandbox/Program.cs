@@ -29,11 +29,20 @@ class Program
         // Console.WriteLine("1");
         // Thread.Sleep(1000);
 
-        // Here is another way to do a countdown:
 
+        // Here is another way to do a countdown:
+        // This writes each number on a new line.
+
+        // for (int i = 5; i > 0; i--)
+        // {
+        //     Console.WriteLine(i);
+        //     Thread.Sleep(1000);
+        // }
+
+        // Changed to writing the numbers on one line.
         for (int i = 5; i > 0; i--)
         {
-            Console.WriteLine(i);
+            Console.Write(i);
             Thread.Sleep(1000);
         }
 
