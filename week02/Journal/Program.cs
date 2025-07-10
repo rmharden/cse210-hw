@@ -38,11 +38,16 @@ class Program
             if (response == "1")
             {
                 Console.WriteLine("\nYou chose 1.\n");
+                PromptGenerator pg1 = new PromptGenerator();
+                pg1.GetRandomPrompt(); // This actually displays the prompt.
+                
+
             }
             // 2. Display
             else if (response == "2")
             {
                 Console.WriteLine("\nYou chose 2.\n");
+
             }
             // 3. Load
             else if (response == "3")
@@ -52,7 +57,7 @@ class Program
             // 4. Save 
             else if (response == "4")
             {
-                Console.WriteLine("\nYou chose 2.\n");
+                Console.WriteLine("\nYou chose 4.\n");
             }
             // 5. Quit
             else if (response == "5")

@@ -1,23 +1,25 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
 
 // Supplies random prompts whenever needed.
 
 public class PromptGenerator
 {
-    public string GetRandomPrompt()
+    public String GetRandomPrompt()
     {
-        Random random = new Random();
         List<string> _prompts = new List<string>()
         {
-            "Who was the most interesting person I interacted with today?",
-            "What was the best part of my day?",
-            "How did I see the hand of the Lord in my life today?",
-            "What was the strongest emotion I felt today?",
-            "If I had one thing I could do over today, what would it be?"
+            "1. Who was the most interesting person I interacted with today?",
+            "2. What was the best part of my day?",
+            "3. How did I see the hand of the Lord in my life today?",
+            "4. What was the strongest emotion I felt today?",
+            "5. If I had one thing I could do over today, what would it be?"
         };
+        Random random = new Random();
         int pIndex = random.Next(_prompts.Count);
-        //Console.WriteLine(_prompts[pIndex]); // This creates a duplicate prompt.
-        return _prompts[pIndex];
+        string promptText = _prompts[pIndex];
+        Console.WriteLine(promptText); // This creates a duplicate prompt.
+        return promptText;
     }
 }
