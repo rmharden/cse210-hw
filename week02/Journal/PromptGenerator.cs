@@ -17,7 +17,7 @@ public class PromptGenerator
             "If I had one thing I could do over today, what would it be?"
         };
         int pIndex = random.Next(_prompts.Count);
-        Console.WriteLine(_prompts[pIndex]);
+        //Console.WriteLine(_prompts[pIndex]); // This creates a duplicate prompt.
         return _prompts[pIndex];
     }
 }

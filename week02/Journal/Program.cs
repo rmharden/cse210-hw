@@ -39,7 +39,6 @@ class Program
                 // Console.WriteLine($"You chose {response}.");
                 // Console.WriteLine("");
 
-                
                 Entry ne1 = new Entry();
                 ne1.Display();
             }
