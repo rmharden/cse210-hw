@@ -5,6 +5,7 @@ using System.Net;
 using System.Runtime.InteropServices.Marshalling;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 // Handles most of the user interaction.
 class Program
@@ -36,31 +37,22 @@ class Program
             // 1. Write
             if (response == "1")
             {
-
+                Console.WriteLine("\nYou chose 1.\n");
             }
             // 2. Display
             else if (response == "2")
             {
-                Entry anEntry = new Entry();
-                anEntry.Display();
-                Journal theJournal = new Journal();
-                theJournal.AddEntry(anEntry);
+                Console.WriteLine("\nYou chose 2.\n");
             }
             // 3. Load
             else if (response == "3")
             {
-                Console.WriteLine("");
-                Console.WriteLine($"You chose {response}.");
-                Console.WriteLine("");
-                Journal theJournal = new Journal();
-
+                Console.WriteLine("\nYou chose 3.\n");
             }
             // 4. Save 
             else if (response == "4")
             {
-                Console.WriteLine("");
-                Console.WriteLine($"You chose {response}.");
-                Console.WriteLine("");
+                Console.WriteLine("\nYou chose 2.\n");
             }
             // 5. Quit
             else if (response == "5")
