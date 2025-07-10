@@ -1,4 +1,17 @@
 using System;
+
+// Reprsents a single journal entry.
+public class Entry
+{
+    
+}
+
+
+
+
+
+/*
+using System;
 using System.Data.SqlTypes;
 using System.Globalization;
 
@@ -31,3 +44,4 @@ public class Entry
         Console.WriteLine(entryText);       
     }
 }
+*/

@@ -1,6 +1,14 @@
 using System.IO;
 
+// Stores a list of journal entries.
 
+public class Journal
+{
+
+}
+
+
+/*
 // Stores a list of journal entries.
 public class Journal
 {
@@ -34,3 +42,4 @@ public class Journal
     }
 
 }
+*/
