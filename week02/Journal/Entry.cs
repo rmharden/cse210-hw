@@ -1,9 +1,25 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
-// Reprsents a single journal entry.
+// Represents a single journal entry.
 public class Entry
 {
-    
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+
+    public void Display()
+    {
+        DateTime theCurrentTime = DateTime.Now;
+        string _date = theCurrentTime.ToShortDateString();
+        Console.WriteLine(_date);
+
+        PromptGenerator _promptText = new PromptGenerator();
+        Console.WriteLine(_promptText.GetRandomPrompt());
+
+        Console.Write("> ");
+        _entryText = Console.ReadLine();
+    }
 }
 
 
