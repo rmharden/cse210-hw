@@ -40,26 +40,45 @@ class Program
             if (response == "1")
             {
                 Console.WriteLine("\nYou chose 1.\n");
+
                 Journal theJournal = new Journal();
+
+                DateTime theCurrentTime = DateTime.Now;
+                string dateText = theCurrentTime.ToShortDateString();
+
                 Entry anEntry = new Entry();
+                anEntry._date = dateText;
 
                 PromptGenerator pg1 = new PromptGenerator();
-                pg1.GetRandomPrompt(); // This actually displays the prompt.
+                anEntry._promptText = pg1.GetRandomPrompt(); // This actually displays the prompt.
 
+                Console.WriteLine(anEntry._promptText);
+                Console.Write("> ");
+                anEntry._entryText = Console.ReadLine();
 
+                //Console.WriteLine($"\nDate: {anEntry._date} - Prompt: {anEntry._promptText}");
+                //Console.WriteLine($"{anEntry._entryText}\n");
+
+                //Journal theJournal = new Journal();
+                theJournal.AddEntry(anEntry);
             }
             // 2. Display
             else if (response == "2")
             {
-                DateTime theCurrentTime = DateTime.Now;
-                string dateText = theCurrentTime.ToShortDateString();
-                PromptGenerator pg2 = new PromptGenerator();
-                Console.WriteLine("\nYou chose 2.\n");
+                // DateTime theCurrentTime = DateTime.Now;
+                // string dateText = theCurrentTime.ToShortDateString();
+                // PromptGenerator pg2 = new PromptGenerator();
+
                 Entry e1 = new Entry();
-                e1._date = dateText;
-                e1._promptText = pg2.GetRandomPrompt();
-                Console.WriteLine("> ");
-                e1._entryText = Console.ReadLine();
+                // e1._date = dateText;
+                // e1._promptText = pg2;
+                // Console.WriteLine("> ");
+                // e1._entryText = Console.ReadLine();
+                // e1._entryText = "Frustrated.";
+                e1.Display();
+
+                Journal theJournal = new Journal();
+                theJournal.DisplayAll();
 
             }
             // 3. Load

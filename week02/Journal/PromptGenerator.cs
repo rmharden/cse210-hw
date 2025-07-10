@@ -19,7 +19,7 @@ public class PromptGenerator
         Random random = new Random();
         int pIndex = random.Next(_prompts.Count);
         string promptText = _prompts[pIndex];
-        Console.WriteLine(promptText); // This was creating a duplicate prompt.
+        // Console.WriteLine(promptText); // This was creating a duplicate prompt.
         return promptText;
     }
 }
