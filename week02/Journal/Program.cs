@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.Marshalling;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
+using System.Globalization;
 
 // Handles most of the user interaction.
 class Program
@@ -38,6 +39,9 @@ class Program
             if (response == "1")
             {
                 Console.WriteLine("\nYou chose 1.\n");
+                Journal theJournal = new Journal();
+                Entry anEntry = new Entry();
+
                 PromptGenerator pg1 = new PromptGenerator();
                 pg1.GetRandomPrompt(); // This actually displays the prompt.
                 

@@ -1,5 +1,11 @@
 public class Entry
 {
-    PromptGenerator _prompt = new PromptGenerator();
-    
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+    public void Display()
+    {
+        Console.WriteLine($"");
+        Console.WriteLine($"");
+    }    
 }
