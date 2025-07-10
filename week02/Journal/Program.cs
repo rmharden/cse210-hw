@@ -7,6 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using System.Globalization;
+using System.IO;
 
 // Handles most of the user interaction.
 class Program
@@ -44,13 +45,21 @@ class Program
 
                 PromptGenerator pg1 = new PromptGenerator();
                 pg1.GetRandomPrompt(); // This actually displays the prompt.
-                
+
 
             }
             // 2. Display
             else if (response == "2")
             {
+                DateTime theCurrentTime = DateTime.Now;
+                string dateText = theCurrentTime.ToShortDateString();
+                PromptGenerator pg2 = new PromptGenerator();
                 Console.WriteLine("\nYou chose 2.\n");
+                Entry e1 = new Entry();
+                e1._date = dateText;
+                e1._promptText = pg2.GetRandomPrompt();
+                Console.WriteLine("> ");
+                e1._entryText = Console.ReadLine();
 
             }
             // 3. Load
