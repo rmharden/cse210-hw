@@ -22,7 +22,7 @@ class Program
         string response = "";
         while (response != "5")
         {
-            Console.WriteLine("Please select one of the following choices:");
+            Console.WriteLine("\nPlease select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
