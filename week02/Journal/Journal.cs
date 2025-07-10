@@ -4,14 +4,18 @@ using System.IO;
 
 public class Journal
 {
-    List<string> _entries = new List<string>();
     public void AddEntry(Entry newEntry)
     {
-        
+        List<string> _entries = new List<string>();
+        newEntry.Add(Entry._entryText);
+        foreach (Entry newEntry in _entries)
+        {
+            Console.WriteLine(newEntry._filename);
+        }        
     }
     public void DisplayAll()
     {
-
+        Console.WriteLine();
     }
     public void SaveToFile(string file)
     {

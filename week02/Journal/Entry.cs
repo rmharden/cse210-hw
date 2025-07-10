@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 // Represents a single journal entry.
 public class Entry
@@ -12,13 +13,17 @@ public class Entry
     {
         DateTime theCurrentTime = DateTime.Now;
         string _date = theCurrentTime.ToShortDateString();
-        Console.WriteLine(_date);
+
 
         PromptGenerator _promptText = new PromptGenerator();
-        Console.WriteLine(_promptText.GetRandomPrompt());
+        Console.WriteLine($"Date: {_date} - {_promptText.GetRandomPrompt}");
+        Console.WriteLine($"{_entryText}");
 
-        Console.Write("> ");
-        _entryText = Console.ReadLine();
+        //PromptGenerator _promptText = new PromptGenerator();
+        //Console.WriteLine(_promptText.GetRandomPrompt());
+
+        // Console.Write("> ");
+        // string _entryText = Console.ReadLine();
     }
 }
 
