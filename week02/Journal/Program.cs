@@ -35,12 +35,10 @@ class Program
             // 1. Write
             if (response == "1")
             {
-                // Console.WriteLine("");
-                // Console.WriteLine($"You chose {response}.");
-                // Console.WriteLine("");
-
-                Entry ne1 = new Entry();
-                ne1.Display();
+                Entry anEntry = new Entry();
+                anEntry.Display();
+                Journal theJournal = new Journal();
+                theJournal.AddEntry(anEntry);
             }
             // 2. Display
             else if (response == "2")
