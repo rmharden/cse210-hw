@@ -7,7 +7,7 @@ public class ReflectingActivity : Activity
     {
         Console.Clear();
         Console.WriteLine("\nWelcome to the Reflecting Activity.");
-        Console.WriteLine("\nThis activity will help you reflect on times in your life when you have shown strength \nand resilience. This will help you recognize the power you have and how you can use it \nin other aspects of your life.");
+        Console.WriteLine("\nThis activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
 
         Console.Write("\nHow long, in seconds, would you like for your session? ");
         string userInput = Console.ReadLine();
