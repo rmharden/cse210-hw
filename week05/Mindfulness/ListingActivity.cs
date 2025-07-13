@@ -3,7 +3,7 @@ public class ListingActivity
     public ListingActivity()
     {
         Console.WriteLine("List as many responses you can to the following prompt:");
-        //GetRandomPrompt();
+        GetRandomPrompt();
     }
     public string GetRandomPrompt()
     {
@@ -17,7 +17,8 @@ public class ListingActivity
             "> 5. Who are some of your personal heroes?",
             "> 6. What is your favorite thing about this experience?"            
         };
-        
-        return "";
+        int laIndex = displayPrompt.Next(_prompts.Count);
+        Console.WriteLine($"--- {_prompts[laIndex]} ---");
+        return _prompts[laIndex];
     }
 }
