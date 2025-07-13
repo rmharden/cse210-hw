@@ -3,10 +3,10 @@ public class ListingActivity : Activity
     public ListingActivity(string name, string description, int duration) : base()
     {
         name = "Listing";
-        description = "reflect on the good things in your life by having you list as many things as you can in a certain area.";
+        description = "reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
 
         base.DisplayStartingMessage(name, description, duration);
-
+        
         Console.WriteLine("List as many responses you can to the following prompt:");
         GetRandomPrompt();
 
