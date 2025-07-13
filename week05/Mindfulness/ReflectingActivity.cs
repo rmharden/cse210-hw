@@ -3,19 +3,12 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 public class ReflectingActivity : Activity
 {
-    public ReflectingActivity()
+    public ReflectingActivity(string name, string description, int duration) : base()
     {
-        Console.Clear();
-        Console.WriteLine("\nWelcome to the Reflecting Activity.");
-        Console.WriteLine("\nThis activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
-
-        Console.Write("\nHow long, in seconds, would you like for your session? ");
-        string userInput = Console.ReadLine();
-
-        Console.Clear();
-        Console.WriteLine("Get ready...");
-        Console.WriteLine("The spinner is under this");
-        Console.Read();
+        name = "Reflecting";
+        description = "reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+        
+        base.DisplayStartingMessage(name, description, duration);
 
         Console.WriteLine("Consider the following prompt:\n");
         GetRandomPrompt();
@@ -28,18 +21,13 @@ public class ReflectingActivity : Activity
 
         Console.Clear();
         GetRandomQuestion();
-        Console.WriteLine("This spinner is on the same line after the question here.");
+        base.ShowSpinner();
+
         Console.Read();
-        Console.WriteLine("The program is counting and then it asks another question.");
+        base.ShowCountDown();
         GetRandomQuestion();
 
-        Console.Read();
-
-        Console.WriteLine("\nWell done!!");
-
-        Console.WriteLine($"\nYou have completed another {userInput} seconds of the Reflecting Activity.\n");
-        Console.WriteLine("The spinner is shown here too.");
-        Console.Read();
+        base.DisplayEndingMessage(duration, name);
     }
     public string GetRandomPrompt()
     {
