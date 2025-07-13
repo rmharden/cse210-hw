@@ -28,20 +28,24 @@ public class BreathingActivity //: Activity
 
     public void Run()
     {
-        Console.Write("Breathe in...");
-        for (int i = 5; i > 0; i--)
-        {
-            Console.Write(i);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-        }
+        // Week 01 Curriculum about the int.Parse() function
+        // Week 05 Video Demo on animations
+        Console.WriteLine("\nHow long, in seconds, would you like your session? ");
+        string inputString = Console.ReadLine();
+        int duration = int.Parse(inputString);
 
-        Console.Write("Now breathe out...");
-        for (int i = 6; i > 0; i--)
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(duration);
+
+        while (DateTime.Now < endTime)
         {
-            Console.Write(i);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
+            Console.Write("\nBreathe in... ");
+            for (int i = 5; i > 0; i--)
+            {
+                Console.Write(i);
+                Thread.Sleep(1000);
+                Console.Write("\b \b");
+            }
         }
     }
     public void Spinner()
