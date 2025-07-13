@@ -46,9 +46,19 @@ public class BreathingActivity //: Activity
                 Thread.Sleep(1000);
                 Console.Write("\b \b");
             }
+            Console.WriteLine();
+            Console.Write("Breath out... ");
+            for (int i2 = 5; i2 > 0; i2--)
+            {
+                Console.Write(i2);
+                Thread.Sleep(1000);
+                Console.Write("\b \b");
+            }
         }
+        Console.WriteLine("\nWell done!\n");
     }
     public void Spinner()
+
     {
         // This is here temorarily
 
