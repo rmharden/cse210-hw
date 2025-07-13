@@ -19,7 +19,7 @@ public class ReflectingActivity
         {
             for (int ra1 = 5; ra1 > 0; ra1--)
             {
-                //GetRandomQuestion();
+                GetRandomQuestion();
                 //base.ShowSpinner();
                 Thread.Sleep(1000);
             }
