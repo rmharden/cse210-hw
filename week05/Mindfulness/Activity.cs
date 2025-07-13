@@ -43,10 +43,10 @@ public class Activity()
 
         Console.Clear();
         Console.WriteLine("Get ready...");
-        ShowSpinner();
+        ShowSpinner(duration);
     }
     // public void ShowSpinner(int seconds)
-    public void ShowSpinner()
+    public void ShowSpinner(int seconds)
     {
         List<string> animationStrings = new List<string>();
         animationStrings.Add("|");
@@ -74,10 +74,10 @@ public class Activity()
     public void DisplayEndingMessage(int duration, string name)
     {
         Console.WriteLine("Well done!");
-        ShowSpinner();
+        ShowSpinner(duration);
 
         Console.WriteLine($"\nYou have completed another {duration} seconds of the {name} Activity.");
-        ShowSpinner();
+        ShowSpinner(duration);
 
         Console.Clear();
     }
