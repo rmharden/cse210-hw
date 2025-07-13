@@ -20,7 +20,7 @@ public class BreathingActivity
                 Console.Write("\b \b");
             }
             Console.WriteLine();
-            Console.Write("Breathe out");
+            Console.Write("Breathe out...");
             for (int bo = 5; bo > 0; bo--)
             {
                 Console.Write(bo);
