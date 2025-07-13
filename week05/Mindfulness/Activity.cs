@@ -27,10 +27,11 @@ public class Activity()
     }
     public int SetDuration(int duration)
     {
-        _duration = duration;
+        Console.Write("How long, in seconds, would you like your session? ");
+        string inputString = Console.ReadLine();
+        int usersTime = int.Parse(inputString);
+        usersTime = duration;
         return duration;
-        // had an error for this. not sure why
-        // https://learn.microsoft.com/en-us/dotnet/csharp/misc/cs0161?f1url=%3FappId%3Droslyn%26k%3Dk(CS0161)
     }
     public void DisplayStartingMessage(string name, string description, int duration)
     {
@@ -39,18 +40,43 @@ public class Activity()
 
         Console.WriteLine($"This activity will help you {description}\n");
 
-        Console.Write("How long, in seconds, would you like your session? ");
-        string inputString = Console.ReadLine();
-        int usersTime = int.Parse(inputString);
-        usersTime = duration;
 
         Console.Clear();
         Console.WriteLine("Get ready...");
-        // show spinner here
+        ShowSpinner();
     }
-
-    public void ShowSpinner(int seconds);
+    // public void ShowSpinner(int seconds)
+    public void ShowSpinner()
     {
-        
+        List<string> animationStrings = new List<string>();
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("\\");
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("\\");
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(10);
+
+        int i3 = 0;
+
+        while (DateTime.Now < endTime)
+        {
+            string s = animationStrings[i3];
+            Console.Write(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+        }
+    }
+    public void DisplayEndingMessage()
+    {
+        Console.WriteLine("Well done!");
+        ShowSpinner();
+        GetDuration();
+
+        Console.WriteLine($"\nYou have completed another {duration} ");
     }
 }
