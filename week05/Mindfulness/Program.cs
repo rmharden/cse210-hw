@@ -1,14 +1,13 @@
 using System;
-using System.IO;
 
 class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         string response = "";
         while (response != "4")
         {
-            Console.Clear();
             Console.WriteLine();
             Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Start the breathing activity");
