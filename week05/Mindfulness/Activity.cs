@@ -46,5 +46,11 @@ public class Activity()
 
         Console.Clear();
         Console.WriteLine("Get ready...");
+        // show spinner here
+    }
+
+    public void ShowSpinner(int seconds);
+    {
+        
     }
 }
