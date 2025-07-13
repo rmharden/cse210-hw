@@ -3,7 +3,7 @@ public class ReflectingActivity
     public ReflectingActivity()
     {
         Console.WriteLine("Consider the following prompt:\n");
-        //GetRandomPrompt();
+        GetRandomPrompt();
         Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
         Console.Read();
 
@@ -21,8 +21,22 @@ public class ReflectingActivity
             {
                 //GetRandomQuestion();
                 //base.ShowSpinner();
+                Thread.Sleep(1000);
             }
         }
-
+    }
+    public string GetRandomPrompt()
+    {
+        Random displayPrompt = new Random();
+        List<string> _prompts = new List<string>()
+        {
+            "1. Think of a time when you stood up for someone else.",
+            "2. Think of a time when you did something really difficult.",
+            "3. Think of a time when you helped someone in need.",
+            "4. Think of a time when you did something truly selfless."
+        };
+        int pIndex = displayPrompt.Next(_prompts.Count);
+        Console.WriteLine($"--- {_prompts[pIndex]} ---");
+        return _prompts[pIndex];
     }
 }
