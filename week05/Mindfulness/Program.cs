@@ -20,6 +20,7 @@ class Program
             if (response == "1")
             {
                 Console.WriteLine("you chose 1");
+                BreathingActivity ba1 = new BreathingActivity();
             }
             else if (response == "2")
             {
