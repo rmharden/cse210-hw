@@ -9,7 +9,7 @@ public class BreathingActivity
         Console.WriteLine("\nby walking you through breathing in and out slowly.Clear your mind and focus on your breathing.");
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(10);
+        DateTime endTime = startTime.AddSeconds(30);
         while (DateTime.Now < endTime)
         {
             Console.Write("\nBreathe in...");
@@ -21,13 +21,13 @@ public class BreathingActivity
             }
             Console.WriteLine();
             Console.Write("Breathe out...");
-            for (int bo = 5; bo > 0; bo--)
+            for (int bo = 6; bo > 0; bo--)
             {
                 Console.Write(bo);
                 Thread.Sleep(1000);
                 Console.Write("\b \b");                
             }
         }
-
+        Console.WriteLine();
     }
 }
