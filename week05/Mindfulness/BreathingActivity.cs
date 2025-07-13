@@ -5,11 +5,6 @@ public class BreathingActivity : Activity
     // From our class diagram, this class only has BreathingActivity() and Run() : void.
     public BreathingActivity()
     {
-
-    }
-
-    public void Run()
-    {
         // I used Week 01 Curriculum about the int.Parse() function and the Week 05 Video Demo on animations
         Console.WriteLine("\nHow long, in seconds, would you like your session? ");
         string inputString = Console.ReadLine();
@@ -37,5 +32,12 @@ public class BreathingActivity : Activity
             }
             Console.WriteLine();
         }
+
+    }
+    // I don't know what we're supposed to use Run() for.
+    public void Run()
+    {
+
+
     }
 }
