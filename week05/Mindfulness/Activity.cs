@@ -40,7 +40,6 @@ public class Activity()
 
         Console.WriteLine($"This activity will help you {description}\n");
 
-
         Console.Clear();
         Console.WriteLine("Get ready...");
         ShowSpinner();
@@ -71,12 +70,25 @@ public class Activity()
             Console.Write("\b \b");
         }
     }
-    public void DisplayEndingMessage()
+    public void DisplayEndingMessage(int duration, string name)
     {
         Console.WriteLine("Well done!");
         ShowSpinner();
+
+        Console.WriteLine();
         GetDuration();
 
-        Console.WriteLine($"\nYou have completed another {duration} ");
+        Console.WriteLine($"\nYou have completed another {duration} seconds of the {name} Activity.");
+        ShowSpinner();
+
+        Console.Clear();
+    }
+
+    public void ShowCountDown()
+    {
+        for (int i4 = 5; i4 > 0; i4--)
+        {
+            Console.Write("\b \b");
+        }
     }
 }
