@@ -16,16 +16,22 @@ public class ReflectingActivity : Activity
         Console.Read();
 
         Console.WriteLine("\nNow ponder on each of the following questions as they related to this experience.");
-        Console.WriteLine("You may being in: (will display numbers counting down here)");
-        Console.Read();
+        Console.Write("You may being in: ");
+        base.ShowCountDown();
 
         Console.Clear();
-        GetRandomQuestion();
-        base.ShowSpinner();
 
-        Console.Read();
-        base.ShowCountDown();
-        GetRandomQuestion();
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(duration);
+        while (DateTime.Now < endTime)
+        {
+            for (int i = 5; i > 0; i--)
+            {
+                GetRandomQuestion();
+                base.ShowSpinner();;
+                Thread.Sleep(1000);   
+            }
+        }
 
         base.DisplayEndingMessage(duration, name);
     }
