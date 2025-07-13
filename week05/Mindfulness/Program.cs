@@ -20,13 +20,24 @@ class Program
             response = Console.ReadLine();
             if (response == "1")
             {
-
+                Console.WriteLine("you chose 1");
             }
             else if (response == "2")
             {
-
+                Console.WriteLine("you chose 2");
             }
-
+            else if (response == "3")
+            {
+                Console.WriteLine("you chose 3");
+            }
+            else if (response == "4")
+            {
+                Console.WriteLine("\nThank you for using the Mindfulness Program");
+            }
+            else
+            {
+                Console.WriteLine("\nInvalid number.\n");
+            }
         }
     }
 }
