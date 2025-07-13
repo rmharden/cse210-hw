@@ -9,7 +9,7 @@ public class BreathingActivity
         Console.WriteLine("\nby walking you through breathing in and out slowly.Clear your mind and focus on your breathing.");
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(30);
+        DateTime endTime = startTime.AddSeconds(20);
         while (DateTime.Now < endTime)
         {
             Console.Write("\nBreathe in...");
