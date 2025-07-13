@@ -45,11 +45,8 @@ class Program
             response = Console.ReadLine();
             if (response == "1")
             {
-                Console.WriteLine("\nYou chose the Breathing Activity.\n");
+                //Console.WriteLine("\nYou chose the Breathing Activity.\n");
                 BreathingActivity ba1 = new BreathingActivity("", "", 0);
-                string name = ba1.GetName();
-                string description = ba1.GetDescription();
-                int duration = ba1.GetDuration();
             }
             else if (response == "2")
             {

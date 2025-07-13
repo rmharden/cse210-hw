@@ -7,16 +7,17 @@ public class BreathingActivity : Activity
     // From our class diagram, this class only has BreathingActivity() and Run() : void.
     public BreathingActivity(string name, string description, int duration) : base()
     {
+
         // I used Week 01 Curriculum about the int.Parse() function and the Week 05 Video Demo on animations
 
         name = "Breathing";
-        description = "relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
-        duration = 20;
+        description = "by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
+
+        base.DisplayStartingMessage(name, description, duration);
 
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(duration);
-
-        while (DateTime.Now<endTime)
+        while (DateTime.Now < endTime)
         {
             Console.Write("\nBreathe in... ");
             for (int i = 5; i > 0; i--)
@@ -35,5 +36,7 @@ public class BreathingActivity : Activity
             }
             Console.WriteLine();
         }
+
+        base.DisplayEndingMessage(duration, "Breathing");
     }
 }
