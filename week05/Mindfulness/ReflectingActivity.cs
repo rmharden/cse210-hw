@@ -28,7 +28,7 @@ public class ReflectingActivity : Activity
             for (int i = 5; i > 0; i--)
             {
                 GetRandomQuestion();
-                base.ShowSpinner(duration);
+                base.ShowSpinner();
                 Thread.Sleep(1000);   
             }
         }
