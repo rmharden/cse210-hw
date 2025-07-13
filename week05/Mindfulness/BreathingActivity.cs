@@ -1,21 +1,27 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
+
 public class BreathingActivity : Activity
 {
 
     // From our class diagram, this class only has BreathingActivity() and Run() : void.
-    public BreathingActivity()
+    public BreathingActivity(string name, string description, int duration) : base()
     {
         // I used Week 01 Curriculum about the int.Parse() function and the Week 05 Video Demo on animations
+        public BreathingActivity()
+        {
+            _name = "Breathing";
 
-        // Console.Write("How long, in seconds, would you like your session? ");
-        // string inputString = Console.ReadLine();
-        // int usersTime = int.Parse(inputString);
-        // usersTime = duration;
-
+            GetDescription()
+            {
+                return  _description + $"relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
+            }
+            _duration = seconds;
+        }
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(duration);
 
-        while (DateTime.Now < endTime)
+        while (DateTime.Now<endTime)
         {
             Console.Write("\nBreathe in... ");
             for (int i = 5; i > 0; i--)
@@ -34,12 +40,5 @@ public class BreathingActivity : Activity
             }
             Console.WriteLine();
         }
-
-    }
-    // I don't know what we're supposed to use Run() for.
-    public void Run()
-    {
-
-
     }
 }

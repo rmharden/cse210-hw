@@ -1,8 +1,8 @@
 public class Activity()
 {
-    private string _name = "";
-    private string _description = "";
-    private int _duration = 0;
+    protected string _name = "";
+    protected string _description = "";
+    protected int _duration = 0;
 
     public string GetName()
     {
