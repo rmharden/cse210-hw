@@ -7,9 +7,10 @@ public class BreathingActivity : Activity
     {
         // I used Week 01 Curriculum about the int.Parse() function and the Week 05 Video Demo on animations
 
-        // Console.WriteLine("\nHow long, in seconds, would you like your session? ");
+        // Console.Write("How long, in seconds, would you like your session? ");
         // string inputString = Console.ReadLine();
-        // int duration = int.Parse(inputString);
+        // int usersTime = int.Parse(inputString);
+        // usersTime = duration;
 
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(duration);

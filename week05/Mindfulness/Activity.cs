@@ -27,10 +27,6 @@ public class Activity()
     }
     public int SetDuration(int duration)
     {
-        Console.Write("How long, in seconds, would you like your session? ");
-        string inputString = Console.ReadLine();
-        int usersTime = int.Parse(inputString);
-        usersTime = duration;
         return duration;
     }
     public void DisplayStartingMessage(string name, string description, int duration)
@@ -39,6 +35,11 @@ public class Activity()
         Console.WriteLine($"Welcome to the {name} Activity.\n");
 
         Console.WriteLine($"This activity will help you {description}\n");
+
+        Console.Write("How long, in seconds, would you like your session? ");
+        string inputString = Console.ReadLine();
+        int usersTime = int.Parse(inputString);
+        usersTime = duration;
 
         Console.Clear();
         Console.WriteLine("Get ready...");
@@ -74,9 +75,6 @@ public class Activity()
     {
         Console.WriteLine("Well done!");
         ShowSpinner();
-
-        Console.WriteLine();
-        GetDuration();
 
         Console.WriteLine($"\nYou have completed another {duration} seconds of the {name} Activity.");
         ShowSpinner();
