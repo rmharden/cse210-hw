@@ -25,9 +25,9 @@ public class BreathingActivity
             {
                 Console.Write(bo);
                 Thread.Sleep(1000);
-                Console.Write("\b \b");                
+                Console.Write("\b \b");
             }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
 }
