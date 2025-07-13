@@ -3,7 +3,7 @@ public class ListingActivity : Activity
     public ListingActivity(string name, string description, int duration) : base()
     {
         name = "Listing";
-        description = "reflect on the good things in your life by having you list as many things as you can in a certain area.");
+        description = "reflect on the good things in your life by having you list as many things as you can in a certain area.";
 
         base.DisplayStartingMessage(name, description, duration);
 
