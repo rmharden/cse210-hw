@@ -37,6 +37,6 @@ public class BreathingActivity : Activity
             Console.WriteLine();
         }
 
-        base.DisplayEndingMessage(duration, "Breathing");
+        base.DisplayEndingMessage(duration, name);
     }
 }

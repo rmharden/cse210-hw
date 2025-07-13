@@ -32,7 +32,7 @@ public class ReflectingActivity : Activity
                 Thread.Sleep(1000);   
             }
         }
-
+        
         base.DisplayEndingMessage(duration, name);
     }
     public string GetRandomPrompt()

@@ -1,32 +1,32 @@
 public class ListingActivity : Activity
 {
-    public ListingActivity()
+    public ListingActivity(string name, string description, int duration) : base()
     {
-        Console.Clear();
-        Console.WriteLine("\nWelcome to the Listing Activity.");
-        Console.WriteLine("\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+        name = "Listing";
+        description = "reflect on the good things in your life by having you list as many things as you can in a certain area.");
 
-        Console.Write("\nHow long, in seconds, would you like for your session? ");
-        string userInput = Console.ReadLine();
-
-        Console.Clear();
-        Console.WriteLine("Get ready...\n");
+        base.DisplayStartingMessage(name, description, duration);
 
         Console.WriteLine("List as many responses you can to the following prompt:");
         GetRandomPrompt();
-        Console.WriteLine("You may begin in: (a number countdown is here.)");
-        Console.Read();
-        Console.WriteLine("> ");
-        Console.ReadLine();
 
+        Console.Write("You may begin in: ");
+        base.ShowCountDown();
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(duration);
+        while (DateTime.Now < endTime)
+        {
+            for (int i = 5; i > 0; i--)
+            {
+                Console.WriteLine("> ");
+                Console.ReadLine();
+                Thread.Sleep(1000);
+            }
+        }
         int newListNumber = 0;
         Console.WriteLine($"You listed {newListNumber} items!");
-
-        Console.WriteLine("\nWell done!!");
-
-        Console.WriteLine($"\nYou have completed another {userInput} seconds of the Listing Activity.\n");
-        Console.WriteLine("There is a counter above this line.");
-        Console.Read();
+        base.DisplayEndingMessage(duration, name);
     }
     public string GetRandomPrompt()
     {
