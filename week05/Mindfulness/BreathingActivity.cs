@@ -8,16 +8,11 @@ public class BreathingActivity : Activity
     public BreathingActivity(string name, string description, int duration) : base()
     {
         // I used Week 01 Curriculum about the int.Parse() function and the Week 05 Video Demo on animations
-        public BreathingActivity()
-        {
-            _name = "Breathing";
 
-            GetDescription()
-            {
-                return  _description + $"relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
-            }
-            _duration = seconds;
-        }
+        name = "Breathing";
+        description = "relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
+        duration = 20;
+
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(duration);
 
