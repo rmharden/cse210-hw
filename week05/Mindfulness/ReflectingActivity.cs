@@ -39,4 +39,15 @@ public class ReflectingActivity
         Console.WriteLine($"--- {_prompts[pIndex]} ---");
         return _prompts[pIndex];
     }
+    public string GetRandomQuestion()
+    {
+        Random displayQuestions = new Random();
+        List<string> _questions = new List<string>()
+        { 
+            
+        };
+        int qIndex = displayQuestions.Next(_questions.Count);
+        Console.WriteLine($"--- {_questions[qIndex]} ---");
+        return _questions[qIndex];
+    }
 }
