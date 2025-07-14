@@ -1,5 +1,6 @@
 public class PromptGenerator
 {
+    public List<string> _prompts; // I don't know if I need this here.
     public string GetRandomPrompt()
     {
         Random displayPrompt = new Random();

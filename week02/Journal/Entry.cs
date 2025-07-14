@@ -1,1 +1,12 @@
-// Re-writing the Journal program based on what I learned as I studied for the Mindfulness program.
+public class Entry
+{
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+
+
+    public void Display()
+    {
+        
+    }
+}

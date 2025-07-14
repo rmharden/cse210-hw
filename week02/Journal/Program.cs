@@ -4,8 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         PromptGenerator randomPrompt = new PromptGenerator();
         randomPrompt.GetRandomPrompt();
+
     }
 }
 
