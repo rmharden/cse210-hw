@@ -7,6 +7,7 @@ public class ListingActivity
 
     public ListingActivity()
     {
+        Console.Clear();
         Console.WriteLine("List as many responses you can to the following prompt:");
         GetRandomPrompt();
 

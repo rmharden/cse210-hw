@@ -5,6 +5,7 @@ public class ReflectingActivity
     private int _duration = 0;
     public ReflectingActivity()
     {
+        Console.Clear();
         Console.WriteLine("Consider the following prompt:\n");
         GetRandomPrompt();
         Console.WriteLine("\nWhen you have something in mind, press enter to continue.");

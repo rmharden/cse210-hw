@@ -25,6 +25,9 @@ class Activity
         userTime = duration;
 
         // Do I add the spinner and things here? This is where I left off.
+        Console.Clear();
+        Console.WriteLine("Get ready...");
+        ShowSpinner();
     }
 
     public void DisplayEndingMessage()
