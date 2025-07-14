@@ -18,7 +18,7 @@ class Program
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
-            Console.Write("What would you like to do? ");
+            Console.WriteLine("What would you like to do? ");
 
             response = Console.ReadLine();
 
@@ -45,8 +45,8 @@ class Program
             // 3. Load 
             else if (response == "3")
             {
-                Console.WriteLine("What is the filename you would like to load?");
-                Console.WriteLine("> ");
+                Console.WriteLine("What is the name of the file you would like to load?");
+                Console.Write("> ");
                 string file = Console.ReadLine();
                 theJournal.LoadFromFile(file);
             }
@@ -54,7 +54,7 @@ class Program
             // 4. Save
             else if (response == "4")
             {
-                Console.WriteLine("What is the filename?");
+                Console.WriteLine("What is the name of the file? ");
                 Console.Write("> ");
                 string file = Console.ReadLine();
                 theJournal.SaveToFile(file);
