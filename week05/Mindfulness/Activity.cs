@@ -37,6 +37,12 @@ class Activity
 
     public int ShowCountDown()
     {
+        for (int scd = 5; scd > 0; scd--)
+        {
+            Console.WriteLine(scd);
+            Thread.Sleep(1000);
+            Console.WriteLine("\b \b");
+        }
         return 0;
     }
 }
