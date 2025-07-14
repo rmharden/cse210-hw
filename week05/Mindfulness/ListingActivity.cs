@@ -1,10 +1,31 @@
 public class ListingActivity
 {
+    private List<string> _usersEntries = new List<string>();
     public ListingActivity()
     {
         Console.WriteLine("List as many responses you can to the following prompt:");
         GetRandomPrompt();
+
+        Console.WriteLine("You may begin in: ");
+        //base.ShowCountDown();
+
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(20);
+        while (DateTime.Now < endTime)
+        {
+            //sort of works.
+            for (int userInputIndex = 5; userInputIndex > 0; userInputIndex--)
+            {
+                Console.Write("> ");
+                _usersEntries.Add(Console.ReadLine());
+                //Thread.Sleep(1000);
+            }
+            Console.WriteLine();
+            int usersNumber = _usersEntries.Count;
+            Console.WriteLine($"You listed {usersNumber} items!");
+        }
     }
+
     public string GetRandomPrompt()
     {
         Random displayPrompt = new Random();
@@ -15,7 +36,7 @@ public class ListingActivity
             "> 3. Who are people that you have helped this week?",
             "> 4. When have you felt the Holy Ghost this month?",
             "> 5. Who are some of your personal heroes?",
-            "> 6. What is your favorite thing about this experience?"            
+            "> 6. What is your favorite thing about this experience?"
         };
         int laIndex = displayPrompt.Next(_prompts.Count);
         Console.WriteLine($"--- {_prompts[laIndex]} ---");
