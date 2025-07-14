@@ -47,4 +47,5 @@ public class Journal
             string _promptText = parts[1];
             string _entryText = parts[2];
         }
+    }
 }
