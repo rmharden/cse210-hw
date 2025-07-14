@@ -44,13 +44,13 @@ class Program
             // 3. Load 
             else if (response == "3")
             {
-
+                
             }
 
             // 4. Save
             else if (response == "4")
             {
-
+                theJournal.SaveToFile();
             }
 
             // 5. Quit

@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.ExceptionServices;
+using System.Runtime.InteropServices.Marshalling;
 
 public class Journal
 {
@@ -8,6 +9,10 @@ public class Journal
     public Journal()
     {
 
+    }
+    public void AddEntry(Entry newEntry)
+    {
+        _entries.Add(newEntry);
     }
     public void DisplayAll()
     {
@@ -19,6 +24,8 @@ public class Journal
     }
     public void SaveToFile()
     {
+        Console.WriteLine("What is the filename?");
+        Console.WriteLine("> ");
 
     }
 }
