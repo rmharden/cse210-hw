@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 class Program
 {
@@ -6,6 +8,45 @@ class Program
     {
         Console.Clear();
         Console.WriteLine("Hello Sandbox World!");
+
+
+        // New person object
+        Person p1 = new Person();
+        p1._firstName = "Mary";
+        p1._lastName = "Smith";
+        p1._age = 25;
+
+        Person p2 = new Person();
+        p2._firstName = "John";
+        p2._lastName = "Watkins";
+        p2._age = 30;
+
+        List<Person> people = new List<Person>();
+        people.Add(p1);
+        people.Add(p2);
+
+        foreach (Person p in people)
+        {
+            Console.WriteLine(p._firstName);
+        }
+        // Calls the function and passes the list of people
+        SaveToFile(people);
+    }
+    public static void SaveToFile(List<Person> people)
+    {
+        Console.Write("What would you like the name of the file to be? ");
+        string file = Console.ReadLine();
+
+        // This will close out the file as soon the file is done being used to save the list.
+        using (StreamWriter outputFile = new StreamWriter(file))
+        {
+            foreach (Person p in people)
+            {
+                outputFile.WriteLine(p._firstName);
+                outputFile.WriteLine(p._lastName);
+                outputFile.WriteLine(p._age);
+            }
+        }
     }
 }
 
