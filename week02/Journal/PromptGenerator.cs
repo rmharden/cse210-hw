@@ -12,6 +12,7 @@ public class PromptGenerator
             "If I had one thing I could do over today, what would it be?"
         };
         int i = displayPrompt.Next(_prompts.Count);
+        Console.WriteLine(_prompts[i]);
         return _prompts[i];
     }
 }
