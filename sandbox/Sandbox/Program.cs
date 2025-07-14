@@ -47,6 +47,7 @@ class Program
                 outputFile.WriteLine(p._age);
             }
         }
+        Console.WriteLine("File saved!");
     }
 }
 
