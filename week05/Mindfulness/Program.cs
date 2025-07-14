@@ -30,6 +30,7 @@ class Program
             else if (response == "3")
             {
                 Console.WriteLine("you chose 3");
+                ListingActivity la1 = new ListingActivity();
             }
             else if (response == "4")
             {
