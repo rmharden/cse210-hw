@@ -92,7 +92,9 @@ class Program
             newPerson._firstName = parts[0];
             newPerson._lastName = parts[1];
             newPerson._age = int.Parse(parts[2]);
-            
+
+            // adds the people to the list.
+            people.Add(newPerson);
         }
 
         return people;
