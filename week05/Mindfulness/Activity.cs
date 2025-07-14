@@ -13,13 +13,24 @@ class Activity
     }
     public void DisplayStartingMessage(string name, string description, int duration)
     {
-        Console.WriteLine($"");
-        Console.WriteLine($"This activity will help you {description}");
+        Console.Clear();
+
+        Console.WriteLine($"\nWelcome to the {name} Activity.");
+
+        Console.WriteLine($"\nThis activity will help you {description}\n");
+
+        Console.Write("How long, in seconds, would you like your sesson? ");
+        string userInput = Console.ReadLine();
+        int userTime = int.Parse(userInput);
+        userTime = duration;
+
+        // Do I add the spinner and things here? This is where I left off.
     }
 
     public void DisplayEndingMessage()
     {
-
+        Console.WriteLine("Well done!");
+        ShowSpinner();
     }
     public int ShowSpinner()
     {
