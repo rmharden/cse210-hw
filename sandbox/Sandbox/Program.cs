@@ -9,45 +9,93 @@ class Program
         Console.Clear();
         Console.WriteLine("Hello Sandbox World!");
 
+        // This is from the first half of the video.
+        // // New person object
+        // Person p1 = new Person();
+        // p1._firstName = "Lili";
+        // p1._lastName = "Angeline";
+        // p1._age = 47;
 
-        // New person object
-        Person p1 = new Person();
-        p1._firstName = "Mary";
-        p1._lastName = "Smith";
-        p1._age = 25;
+        // Person p2 = new Person();
+        // p2._firstName = "Mark";
+        // p2._lastName = "Liberati";
+        // p2._age = 52;
 
-        Person p2 = new Person();
-        p2._firstName = "John";
-        p2._lastName = "Watkins";
-        p2._age = 30;
+        // List<Person> people = new List<Person>();
+        // people.Add(p1);
+        // people.Add(p2);
 
-        List<Person> people = new List<Person>();
-        people.Add(p1);
-        people.Add(p2);
+        // foreach (Person p in people)
+        // {
+        //     Console.WriteLine(p._firstName);
+        // }
+        // // Calls the function and passes the list of people
+        // SaveToFile(people);
 
-        foreach (Person p in people)
+        List<Person> newPeople = ReadFromFile();
+        foreach (Person p in newPeople)
         {
-            Console.WriteLine(p._firstName);
+            Console.WriteLine(p._lastName);
         }
-        // Calls the function and passes the list of people
-        SaveToFile(people);
     }
     public static void SaveToFile(List<Person> people)
     {
         Console.Write("What would you like the name of the file to be? ");
         string file = Console.ReadLine();
-
+        // If filename is the same as before, it saves on top of the file and replaces
+        // what was there.
         // This will close out the file as soon the file is done being used to save the list.
         using (StreamWriter outputFile = new StreamWriter(file))
         {
             foreach (Person p in people)
             {
-                outputFile.WriteLine(p._firstName);
-                outputFile.WriteLine(p._lastName);
-                outputFile.WriteLine(p._age);
+                // This will be all on it's own line:
+                // outputFile.WriteLine(p._firstName);
+                // outputFile.WriteLine(p._lastName);
+                // outputFile.WriteLine(p._age);
+
+                // This is going to change it to how I want to display it:
+                // outputFile.WriteLine($"First Name: {p._firstName} - Last Name: {p._lastName}");
+                // outputFile.WriteLine(p._age);
+
+                // This will separate them ~|~ in-between:
+                outputFile.WriteLine($"{p._firstName}~|~{p._lastName}~|~{p._age}");
             }
         }
         Console.WriteLine("File saved!");
+    }
+
+    public static List<Person> ReadFromFile()
+    {
+        Console.WriteLine("Reading list from file...");
+        List<Person> people = new List<Person>();
+        Console.WriteLine("What is the name of the file?");
+        Console.Write("> ");
+        string file = Console.ReadLine();
+
+        // This a string array called lines
+        string[] lines = System.IO.File.ReadAllLines(file);
+
+        foreach (string line in lines)
+        {
+            //Console.WriteLine(line);
+            // Line looks something like this: "Lili~|~Angeline~|~47"
+
+            // Spliting the line:
+            string[] parts = line.Split("~|~");
+
+            // parts[0] - Mary
+            // parts[1] - Smith
+            // parts[2] - 25
+
+            Person newPerson = new Person();
+            newPerson._firstName = parts[0];
+            newPerson._lastName = parts[1];
+            newPerson._age = int.Parse(parts[2]);
+            
+        }
+
+        return people;
     }
 }
 
