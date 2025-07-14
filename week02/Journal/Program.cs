@@ -45,13 +45,19 @@ class Program
             // 3. Load 
             else if (response == "3")
             {
-
+                Console.WriteLine("What is the filename you would like to load?");
+                Console.WriteLine("> ");
+                string file = Console.ReadLine();
+                theJournal.LoadFromFile(file);
             }
 
             // 4. Save
             else if (response == "4")
             {
-                theJournal.SaveToFile();
+                Console.WriteLine("What is the filename?");
+                Console.WriteLine("> ");
+                string file = Console.ReadLine();
+                theJournal.SaveToFile(file);
             }
 
             // 5. Quit

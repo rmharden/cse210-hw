@@ -23,16 +23,18 @@ public class Journal
             Console.WriteLine($"Date: {entry._entryText}\n");
         }
     }
-    public void SaveToFile()
+    public void SaveToFile(string file)
     {
-        Console.WriteLine("What is the filename?");
-        Console.WriteLine("> ");
+        // Console.WriteLine("What is the filename?");
+        // Console.WriteLine("> ");
+        Console.WriteLine("");
 
     }
 
-    public void LoadToFile()
+    public void LoadFromFile(string file)
     {
-        Console.WriteLine("What is the filename you would like to load?");
-        Console.WriteLine("> ");
+        // Console.WriteLine("What is the filename you would like to load?");
+        // Console.WriteLine("> ");
+        // file = Console.ReadLine(); 
     }
 }
