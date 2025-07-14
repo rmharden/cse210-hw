@@ -2,6 +2,10 @@ using System.Runtime.InteropServices.Marshalling;
 
 public class BreathingActivity
 {
+    private string _name = "Breathing";
+    private string _description = "relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
+    private int _duration = 0;
+    
     public BreathingActivity()
     {
         Console.Clear();

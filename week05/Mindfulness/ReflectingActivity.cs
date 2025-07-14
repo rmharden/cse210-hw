@@ -1,5 +1,8 @@
 public class ReflectingActivity
 {
+    private string _name = "Reflecting";
+    private string _description = "reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+    private int _duration = 0;
     public ReflectingActivity()
     {
         Console.WriteLine("Consider the following prompt:\n");

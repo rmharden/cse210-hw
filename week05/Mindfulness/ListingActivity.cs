@@ -1,6 +1,10 @@
 public class ListingActivity
 {
+    private string _name = "Listing";
+    private string _description = "reflect on the good things in your life by having you list as many things as you can in a certain area.";
+    private int _duration = 0;
     private List<string> _usersEntries = new List<string>();
+
     public ListingActivity()
     {
         Console.WriteLine("List as many responses you can to the following prompt:");
