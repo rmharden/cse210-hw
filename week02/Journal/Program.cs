@@ -33,6 +33,7 @@ class Program
                 PromptGenerator randomPrompt = new PromptGenerator();
                 anEntry._promptText = randomPrompt.GetRandomPrompt();
                 anEntry._entryText = Console.ReadLine();
+                theJournal.AddEntry(anEntry);
             }
 
             // 2. Display
@@ -44,7 +45,7 @@ class Program
             // 3. Load 
             else if (response == "3")
             {
-                
+
             }
 
             // 4. Save

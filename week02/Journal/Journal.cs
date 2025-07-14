@@ -4,15 +4,16 @@ using System.Runtime.InteropServices.Marshalling;
 
 public class Journal
 {
-    
+
     List<Entry> _entries = new List<Entry>();
+
     public Journal()
     {
 
     }
-    public void AddEntry(Entry newEntry)
+    public void AddEntry(Entry anEntry)
     {
-        _entries.Add(newEntry);
+        _entries.Add(anEntry);
     }
     public void DisplayAll()
     {
@@ -27,5 +28,11 @@ public class Journal
         Console.WriteLine("What is the filename?");
         Console.WriteLine("> ");
 
+    }
+
+    public void LoadToFile()
+    {
+        Console.WriteLine("What is the filename you would like to load?");
+        Console.WriteLine("> ");
     }
 }
