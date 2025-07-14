@@ -10,7 +10,7 @@ public class ListingActivity
         //base.ShowCountDown();
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(30);
+        DateTime endTime = startTime.AddSeconds(60);
         while (DateTime.Now < endTime)
         {
             Console.Write("> ");
