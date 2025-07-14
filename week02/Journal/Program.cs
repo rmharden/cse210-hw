@@ -4,5 +4,5 @@ using System;
 
 class Program
 {
-    
+    PromptGenerator displayPrompt = new PromptGenerator();
 }
