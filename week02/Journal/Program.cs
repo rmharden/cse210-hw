@@ -8,3 +8,16 @@ class Program
         randomPrompt.GetRandomPrompt();
     }
 }
+
+/*
+
+Welcome to the Journal Program!
+Please select one of the following choices:
+1. Write
+2. Display
+3. Load
+4. Save
+5. Quit
+What would you like to do?
+
+*/
