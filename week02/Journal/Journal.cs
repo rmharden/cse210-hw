@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.ExceptionServices;
 using System.Runtime.InteropServices.Marshalling;
+using System.IO;
 
 public class Journal
 {
@@ -27,6 +28,11 @@ public class Journal
     {
         // Console.WriteLine("What is the filename?");
         // Console.WriteLine("> ");
+        string filename = file;
+        using (StreamWriter outputFile = new StreamWriter(file))
+        {
+            outputFile.WriteLine();
+        }
         Console.WriteLine("File saved.");
 
     }
@@ -46,6 +52,8 @@ public class Journal
             string _date = parts[0];
             string _promptText = parts[1];
             string _entryText = parts[2];
+            Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
+            Console.WriteLine($"{_entryText}");
         }
     }
 }
