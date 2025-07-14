@@ -1,21 +1,23 @@
-public class ListingActivity
+using System;
+public class ListingActivity : Activity
 {
     private string _name = "Listing";
     private string _description = "reflect on the good things in your life by having you list as many things as you can in a certain area.";
     private int _duration = 0;
     private List<string> _usersEntries = new List<string>();
 
-    public ListingActivity()
+    public ListingActivity(string name, string description, int duration) : base(name, description, duration)
     {
+        base.DisplayStartingMessage(name, description, duration);
         Console.Clear();
         Console.WriteLine("List as many responses you can to the following prompt:");
         GetRandomPrompt();
 
         Console.WriteLine("You may begin in: ");
-        //base.ShowCountDown();
+        base.ShowCountDown();
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(60);
+        DateTime endTime = startTime.AddSeconds(duration);
         while (DateTime.Now < endTime)
         {
             Console.Write("> ");
@@ -24,7 +26,9 @@ public class ListingActivity
         Console.WriteLine();
         int usersNumber = _usersEntries.Count;
         Console.WriteLine($"You listed {usersNumber} items!");
+        base.DisplayEndingMessage();
     }
+
 
     public string GetRandomPrompt()
     {

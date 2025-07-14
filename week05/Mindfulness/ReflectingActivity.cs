@@ -1,10 +1,11 @@
-public class ReflectingActivity
+public class ReflectingActivity : Activity
 {
     private string _name = "Reflecting";
     private string _description = "reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
     private int _duration = 0;
-    public ReflectingActivity()
+    public ReflectingActivity(string name, string description, int duration) : base(name, description, duration)
     {
+        base.DisplayEndingMessage();
         Console.Clear();
         Console.WriteLine("Consider the following prompt:\n");
         GetRandomPrompt();
@@ -13,21 +14,22 @@ public class ReflectingActivity
 
         Console.WriteLine("\nNow ponder on each of the following questions as the related to this experience.");
         Console.Write("You may begin in: ");
-        //base.ShowCountDown();
+        base.ShowCountDown();
 
         Console.Clear();
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(20);
+        DateTime endTime = startTime.AddSeconds(duration);
         while (DateTime.Now < endTime)
         {
             for (int ra1 = 5; ra1 > 0; ra1--)
             {
                 GetRandomQuestion();
-                //base.ShowSpinner();
+                base.ShowSpinner();
                 Thread.Sleep(1000);
             }
         }
+        base.DisplayEndingMessage();
     }
     public string GetRandomPrompt()
     {

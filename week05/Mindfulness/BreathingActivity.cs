@@ -1,19 +1,21 @@
 using System.Runtime.InteropServices.Marshalling;
 
-public class BreathingActivity
+public class BreathingActivity : Activity
 {
-    private string _name = "Breathing";
-    private string _description = "relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
-    private int _duration = 0;
+    protected string _name = "Breathing";
+    protected string _description = "relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
+    protected int _duration = 0;
 
-    public BreathingActivity()
+    public BreathingActivity(string name, string description, int duration) : base(name, description, duration)
     {
         Console.Clear();
         Console.WriteLine("\nWelcome to the Breathing Activity.");
         Console.WriteLine("\nby walking you through breathing in and out slowly.Clear your mind and focus on your breathing.");
+        // LEFT OF HERE. Check for adding the activity base to everything.
+        base.DisplayStartingMessage(name, description);
 
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(20);
+        DateTime endTime = startTime.AddSeconds(duration);
         while (DateTime.Now < endTime)
         {
             Console.Write("\nBreathe in...");

@@ -1,15 +1,20 @@
 using System;
-class Activity
+public class Activity
 {
     private string _name;
     private string _description;
     private int _duration;
+    public Activity()
+    {
+        _name = "";
+        _description = "";
+        _duration = 0;
+    }
     public Activity(string name, string description, int duration)
     {
         _name = name;
         _description = description;
         _duration = duration;
-
     }
     public void DisplayStartingMessage(string name, string description, int duration)
     {
