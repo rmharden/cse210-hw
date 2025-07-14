@@ -4,10 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Clear();
-        PromptGenerator randomPrompt = new PromptGenerator();
-        randomPrompt.GetRandomPrompt();
-
+        string response = "";
+        while (response != "5")
+        {
+            Console.Clear();
+            PromptGenerator randomPrompt = new PromptGenerator();
+            randomPrompt.GetRandomPrompt();
+        }
     }
 }
 
