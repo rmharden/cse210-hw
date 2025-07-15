@@ -33,33 +33,32 @@ class Program
                 Entry anEntry = new Entry();
                 string serializedVersion = anEntry.Serialize();
                 _Entries.Add(serializedVersion);
+                anEntry.Display();
+                Console.WriteLine();
             }
 
             // 2. Display
             else if (response == "2")
             {
-                Entry anEntry = new Entry();
-                anEntry.Display();
-                Console.WriteLine(_Entries);
-                //theJournal.DisplayAll();
+
             }
 
             // 3. Load 
             else if (response == "3")
             {
-                Console.WriteLine("What is the name of the file you would like to load?");
-                Console.Write("> ");
-                string file = Console.ReadLine();
-                //theJournal.LoadFromFile(file);
+                // Console.WriteLine("What is the name of the file you would like to load?");
+                // Console.Write("> ");
+                // string file = Console.ReadLine();
+                // //theJournal.LoadFromFile(file);
             }
 
             // 4. Save
             else if (response == "4")
             {
-                Console.WriteLine("What is the name of the file? ");
-                Console.Write("> ");
-                string file = Console.ReadLine();
-                //theJournal.SaveToFile(file);
+                // Console.WriteLine("What is the name of the file? ");
+                // Console.Write("> ");
+                // string file = Console.ReadLine();
+                // //theJournal.SaveToFile(file);
             }
 
             // 5. Quit
