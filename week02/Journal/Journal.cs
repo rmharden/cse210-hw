@@ -8,10 +8,10 @@ public class Journal
 
     List<Entry> _entries = new List<Entry>();
 
-    // public Journal()
-    // {
+    public Journal()
+    {
 
-    // }
+    }
     public void AddEntry(Entry anEntry)
     {
         _entries.Add(anEntry);
