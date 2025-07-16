@@ -11,11 +11,13 @@ class Program
         Console.WriteLine("This is a square:");
         Console.WriteLine(s1.GetColor());
         Console.WriteLine(s1.GetArea());
+        Console.WriteLine();
 
         Rectangle r1 = new Rectangle("turquoise", 20, 15);
         Console.WriteLine("This is a rectangle:");
         Console.WriteLine(r1.GetColor());
         Console.WriteLine(r1.GetArea());
+        Console.WriteLine();
 
     }
 }
