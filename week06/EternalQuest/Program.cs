@@ -397,6 +397,190 @@ SimpleGoalLGive a talk,Speak in Sacrament Meeting when aksed,100,False
 EternalGoal:Study the scriptures,Study for at least 10 minutes,50
 ChecklistGoal:Attend the temple,Attend and perform any ordinance,50,500,3,1
 
-
 // the points changed and the CheckListGoal has one of 3 complete.
 */
+
+/*
+Quiting and starting again:
+
+
+You have 250 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 6
+
+
+
+You have 0 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 4
+What is the filename for the goal file? goals.txt
+
+You have 250 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 2
+The goals are:
+1. [X] Give a talk (Speak in Sacrament meeting when asked)
+2. [ ] Study the scriptures (Study for at least 10 minutes)  // This is an eternal goal, it's never really completed.
+3. [ ] Attend the temple (Attend and perform and perform any ordiance) -- Currently completed: 1/3
+
+You have 250 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 5
+The goals are:
+1. Give a talk
+2. Study the scriptures
+3. Attend the temple.  
+Which goal did you accomplish? 3
+Congratulations! You have earned 50 points!
+You now have 300 points.
+
+You have 300 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 3
+The goals are:
+1. Give a talk
+2. Study the scriptures
+3. Attend the temple.  
+Which goal did you accomplish? 3
+Congratulations! You have earned 550 points! // This completes the goal and gives the user points plus the bonus.
+You now have 850 points.
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 2
+The goals are:
+1. [X] Give a talk (Speak in Sacrament meeting when asked)
+2. [ ] Study the scriptures (Study for at least 10 minutes)  // This is an eternal goal, it's never really completed.
+3. [X] Attend the temple (Attend and perform and perform any ordiance) -- Currently completed: 3/3
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 1
+The types of Goals are:
+    1. Simple Goal
+    2. Eternal Goal
+    3. Checklist Goal
+Which type of goal would you like to create? 3
+What is the name of your goal? Wake up early
+What is a short description of it? Wake up by at least 6:00am
+How many times does this goal need to be accomplished for a bonus? 10
+What is the bonus for accomplishig it that many times? 1000
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 2
+The goals are:
+1. [X] Give a talk (Speak in Sacrament meeting when asked)
+2. [ ] Study the scriptures (Study for at least 10 minutes)  // This is an eternal goal, it's never really completed.
+3. [X] Attend the temple (Attend and perform and perform any ordiance) -- Currently completed: 3/3
+4. [ ] Wake up early (Wake up by at least 6:00am) -- Currently completed: 
+/10
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 3
+What is the filename for the goal file? goals.txt
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 
+*/
+
+/*
+This is waht the ext file looks like now:
+
+goals.txt
+
+850
+SimpleGoalLGive a talk,Speak in Sacrament Meeting when aksed,100,True
+EternalGoal:Study the scriptures,Study for at least 10 minutes,50
+ChecklistGoal:Attend the temple,Attend and perform any ordinance,50,500,3,3
+ChecklistGoal:Wake up early,Wake up by at least 6:00am,10,1000,10,0
+*/
+
+/*
+
+You have 850 points.
+
+Menu Options:
+    1. Create New Goal
+    2. List Goals
+    3. Save Goals
+    4. Load Goals
+    5. Record Event
+    6. Quit
+Select a choice from the menu: 6
+// ends program
+*/
+
+
