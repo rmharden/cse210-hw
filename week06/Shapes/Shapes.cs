@@ -1,6 +1,6 @@
 using System.Drawing;
 
-public class Shapes
+public abstract class Shapes //our lesson puts "abstract" on the base class
 {
     // this is a member variable
     string _color;
