@@ -1,9 +1,10 @@
 using System.Drawing;
 
-public abstract class Shapes //our lesson puts "abstract" on the base class
+//our lesson puts "abstract" on the base class
+public abstract class Shapes
 {
     // this is a member variable
-    string _color;
+    private string _color;
 
     // This is the getter
     public string GetColor()
