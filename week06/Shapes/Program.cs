@@ -49,7 +49,7 @@ class Program
             Console.WriteLine($"\nThe {color} shape has an area of {area}.\n");
         }
 
-        // This needs to have a different variable so it is displayed at a different time and doesn't make a duplicate in the same list:
+        // This needs to have a different variable and list so it is displayed at a different time and doesn't make a duplicate in the same list:
         List<Shape> shapes2 = new List<Shape>();
         foreach (Shape s2 in shapes2)
         {
