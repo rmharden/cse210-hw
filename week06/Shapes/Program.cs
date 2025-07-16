@@ -4,8 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Console.WriteLine("Hello World! This is the Shapes Project.\n");
 
+        // All of this is test code from Steps 1-6:
         // is this a instance of Square?
         Square s1 = new Square("green", 5);
         Console.WriteLine("This is a square:");
@@ -25,5 +27,19 @@ class Program
         Console.WriteLine(c1.GetArea());
         Console.WriteLine();
 
+
+        Console.WriteLine("\nAdding shapes to a list...\n");
+        // This is Step 7: Build a List
+        List<Shape> shapes = new List<Shape>();
+
+        shapes.Add(s1);
+        shapes.Add(r1);
+        shapes.Add(c1);
+
+        foreach (Shape s in shapes)
+        {
+            Console.WriteLine(s.GetColor());
+            Console.WriteLine(s.GetArea());            
+        }
     }
 }
