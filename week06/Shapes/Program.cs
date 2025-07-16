@@ -19,5 +19,11 @@ class Program
         Console.WriteLine(r1.GetArea());
         Console.WriteLine();
 
+        Circle c1 = new Circle("yellow", 15);
+        Console.WriteLine("This is a circle:");
+        Console.WriteLine(c1.GetColor());
+        Console.WriteLine(c1.GetArea());
+        Console.WriteLine();
+
     }
 }
