@@ -1,4 +1,4 @@
-public class Student
+public class Student : Person
 {
     private double _gpa;
 
