@@ -18,6 +18,16 @@ public class Person
 
     public string GetFormalName()
     {
-        
+        return GetLastName() + ", " + _first;
+    }
+
+    public void SetFirstName(string newFirstName)
+    {
+        _first = newFirstName;
+    }
+
+    public string GetFullName()
+    {
+        return _first + " " + _last;
     }
 }
