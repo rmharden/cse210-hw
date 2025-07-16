@@ -6,6 +6,13 @@ public class Person
     private string _last;
     public Address _address;
 
+
+    // This is 10:58 of 15:08 in the video
+    // This is going to show what happens without the override
+    public string _personType;
+
+
+
     public string GetFirstName()
     {
         return _first;

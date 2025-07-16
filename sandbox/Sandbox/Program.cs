@@ -38,8 +38,28 @@ class Program
         Console.WriteLine("\nLooking at the list of people...\n");
         foreach (Person p in people)
         {
+
+            // 11:08 of 15:06 in the video
+            // this is showing what happens if we don't override
+            // the teacher variable needs to be set.
+            if (p._personType == "teacher")
+            {
+                // needs to say what to do
+            }
+            else
+            {
+                // needs to say what happens otherwise for the regular person
+            }
+            // Without polymorphism, you have to have a bunch of the if statements for each new type of person
+
+
             Console.WriteLine(p.GetFullName());
         }
+    }
+
+    public static void PrintPersonDetails(Person p)
+    {
+        Console.WriteLine(p.GetFullName());
     }
 }
 
