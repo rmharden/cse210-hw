@@ -46,6 +46,11 @@ class Program
         // This needs to have a different variable and list so it is displayed at a different time and doesn't make a duplicate in the same list:
         Console.WriteLine("\nAdding shapes to a a different list...\n");
         List<Shape> shapes2 = new List<Shape>();
+
+        shapes.Add(s1);
+        shapes.Add(r1);
+        shapes.Add(c1);
+        
         foreach (Shape s2 in shapes2)
         {
             // This was how the example did it:
