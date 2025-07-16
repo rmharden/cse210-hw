@@ -47,10 +47,10 @@ class Program
         Console.WriteLine("\nAdding shapes to a a different list...\n");
         List<Shape> shapes2 = new List<Shape>();
 
-        shapes.Add(s1);
-        shapes.Add(r1);
-        shapes.Add(c1);
-        
+        shapes2.Add(s1);
+        shapes2.Add(r1);
+        shapes2.Add(c1);
+
         foreach (Shape s2 in shapes2)
         {
             // This was how the example did it:
