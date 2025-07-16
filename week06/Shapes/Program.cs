@@ -12,6 +12,10 @@ class Program
         Console.WriteLine(s1.GetColor());
         Console.WriteLine(s1.GetArea());
 
+        Rectangle r1 = new Rectangle("turquoise", 20, 15);
+        Console.WriteLine("This is a rectangle:");
+        Console.WriteLine(r1.GetColor());
+        Console.WriteLine(r1.GetArea());
 
     }
 }
