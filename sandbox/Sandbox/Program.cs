@@ -1,44 +1,77 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
+// Week 06: Video: Polymorphism (17:44 mins)
+
+// Method overriding so it can do something different in a derived class
 
 class Program
 {
-	static void Main(string[] args)
-	{
+    static void Main(string[] args)
+    {
+        Person p1 = new Person();
 
-        // I used the information from Week 01 about Coverting Types by using the int.Parse() function.
-        // I also watched the video from Week 05 om Display animations and used the things taught there to do the breathing activity.
-        Console.Write("\nHow long, in seconds, would you like your session? ");
+        p1.SetFirstName("Bob");
+        p1.SetLastName("Smith");
 
-        string inputString = Console.ReadLine();
-        int duration = int.Parse(inputString);
+        // Create the bank reports
+        Console.WriteLine(p1.GetFormalName());
 
-        DateTime startTime = DateTime.Now;
-		DateTime endTime = startTime.AddSeconds(duration);
+        Student p2 = new Student();
+        p2.SetFirstName("Emily");
+        p2.SetLastName("Jones");
+        p2.SetGpa(3.75);
 
-        while (DateTime.Now < endTime)
-        {
-            Console.Write("\nBreathe in... ");
-            for (int i = 5; i > 0; i--)
-            {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
-            Console.WriteLine();
-            Console.Write("Breathe out... ");
-            for (int i2 = 5; i2 > 0; i2--)
-            {
-                Console.Write(i2);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
-            Console.WriteLine();
-		}	
-
-		Console.WriteLine("\nWell done!\n");
-	}
+        Console.WriteLine(p2.GetStudentRecord());
+    }
 }
+
+
+
+
+
+
+
+
+// using System;
+// using System.Security.Cryptography.X509Certificates;
+
+// class Program
+// {
+// 	static void Main(string[] args)
+// 	{
+
+//         // I used the information from Week 01 about Coverting Types by using the int.Parse() function.
+//         // I also watched the video from Week 05 om Display animations and used the things taught there to do the breathing activity.
+//         Console.Write("\nHow long, in seconds, would you like your session? ");
+
+//         string inputString = Console.ReadLine();
+//         int duration = int.Parse(inputString);
+
+//         DateTime startTime = DateTime.Now;
+// 		DateTime endTime = startTime.AddSeconds(duration);
+
+//         while (DateTime.Now < endTime)
+//         {
+//             Console.Write("\nBreathe in... ");
+//             for (int i = 5; i > 0; i--)
+//             {
+//                 Console.Write(i);
+//                 Thread.Sleep(1000);
+//                 Console.Write("\b \b");
+//             }
+//             Console.WriteLine();
+//             Console.Write("Breathe out... ");
+//             for (int i2 = 5; i2 > 0; i2--)
+//             {
+//                 Console.Write(i2);
+//                 Thread.Sleep(1000);
+//                 Console.Write("\b \b");
+//             }
+//             Console.WriteLine();
+// 		}	
+
+// 		Console.WriteLine("\nWell done!\n");
+// 	}
+// }
 
 
 
