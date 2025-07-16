@@ -6,9 +6,17 @@ public class Person
     private string _last;
     public Address _address;
 
+    public string GetFirstName()
+    {
+        return _first;
+    }
     public string GetLastName()
     {
         return _last;
+    }
+    public void SetFirstName(string newFirstName)
+    {
+        _first = newFirstName;
     }
 
     public void SetLastName(string newLastName)
@@ -19,11 +27,6 @@ public class Person
     public string GetFormalName()
     {
         return GetLastName() + ", " + _first;
-    }
-
-    public void SetFirstName(string newFirstName)
-    {
-        _first = newFirstName;
     }
 
     // public string GetFullName()

@@ -21,6 +21,25 @@ class Program
         p2.SetGpa(3.75);
 
         Console.WriteLine(p2.GetStudentRecord());
+
+        Teacher p3 = new Teacher();
+        p3.SetFirstName("Michael");
+        p3.SetLastName("Broach");
+
+        Console.WriteLine(p1.GetFullName());
+        Console.WriteLine(p2.GetFullName());
+        Console.WriteLine(p3.GetFullName());
+
+        List<Person> people = new List<Person>();
+        people.Add(p1);
+        people.Add(p2);
+        people.Add(p3);
+
+        Console.WriteLine("\nLooking at the list of people...\n");
+        foreach (Person p in people)
+        {
+            Console.WriteLine(p.GetFullName());
+        }
     }
 }
 
