@@ -26,7 +26,9 @@ public class Person
         _first = newFirstName;
     }
 
-    public string GetFullName()
+    // public string GetFullName()
+    // This overrides this function. We do that by making it virtual
+    public virtual string GetFullName()
     {
         return _first + " " + _last;
     }
