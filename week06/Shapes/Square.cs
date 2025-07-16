@@ -1,4 +1,4 @@
-public class Square : Shape
+public class Square : Shapes
 {
 
 }

@@ -1,6 +1,6 @@
 using System.Drawing;
 
-public class Shape
+public class Shapes
 {
     // this is a member variable
     string _color;
