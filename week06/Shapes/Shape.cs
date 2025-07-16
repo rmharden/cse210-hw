@@ -1,3 +1,5 @@
+using System.Drawing;
+
 public class Shapes
 {
     // this is a member variable
@@ -6,7 +8,7 @@ public class Shapes
     // This is the getter
     public string GetColor()
     {
-        return "";
+        return _color;
     }
 
     // This is a setter
