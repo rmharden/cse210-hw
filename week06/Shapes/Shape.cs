@@ -6,6 +6,12 @@ public abstract class Shape
     // this is a member variable
     private string _color;
 
+    // this might have been why it isn't working: this is from the example:
+    public Shape(string color)
+    {
+        _color = color;
+    }
+
     // This is the getter
     public string GetColor()
     {
