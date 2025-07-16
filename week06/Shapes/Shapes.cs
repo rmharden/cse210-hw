@@ -19,7 +19,7 @@ public abstract class Shapes
     }
 
     // public virtual double GetArea()
-    public abstract double GetArea()
+    public virtual double GetArea()
     {
         return 0;
     }

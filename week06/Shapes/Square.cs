@@ -5,8 +5,9 @@ public class Square : Shapes
     private double _side;
 
     // error says the base says it doesn't take a constructor...
-    public Square(string color, double side) : base (color) // why does this not work?
+    public Square(string color, double side) // why does this not work?
     {
+        base.GetColor();
         _side = side;
     }
 
