@@ -41,15 +41,10 @@ class Program
             Console.WriteLine(s.GetColor());
             Console.WriteLine(s.GetArea());
             Console.WriteLine();
-
-            // This was how the example did it:
-            string color = s.GetColor();
-            double area = s.GetArea();
-
-            Console.WriteLine($"\nThe {color} shape has an area of {area}.\n");
         }
 
         // This needs to have a different variable and list so it is displayed at a different time and doesn't make a duplicate in the same list:
+        Console.WriteLine("\nAdding shapes to a a different list...\n")
         List<Shape> shapes2 = new List<Shape>();
         foreach (Shape s2 in shapes2)
         {
