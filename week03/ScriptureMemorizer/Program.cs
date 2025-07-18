@@ -12,12 +12,14 @@ class Program
         // Console.WriteLine(w.GetDisplayText()); //end of this test
 
         // For testing purposes, create some objects: (video at 14:30 of 16:27)
+
         // "Main function will have your main loop and will be "listening" for the enter key and stuff like that" (video at 14:46 of 16:27)
 
         // Probably need to create a scripture: (video at 14:50 of 16:27)
         // Then it needed a reference so we created a Reference: (video at 15:14 of 16:27)
-        Reference reference = new Reference("1 Nephi", 3, 7);
-        Scripture scripture = new Scripture(reference, "I will go and do...");
+        // start of this test.
+        // Reference reference = new Reference("1 Nephi", 3, 7);
+        // Scripture scripture = new Scripture(reference, "I will go and do..."); // end of this test.
 
         // Once implemented, it will split up all of the scripture passed through, the "I will go and do..." into parts(video at 15:20 of 16:27)
 
@@ -26,8 +28,59 @@ class Program
         // display, hide, check if we need to quit
         // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
-        // Trying something else here:
-        
+        // One verse
+        Reference reference1Verse = new Reference("John", 3, 16);
+        Scripture scripture1Verse = new Scripture(reference1Verse, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+
+        // Two verses
+        Reference reference2Verse = new Reference("Proverbs", 3, 5, 6);
+        Scripture scripture2Verse = new Scripture(reference2Verse, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+
+
+        // Trying something else here: (this is working so far.)
+        // I like this one:
+        string userResponse = "";
+
+        while (userResponse.ToLower() != "quit")
+        {
+            Console.Clear();
+            // Testing here:
+            Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+
+            Console.WriteLine("Press enter to continute or type 'quit' to finish:");
+            userResponse = Console.ReadLine();
+        }
+    }
+}
+
+
+// "Start out small, do word, then reference, when there is a lot of you have to do start out with the hidden words and just pick one hidden word or maybe just hade the first word, whatever it is start out slow and build upon it, incremental succcess..."  (video at 16:05 of 16:27)
+
+/*
+
+John 3:16
+
+For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
+
+Proverbs 3:5-6
+
+Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.
+
+*/
+
+
+
+// Watched video:
+// BYU - Idaho Videos CSE 210: Week 3 Assignment 
+// from Chad Macbeth May, 7th, 2024
+// https://video.byui.edu/media/t/1_sv3gxgzs/259941952
+
+// I found this about being able to read the Enter key from a user:
+// https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-9.0
+
+
+
+// Moving this here so I can reference it when I need it:
 
 
 
@@ -59,10 +112,6 @@ class Program
         // {
         //     Console.WriteLine("Thanks for using the program.");
         // } // I don't like how this test works for a loop.
-
-
-
-
 
 
         // Console.WriteLine("\nThis is what it looks like when the program runs:");
@@ -109,31 +158,3 @@ class Program
 
         // Console.WriteLine();
 
-
-    }
-}
-
-
-// "Start out small, do word, then reference, when there is a lot of you have to do start out with the hidden words and just pick one hidden word or maybe just hade the first word, whatever it is start out slow and build upon it, incremental succcess..."  (video at 16:05 of 16:27)
-
-/*
-
-John 3:16
-
-For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
-
-Proverbs 3:5-6
-
-Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.
-
-*/
-
-
-
-// Watched video:
-// BYU - Idaho Videos CSE 210: Week 3 Assignment 
-// from Chad Macbeth May, 7th, 2024
-// https://video.byui.edu/media/t/1_sv3gxgzs/259941952
-
-// I found this about being able to read the Enter key from a user:
-// https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-9.0
