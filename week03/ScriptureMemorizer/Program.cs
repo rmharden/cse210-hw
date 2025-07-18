@@ -28,7 +28,7 @@ class Program
 
             Console.WriteLine(r2.GetDisplayText());
             Console.WriteLine(s2.GetDisplayText());
-            
+
             Console.WriteLine(r3.GetDisplayText());
             Console.WriteLine(s3.GetDisplayText());
 
@@ -37,3 +37,12 @@ class Program
         }
     }
 }
+
+
+// Watched video:
+// BYU - Idaho Videos CSE 210: Week 3 Assignment 
+// from Chad Macbeth May, 7th, 2024
+// https://video.byui.edu/media/t/1_sv3gxgzs/259941952
+
+// I found this about being able to read the Enter key from a user:
+// https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-9.0
