@@ -26,16 +26,44 @@ class Program
         // display, hide, check if we need to quit
         // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
-        // Trying the loop here:
-        while (Console.ReadKey().Key == ConsoleKey.Enter)
-        {
-            Console.Clear();
-            Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+        // Trying something else here:
+        
 
-            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-            
-            Console.Read();
-        }
+
+
+        // Trying the loop here:
+        //while (Console.ReadKey().Key == ConsoleKey.Enter)      
+        // {
+        //     Console.Clear();
+        //     Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+
+        //     Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+
+        //     Console.Read();
+        // } // I don't like how this test works for a loop.
+
+        // Trying something else:
+
+        // Console.Clear();
+
+        // if (Console.ReadKey().Key == ConsoleKey.Enter)
+        // {
+        //     Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+
+        //     Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+
+        //     Console.Read();
+        //     Console.Clear();
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Thanks for using the program.");
+        // } // I don't like how this test works for a loop.
+
+
+
+
+
 
         // Console.WriteLine("\nThis is what it looks like when the program runs:");
 
