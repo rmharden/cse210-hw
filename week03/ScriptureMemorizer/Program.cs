@@ -5,7 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("");
+        Console.Clear();
+        Console.WriteLine();
 
         Reference r1 = new Reference();
         r1.GetDisplayText();
@@ -19,8 +20,13 @@ class Program
         r3.GetDisplayText();
         Console.WriteLine(r3.GetDisplayText());
 
-        Console.WriteLine("");
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.WriteLine("");
+        string userResponse = "";
+
+        while (userResponse.ToLower() != "quit")
+        {
+
+            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+            userResponse = Console.ReadLine();
+        }
     }
 }
