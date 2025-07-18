@@ -5,7 +5,7 @@ public class Scripture
     //private List<Word> _words; // I need to make the type Word but I don't know how to add the objects to the list when they become an array.
     private List<string> _words = new List<string>();
 
-    private Scripture(Reference reference, string text)
+    public Scripture(Reference reference, string text)
     {
         _reference = reference; //This I am not sure... Do I call Reference here? or is it adding the info, because display text never works from here.
 
