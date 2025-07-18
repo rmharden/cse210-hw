@@ -33,6 +33,8 @@ class Program
             // Testing here: this works!! <3
             Console.WriteLine($"\n{reference1Verse.GetDisplayText()}");
 
+            // this doesn't work
+            // Console.Write($" {scripture1Verse.GetDisplayText}\n");
 
             Console.WriteLine("\nPress enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();

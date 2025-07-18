@@ -13,9 +13,10 @@ public class Scripture
     {
 
         // "In here we have to initialize a reference but we've been given a reference." (video at 10:05 of 16:27)
+        // _reference = reference;
         _reference = reference;
-
-
+        
+    
         // "The words are a different matter." (video at 10:15 of 16:27)
 
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
@@ -34,7 +35,7 @@ public class Scripture
         //text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
 
         string[] words = text.Split(" ");
-        //List<string> _words = new List<string>();
+        //List<Word> _words = new List<Word>();
         foreach (string word in words)
         {
             _words.AddRange(words);
@@ -67,7 +68,12 @@ public class Scripture
         // Example: (video at 14:20 of 16:27)
         // Combine strings together with a plus sign:
         //string text = "abc" + "def"; //example
-        return _reference + " ";
+
+
+        // does not work
+        //Console.WriteLine(_reference);
+        //return _reference + " ";
+        return "test";
     }
 
     public bool IsCompletelyHidden()
