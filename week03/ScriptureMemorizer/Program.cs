@@ -28,7 +28,7 @@ class Program
 }
 
 
-// "Start out small, do word, then reference, when there is a lot of you have to do start out with the hiddnen words and just pick one hiddnen word or maybe just hade the first word, whatever it is start out slow and build upon it, incremental succcess..."  (video at 16:05 of 16:27)
+// "Start out small, do word, then reference, when there is a lot of you have to do start out with the hidden words and just pick one hidden word or maybe just hade the first word, whatever it is start out slow and build upon it, incremental succcess..."  (video at 16:05 of 16:27)
 
 /*
 
