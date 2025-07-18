@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class Word
 {
     private string _text;
@@ -7,18 +5,17 @@ public class Word
 
     public Word(string text)
     {
-        _text = text;
-        _isHidden = false;
+
     }
 
     public void Hide()
     {
-        _isHidden = true;
+
     }
 
     public void Show()
     {
-        _isHidden = false;
+
     }
 
     public bool IsHidden()
@@ -26,10 +23,8 @@ public class Word
         return true;
     }
 
-    //This is a getter.
     public string GetDisplayText()
     {
-        //Returns an empty string.
-        return _text;
+        return "";
     }
 }
