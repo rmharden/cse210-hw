@@ -1,6 +1,7 @@
 
 // "This class has a bunch of stuff to do. It is the "brain" of the program. (video at 10:02 of 16:27)
 
+using System.Formats.Asn1;
 using System.Runtime.CompilerServices;
 
 public class Scripture
@@ -16,7 +17,6 @@ public class Scripture
         // _reference = reference;
         _reference = reference;
 
-
         // "The words are a different matter." (video at 10:15 of 16:27)
 
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
@@ -31,21 +31,30 @@ public class Scripture
         // "Split and loop through each word" (video at 11:40 of 16:27)
         // Create a word object and put it into _words list (video at 11:50 of 16:27)
 
-        string reference1 = "John 3:16";
-        if (reference1 == "John 3:16")
-        {
-            text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
-        }
-        else
-        {
-            text = "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
-        }
+        // string reference1 = "John 3:16";
+        // if (reference1 == "John 3:16")
+        // {
+        //     text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+        // }
+        // else
+        // {
+        //     text = "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
+        // }
+        // List<string> _words = new List<string>();
+        //     string[] words = text.Split(" ");
 
-        string[] words = text.Split(" ");
-        List<string> _words = new List<string>();
-        foreach (string word in words)
+        //     foreach (string word in words)
+        //     {
+        //         _words.AddRange(words);
+        //     }
+        // }
+
+        // Trying something different than the array:
+
+        List<Word> _words = new List<Word>();
+        foreach (string w in text.Split(" "))
         {
-            _words.AddRange(words);
+            _words.Add(new Word(w));
         }
     }
 
@@ -60,12 +69,12 @@ public class Scripture
 
         //Step 2:
         // I need to randomly select numberToHide, whatever that value is, maybe passing that value through 3 or a 5, whatever value that is of those words (video at 12:45 of 16:27)
-        
-        // Lots of ways we can do this, think about loops, think about if-statements, make sure you call that IsVisible function, etc. (video at 12:50 of 16:27
+
+        // "Lots of ways we can do this, think about loops, think about if-statements, make sure you call that IsVisible function, etc." (video at 12:50 of 16:27
         // "You might want to start one out to select a random set of words to hide and you don't care if the words are already hidden yet, <- a good place to begin, and then try to go in there and say, I just want to hide visible ones." (video at 13:08 of 16:27)
 
         // Step 3:
-        // To hide the words, use the Hide function (video at 13:30 of 16:27) When you do that, and you use GetDisplayText, Bro. Macbeth said it works.
+        // "To hide the words, use the Hide function" (video at 13:30 of 16:27) When you do that, and you use GetDisplayText, Bro. Macbeth said it works.
     }
 
     public string GetDisplayText()
@@ -80,7 +89,7 @@ public class Scripture
         // does not work
         //Console.WriteLine(_reference);
         //return _reference + " ";
-        return _reference + " ";
+        return _reference + " " + _words;
     }
 
     public bool IsCompletelyHidden()

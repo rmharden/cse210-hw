@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class Word
 {
     private string _text;
@@ -20,19 +18,27 @@ public class Word
 
     public void Show()
     {
-        _isHidden = true; // not sure here
+        _isHidden = false; // not sure here
     }
 
     public bool IsHidden()
     {
-        return false;
+        return _isHidden;
     }
 
     //This is a getter.
     public string GetDisplayText()
     {
         // this needs an if statement.
-        //Returns an empty string.
-        return _text;
+        if (_isHidden == true)
+        {
+            return "_";
+        }
+        else
+        {
+            return _text;
+        }
     }
 }
+
+// Watched the video from BYU-Idaho Videos by Chad Macbeth to know how to set this up.
