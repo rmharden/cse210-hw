@@ -27,5 +27,6 @@ Proverbs 3:5-6
 
 
 // Watched video:
-// BYU - Idaho Videos CSE 210: Week 3 Assignment from Chad Macbeth May, 7th, 2024
+// BYU - Idaho Videos CSE 210: Week 3 Assignment 
+// from Chad Macbeth May, 7th, 2024
 // https://video.byui.edu/media/t/1_sv3gxgzs/259941952
