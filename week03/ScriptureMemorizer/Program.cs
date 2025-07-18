@@ -18,7 +18,7 @@ class Program
         Reference reference = new Reference("1 Nephi", 3, 7);
         Scripture scripture = new Scripture(reference, "I will go and do...");
 
-        // Once implemented, it will split up all of the scripture passed thruogh, the "I will go and do..." into parts(video at 15:20 of 16:27)
+        // Once implemented, it will split up all of the scripture passed through, the "I will go and do..." into parts(video at 15:20 of 16:27)
 
         // We will have our loop here (video at 15:29 of 16:27)
         // loop
