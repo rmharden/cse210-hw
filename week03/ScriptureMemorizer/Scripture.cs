@@ -55,9 +55,9 @@ public class Scripture
         // It doesn't worry about if the words are hidden because that is the job of GetDisplayText in the Word class.
         // Example: (video at 14:20 of 16:27)
         // Combine strings together with a plus sign:
-        string text = "abc" + "def";
+        //string text = "abc" + "def"; //example
 
-        string text = "" + "";
+        string text = _reference + "";
         return text;
         // return "";
     }

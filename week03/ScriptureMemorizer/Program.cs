@@ -32,7 +32,7 @@ class Program
         {
             Console.Clear();
             // Testing here:
-            Console.WriteLine("\nThe reference and scripture is displayed here.\n");
+            Console.WriteLine($"\n{reference1Verse}\n");
 
             Console.WriteLine("Press enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();

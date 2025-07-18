@@ -11,11 +11,17 @@ public class Reference
         // "_endVerse needs to be an int/some number" (video at 8:58 of 16:27)
         // "It's best to start this program by not using endVerse and just use thsi one. Just provide a single verse scripture and then go back and try to get the endVerse to work in GetDisplayText." (video at 9:40 of 16:27)
 
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
     }
 
     public Reference(string book, int chapter, int verse, int endVerse)
     {
-
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = endVerse;
     }
 
     public string GetDisplayText()
@@ -24,6 +30,6 @@ public class Reference
         // "There are two ways to return the string:" (video at 9:37 of 16:27)
         // 1 Nephi 3:7
         // 1 Nephi 3:7-9
-        return "";
+        return ;
     }
 }
