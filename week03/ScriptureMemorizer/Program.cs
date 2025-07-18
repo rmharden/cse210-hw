@@ -31,8 +31,8 @@ class Program
         while (userResponse.ToLower() != "quit")
         {
             Console.Clear();
-            // Testing here:
-            Console.WriteLine($"\n{reference1Verse}\n");
+            // Testing here: this works!! <3
+            Console.WriteLine($"\n{reference1Verse.GetDisplayText()}\n");
 
             Console.WriteLine("Press enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();
