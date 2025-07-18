@@ -5,7 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Scripture Memorizer World!");
+        Console.WriteLine("");
+        // This is testing the initialized data in Word.cs: (video at 6:11 of 16:27)
+        Word w = new Word("truth");
+        Console.WriteLine(w.GetDisplayText());
     }
 }
 
