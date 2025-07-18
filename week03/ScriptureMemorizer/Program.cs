@@ -8,8 +8,8 @@ class Program
         Console.Clear();
         Console.WriteLine("");
         // This is testing the initialized data in Word.cs: (video at 6:11 of 16:27)
-        Word w = new Word("truth");
-        Console.WriteLine(w.GetDisplayText());
+        // Word w = new Word("truth");
+        // Console.WriteLine(w.GetDisplayText()); //end of this test
 
         // For testing purposes, create some objects: (video at 14:30 of 16:27)
         // "Main function will have your main loop and will be "listening" for the enter key and stuff like that" (video at 14:46 of 16:27)
