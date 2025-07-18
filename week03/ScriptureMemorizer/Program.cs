@@ -26,49 +26,60 @@ class Program
         // display, hide, check if we need to quit
         // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
-        Console.WriteLine("\nThis is what it looks like when the program runs:");
+        // Trying the loop here:
+        while (Console.ReadKey().Key == ConsoleKey.Enter)
+        {
+            Console.Clear();
+            Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
 
-        Console.WriteLine("\nProverbs 3:5-6 Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            
+            Console.Read();
+        }
 
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.Read();
-        // I'm not sure, but I think this is what I use if I want the user to press enter.
+        // Console.WriteLine("\nThis is what it looks like when the program runs:");
 
-        Console.WriteLine();
+        // Console.WriteLine("\nProverbs 3:5-6 Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
 
-        Console.Clear();
+        // Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        // Console.Read();
+        // // I'm not sure, but I think this is what I use if I want the user to press enter.
 
-        Console.WriteLine("\nAfter the user presses enter, the console is cleared and it shows some of the words missing, lile this:\n");
+        // Console.WriteLine();
 
-        Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+        // Console.Clear();
 
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.Read();
+        // Console.WriteLine("\nAfter the user presses enter, the console is cleared and it shows some of the words missing, lile this:\n");
 
-        Console.WriteLine();
+        // Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
 
-        Console.Clear();
+        // Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        // Console.Read();
 
-        Console.WriteLine("\nThis shows what it looks like after pressing enter few more times\n");
+        // Console.WriteLine();
 
-        Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean ___ ____ thine own understanding. __ ___ thy ways acknowledge him, and he ____ ______ thy ______\n");
+        // Console.Clear();
 
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.Read();
+        // Console.WriteLine("\nThis shows what it looks like after pressing enter few more times\n");
 
-        Console.WriteLine();
+        // Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean ___ ____ thine own understanding. __ ___ thy ways acknowledge him, and he ____ ______ thy ______\n");
 
-        Console.Clear();
+        // Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        // Console.Read();
+
+        // Console.WriteLine();
+
+        // Console.Clear();
 
 
-        Console.WriteLine("\nThis is what it looks like when the scripture is empty:\n");
+        // Console.WriteLine("\nThis is what it looks like when the scripture is empty:\n");
 
-        Console.WriteLine("\nProverbs 3:5-6 _____ __ ___ ____ ____ ___ _____ ______ ___ ____ ___ ____ _____ ___ ______________ __ ___ ___ ____ ___________ ____ ___ __ ____ ______ ___ ______\n");
+        // Console.WriteLine("\nProverbs 3:5-6 _____ __ ___ ____ ____ ___ _____ ______ ___ ____ ___ ____ _____ ___ ______________ __ ___ ___ ____ ___________ ____ ___ __ ____ ______ ___ ______\n");
 
-        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        Console.Read();
+        // Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        // Console.Read();
 
-        Console.WriteLine();
+        // Console.WriteLine();
 
 
     }
@@ -95,3 +106,6 @@ Trust in the Lord with all thine heart; and lean not unto thine own understandin
 // BYU - Idaho Videos CSE 210: Week 3 Assignment 
 // from Chad Macbeth May, 7th, 2024
 // https://video.byui.edu/media/t/1_sv3gxgzs/259941952
+
+// I found this about being able to read the Enter key from a user:
+// https://learn.microsoft.com/en-us/dotnet/api/system.console.readkey?view=net-9.0
