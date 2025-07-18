@@ -1,58 +1,62 @@
 using System;
+using System.Security.Cryptography;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Product productTotal1 = new Product();
-        productTotal1._productPrice = 50;
-        productTotal1._productId = "la1234";
-        productTotal1._productQty = 5;
-        productTotal1._productName = "lamps";
 
-        Product productTotal2 = new Product();
-        productTotal2._productName = "chairs";
-        productTotal2._productId = "ch1234";
-        productTotal2._productPrice = 250;
-        productTotal2._productQty = 2;
+        Order c1O = new Order();
 
-
-        /*
-        Console.WriteLine(order1._price);
-        Console.WriteLine(order1._quantity);
-        Console.WriteLine(order1._name);
-        */
-
-        double firstOrderCost = productTotal1.GetTotalProductCost();
-        Console.WriteLine($"Order 1: ${firstOrderCost}.00");
-
-        double secondOrderCost = productTotal2.GetTotalProductCost();
-        Console.WriteLine($"Order 2: ${secondOrderCost}.00");
+        Customer c1 = new Customer();
+        c1.SetCustomer("Sidse Thøgersdatter");
 
         Address a1 = new Address();
-        a1._street = "Bentsensvej 24";
-        a1._city = "Hvalso";
-        a1._stateOrProvince = "Sjælland";
-        a1._country = "Denmark";
+        a1.SetAddress("Bentsensvej 24", "Hvalso", "Sjælland", "Denmark");
+        Console.WriteLine(a1.GetCountry());
+        Console.WriteLine(c1.GetCustomer());
 
-        string isAddUSA1 = a1.IsAddressUSA();
-        Console.WriteLine($"Is the address in the USA? {isAddUSA1}.");
+        Product c1P1 = new Product();
+        c1P1.SetProduct("Accent Chairs", "ch581496", 250, 2);
+        Product c1P2 = new Product();
+        c1P2.SetProduct("Sofa", "sf789634", 988, 1);
+        Product c1P3 = new Product();
+        c1P3.SetProduct("Ottoman", "ot326598", 250, 1);
+        Console.WriteLine($"{c1P1} + {c1P2} + { c1P3}");
+        
 
-        string addressLabel1 = a1.CompleteAddress();
-        Console.WriteLine();
+
+        Order c2O = new Order();
+
+        Customer c2 = new Customer();
+        c2.SetCustomer("Hugh Falconer");
 
         Address a2 = new Address();
-        a2._street = "50 Village Dr";
-        a2._city = "Winter Park";
-        a2._stateOrProvince = "Colorado";
-        a2._country = "USA";
+        a2.SetAddress("50 Village Dr", "Winter Park", "Colorado", "USA");
+        Console.WriteLine(a2.GetCountry());
+        Console.WriteLine(c2.GetCustomer());
 
-        string isAddUSA2 = a2.IsAddressUSA();
-        Console.WriteLine($"Is the address in the USA? {isAddUSA2}.");
+        Product c2P1 = new Product();
+        c2P1.SetProduct("Dining Table", "dt774422", 1190, 1);
+        Product c2P2 = new Product();
+        c2P2.SetProduct("Dining Chair", "dc753468", 292, 6);
+        Product c2P3 = new Product();
+        c2P3.SetProduct("Kitchen Cabinet", "kc159623", 1599, 1);
 
-        string addressLabel2 = a2.CompleteAddress();
+        Console.WriteLine($"{c2P1} + {c2P2} + { c2P3}");
+        
+
+
+        Console.Clear();
+        Console.WriteLine(c1O.GetPackingLabel());
+        Console.WriteLine(c1O.TotalPrice());
+        Console.WriteLine(c1O.GetShippingLabel());
         Console.WriteLine();
 
+        Console.WriteLine(c2O.GetPackingLabel());
+        Console.WriteLine(c2O.TotalPrice());
+        Console.WriteLine(c2O.GetShippingLabel());
+        Console.WriteLine();
 
     }
 }

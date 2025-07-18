@@ -1,27 +1,65 @@
+using System.Collections;
+
 public class Address
 {
-    public string _street;
-    public string _city;
-    public string _stateOrProvince;
-    public string _country;
-    public string _isUSA;
+    private string _street;
+    private string _city;
+    private string _stateOrProvince;
+    private string _country;
+    private string _isUsa;
+    
 
-    public string IsAddressUSA()
+    public void SetAddress(string street, string city, string stateOrProvince, string country)
     {
-        if (_country == "USA")
-        {
-            _isUSA = "yes";
-        }
-        else
-        {
-            _isUSA = "no";
-        }
-        return _isUSA;
+        _street = street;
+        _city = city;
+        _stateOrProvince = stateOrProvince;
+        _country = country;
     }
-    public string CompleteAddress()
+
+    public string GetStreet()
     {
-        Console.WriteLine(_street);
-        Console.WriteLine($"{_city}, {_stateOrProvince}, {_country}");
-        return _street + _city + _stateOrProvince + _country;
+        return _street;
+    }
+
+    public string GetCity()
+    {
+        return _city;
+    }
+
+    public string GetStateOrProvince()
+    {
+        return _stateOrProvince;
+    }
+
+    public void SetCountry(string country)
+    {
+        _country = country;
+    }
+    public string GetCountry()
+    {
+        return _country;
+    }
+
+    public string IsAddressUsa()
+    {
+        string stupidCountry = GetCountry();
+        Console.WriteLine(stupidCountry);
+        // if (stupidCountry.ToLower() == "usa")
+        // {
+        //     _isUsa = "yes";
+        // }
+        // else
+        // {
+        //     _isUsa = "no";
+        // }
+        // return _isUsa;
+
+        return "";
+    }
+
+    public string GetAddress()
+    {
+        return $"{_street}\n{_city}, {_stateOrProvince}, {_country}";
     }
 }
