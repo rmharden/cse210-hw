@@ -13,10 +13,11 @@ public class Scripture
         // "The words area different matter." (video at 10:15 of 16:27)
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
         // Example:
-        string name = "John Deere";
-        string[] words = name.Split(" "); // this is an array
-        Console.WriteLine(words[0]);
-        Console.WriteLine(words[1]);
+        // start of code testing
+        // string name = "John Deere";
+        // string[] words = name.Split(" "); // this is an array
+        // Console.WriteLine(words[0]);
+        // Console.WriteLine(words[1]); //end of code testing
 
         // Will need a loop (video at 11:30 of 16:27)
         // "Split and loop through each word" (video at 11:40 of 16:27)

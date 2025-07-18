@@ -34,8 +34,8 @@ class Program
         Console.Read();
         // I'm not sure, but I think this is what I use if I want the user to press enter.
 
-        Console.WriteLine(); 
-    
+        Console.WriteLine();
+
         Console.Clear();
 
         Console.WriteLine("\nAfter the user presses enter, the console is cleared and it shows some of the words missing, lile this:\n");
@@ -45,7 +45,32 @@ class Program
         Console.WriteLine("Press enter to continue or type 'quit' to finish:");
         Console.Read();
 
-        Console.WriteLine();        
+        Console.WriteLine();
+
+        Console.Clear();
+
+        Console.WriteLine("\nThis shows what it looks like when after pressing enter more times\n");
+
+        Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean ___ ____ thine own understanding. __ ___ thy ways acknowledge him, and he ____ ______ thy ______\n");
+
+        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        Console.Read();
+
+        Console.WriteLine();
+
+        Console.Clear();
+
+
+        Console.WriteLine("\nThis is what it looks like when the scripture is empty:\n");
+
+        Console.WriteLine("\nProverbs 3:5-6 _____ __ ___ ____ ____ ___ _____ ______ ___ ____ ___ ____ _____ ___ ______________ __ ___ ___ ____ ___________ ____ ___ __ ____ ______ ___ ______\n");
+
+        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        Console.Read();
+
+        Console.WriteLine();
+
+
     }
 }
 
@@ -60,9 +85,7 @@ For God so loved the world, that he gave his only begotten Son, that whosoever b
 
 Proverbs 3:5-6
 
-5 Trust in the Lord with all thine heart; and lean not unto thine own understanding.
-
-6 In all thy ways acknowledge him, and he shall direct thy paths.
+Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.
 
 */
 
