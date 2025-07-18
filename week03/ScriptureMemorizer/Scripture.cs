@@ -6,7 +6,8 @@ using System.Runtime.CompilerServices;
 public class Scripture
 {
     private Reference _reference;
-    private List<Word> _words;
+    //private List<Word> _words;
+    private List<string> _words = new List<string>();
 
     public Scripture(Reference reference, string text)
     {
@@ -29,6 +30,15 @@ public class Scripture
         // "Split and loop through each word" (video at 11:40 of 16:27)
         // Create a word object and put it into _words list (video at 11:50 of 16:27)
 
+
+        //text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+
+        string[] words = text.Split(" ");
+        //List<string> _words = new List<string>();
+        foreach (string word in words)
+        {
+            _words.AddRange(words);
+        }
     }
 
     public void HideRandomWords(int numberToHide)
@@ -42,6 +52,7 @@ public class Scripture
 
         //Step 2:
         // I need to randomly select numberToHide, whatever that value is, maybe passing that value through 3 or a 5, whatever value that is of those words (video at 12:45 of 16:27)
+        
         // Lots of ways we can do this, think about loops, think about if-statements, make sure you call that IsVisible function, etc. (video at 12:50 of 16:27
         // "You might want to start one out to select a random set of words to hide and you don't care if the words are already hidden yet, <- a good place to begin, and then try to go in there and say, I just want to hide visible ones." (video at 13:08 of 16:27)
 
@@ -56,10 +67,7 @@ public class Scripture
         // Example: (video at 14:20 of 16:27)
         // Combine strings together with a plus sign:
         //string text = "abc" + "def"; //example
-
-        string text = _reference + "";
-        return text;
-        // return "";
+        return _reference + " ";
     }
 
     public bool IsCompletelyHidden()

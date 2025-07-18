@@ -19,22 +19,22 @@ class Program
         Reference reference1Verse = new Reference("John", 3, 16);
         Scripture scripture1Verse = new Scripture(reference1Verse, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
-        // Two verses
-        Reference reference2Verse = new Reference("Proverbs", 3, 5, 6);
-        Scripture scripture2Verse = new Scripture(reference2Verse, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        // Two verses (will use this later)
+        // Reference reference2Verse = new Reference("Proverbs", 3, 5, 6);
+        // Scripture scripture2Verse = new Scripture(reference2Verse, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
 
-        // Trying something else here: (this is working so far.)
-        // I like this loop:
+        // This works:
         string userResponse = "";
 
         while (userResponse.ToLower() != "quit")
         {
             Console.Clear();
             // Testing here: this works!! <3
-            Console.WriteLine($"\n{reference1Verse.GetDisplayText()}\n");
+            Console.WriteLine($"\n{reference1Verse.GetDisplayText()}");
 
-            Console.WriteLine("Press enter to continute or type 'quit' to finish:");
+
+            Console.WriteLine("\nPress enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();
         }
     }

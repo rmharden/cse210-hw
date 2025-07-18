@@ -30,7 +30,10 @@ public class Reference
         // "There are two ways to return the string:" (video at 9:37 of 16:27)
         // 1 Nephi 3:7
         // 1 Nephi 3:7-9
-        // This works! <3
+
+
+        // This worked! <3
+        //return _book + " " + _chapter + ":" + _verse;
         return _book + " " + _chapter + ":" + _verse;
     }
 }
