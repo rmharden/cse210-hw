@@ -38,12 +38,19 @@ public class Scripture
         // Lots of ways we can do this, think about loops, think about if-statements, make sure you call that IsVisible function, etc. (video at 12:50 of 16:27
         // "You might want to start one out to select a random set of words to hide and you don't care if the words are already hidden yet, <- a good place to begin, and then try to go in there and say, I just want to hide visible ones." (video at 13:08 of 16:27)
 
-
+        // Step 3:
+        // To hide the words, use the Hide function (video at 13:30 of 16:27) When you do that, and you use GetDisplayText, Bro. Macbeth said it works.
     }
 
     public string GetDisplayText()
     {
-        return "";
+        // Display the Reference, all the Words, (video at 13:50 of 16:27)
+        // It doesn't worry about if the words are hidden because that is the job of GetDisplayText in the Word class.
+        // Example: (video at 14:20 of 16:27)
+        // Combine strings together with a plus sign:
+        string text = "abc" + "def";
+        return text;
+        // return "";
     }
 
     public bool IsCompletelyHidden()
