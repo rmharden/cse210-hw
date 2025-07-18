@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Console.WriteLine("");
         // This is testing the initialized data in Word.cs: (video at 6:11 of 16:27)
         Word w = new Word("truth");
@@ -25,12 +26,16 @@ class Program
         // display, hide, check if we need to quit
         // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
-        Console.WriteLine("This is what it looks like when it is displayed when the program runs:\n");
+        Console.WriteLine("\nThis is what it looks like when the program runs:\n");
 
         Console.WriteLine("Proverbs 3:5-6 Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
 
         Console.WriteLine("Press enter to continue or type 'quit' to finish:");
-        
+        Console.Read();
+        // I'm not sure, but I think this is what I use if I want the user to press enter.
+
+
+        Console.WriteLine();        
     }
 }
 
