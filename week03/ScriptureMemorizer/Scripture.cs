@@ -13,8 +13,7 @@ public class Scripture
         foreach (string word in words)
         {
             _words.AddRange(words);
-            Console.WriteLine(word[0]);
-        }
+        }        
     }
 
     public void HideRandomWords(int numberToHide)
