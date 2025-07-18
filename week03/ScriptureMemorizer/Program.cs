@@ -22,8 +22,15 @@ class Program
 
         // We will have our loop here (video at 15:29 of 16:27)
         // loop
-            // display, hide, check if we need to quit
-            // Use the functions in the Scripture class (video at 15:50 of 16:27)
+        // display, hide, check if we need to quit
+        // Use the functions in the Scripture class (video at 15:50 of 16:27)
+
+        Console.WriteLine("This is what it looks like when it is displayed when the program runs:\n");
+
+        Console.WriteLine("Proverbs 3:5-6 Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+
+        Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+        
     }
 }
 
