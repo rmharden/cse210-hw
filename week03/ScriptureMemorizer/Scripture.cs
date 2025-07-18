@@ -1,3 +1,6 @@
+
+// "This class has a bunch of stuff to do. It is the "brain" of the program. (video at 10:02 of 16:27)
+
 public class Scripture
 {
     private Reference _reference;
