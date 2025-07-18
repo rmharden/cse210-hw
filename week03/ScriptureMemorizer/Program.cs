@@ -49,7 +49,7 @@ class Program
 
         Console.Clear();
 
-        Console.WriteLine("\nThis shows what it looks like when after pressing enter more times\n");
+        Console.WriteLine("\nThis shows what it looks like after pressing enter few more times\n");
 
         Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean ___ ____ thine own understanding. __ ___ thy ways acknowledge him, and he ____ ______ thy ______\n");
 
