@@ -5,6 +5,13 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
+    // public Reference(string book, int chapter, int verse)
+    // {
+    //     _book = book;
+    //     _chapter = chapter;
+    //     _verse = verse;
+    // }
+
     public Reference(string book, int chapter, int verse)
     {
         // "This doesn't have an endVerse so we have to decided what to set _endVerse to equal to." (video at 8:52 of 16:27)
