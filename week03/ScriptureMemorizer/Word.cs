@@ -13,22 +13,24 @@ public class Word
 
     public void Hide()
     {
+        // This needs to be false in the beginning because the scripture needs to be visible.
         _isHidden = true;
     }
 
     public void Show()
     {
-        _isHidden = false;
+        _isHidden = true; // not sure here
     }
 
     public bool IsHidden()
     {
-        return true;
+        return false;
     }
 
     //This is a getter.
     public string GetDisplayText()
     {
+        // this needs an if statement.
         //Returns an empty string.
         return _text;
     }
