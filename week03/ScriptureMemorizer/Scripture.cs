@@ -1,6 +1,8 @@
 
 // "This class has a bunch of stuff to do. It is the "brain" of the program. (video at 10:02 of 16:27)
 
+using System.Runtime.CompilerServices;
+
 public class Scripture
 {
     private Reference _reference;
@@ -10,9 +12,11 @@ public class Scripture
     {
 
         // "In here we have to initialize a reference but we've been given a reference." (video at 10:05 of 16:27)
-        // "The words area different matter." (video at 10:15 of 16:27)
+        _reference = reference;
 
-        
+
+        // "The words are a different matter." (video at 10:15 of 16:27)
+
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
         // Example:
         // start of code testing
@@ -52,6 +56,8 @@ public class Scripture
         // Example: (video at 14:20 of 16:27)
         // Combine strings together with a plus sign:
         string text = "abc" + "def";
+
+        string text = "" + "";
         return text;
         // return "";
     }

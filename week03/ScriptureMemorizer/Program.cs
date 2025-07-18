@@ -13,20 +13,7 @@ class Program
 
         // For testing purposes, create some objects: (video at 14:30 of 16:27)
 
-        // "Main function will have your main loop and will be "listening" for the enter key and stuff like that" (video at 14:46 of 16:27)
-
-        // Probably need to create a scripture: (video at 14:50 of 16:27)
-        // Then it needed a reference so we created a Reference: (video at 15:14 of 16:27)
-        // start of this test.
-        // Reference reference = new Reference("1 Nephi", 3, 7);
-        // Scripture scripture = new Scripture(reference, "I will go and do..."); // end of this test.
-
         // Once implemented, it will split up all of the scripture passed through, the "I will go and do..." into parts(video at 15:20 of 16:27)
-
-        // We will have our loop here (video at 15:29 of 16:27)
-        // loop
-        // display, hide, check if we need to quit
-        // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
         // One verse
         Reference reference1Verse = new Reference("John", 3, 16);
@@ -38,14 +25,14 @@ class Program
 
 
         // Trying something else here: (this is working so far.)
-        // I like this one:
+        // I like this loop:
         string userResponse = "";
 
         while (userResponse.ToLower() != "quit")
         {
             Console.Clear();
             // Testing here:
-            Console.WriteLine("\nThe reference and scripture is displayed her\n");
+            Console.WriteLine("\nThe reference and scripture is displayed here.\n");
 
             Console.WriteLine("Press enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();
@@ -82,7 +69,19 @@ Trust in the Lord with all thine heart; and lean not unto thine own understandin
 
 // Moving this here so I can reference it when I need it:
 
+        // moved this because I have one now.
+        // Probably need to create a scripture: (video at 14:50 of 16:27)
+        // Then it needed a reference so we created a Reference: (video at 15:14 of 16:27)
+        // start of this test.
+        // Reference reference = new Reference("1 Nephi", 3, 7);
+        // Scripture scripture = new Scripture(reference, "I will go and do..."); // end of this test.
 
+        // "Main function will have your main loop and will be "listening" for the enter key and stuff like that" (video at 14:46 of 16:27)
+
+        // We will have our loop here (video at 15:29 of 16:27)
+        // loop
+        // display, hide, check if we need to quit
+        // Use the functions in the Scripture class (video at 15:50 of 16:27)
 
         // Trying the loop here:
         //while (Console.ReadKey().Key == ConsoleKey.Enter)      
