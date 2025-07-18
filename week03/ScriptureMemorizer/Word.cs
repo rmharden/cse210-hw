@@ -8,12 +8,13 @@ public class Word
     public Word(string text)
     {
         _text = text;
+        // This needs to be false in the beginning because the scripture needs to be visible.
         _isHidden = false;
     }
 
     public void Hide()
     {
-        // This needs to be false in the beginning because the scripture needs to be visible.
+        // This will change the state. The word will be hidden.
         _isHidden = true;
     }
 
