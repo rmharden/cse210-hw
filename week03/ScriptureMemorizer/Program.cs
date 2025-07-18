@@ -23,3 +23,9 @@ Proverbs 3:5-6
 6 In all thy ways acknowledge him, and he shall direct thy paths.
 
 */
+
+
+
+// Watched video:
+// BYU - Idaho Videos CSE 210: Week 3 Assignment from Chad Macbeth May, 7th, 2024
+// https://video.byui.edu/media/t/1_sv3gxgzs/259941952
