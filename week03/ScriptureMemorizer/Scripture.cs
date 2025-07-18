@@ -14,7 +14,7 @@ public class Scripture
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
         // Example:
         string name = "John Deere";
-        string[] words = name.Split(" ");
+        string[] words = name.Split(" "); // this is an array
         Console.WriteLine(words[0]);
         Console.WriteLine(words[1]);
 
