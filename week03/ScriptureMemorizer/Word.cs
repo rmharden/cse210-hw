@@ -15,7 +15,7 @@ public class Word
     public void Hide()
     {
         // "The purpose of the Hide function is that the word should be hidden." (video: 7:19 of 16:27)
-        // "All it is doing is changing the state." (video at 8:09 of 16:27)
+        // "All this is doing is changing the state." (video at 8:09 of 16:27)
         _isHidden = true;
     }
 

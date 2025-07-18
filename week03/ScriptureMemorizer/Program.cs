@@ -45,7 +45,7 @@ class Program
         {
             Console.Clear();
             // Testing here:
-            Console.WriteLine("\nProverbs 3:5-6 Trust in the ____ ____ ___ thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.\n");
+            Console.WriteLine("\nThe reference and scripture is displayed her\n");
 
             Console.WriteLine("Press enter to continute or type 'quit' to finish:");
             userResponse = Console.ReadLine();

@@ -11,6 +11,8 @@ public class Scripture
 
         // "In here we have to initialize a reference but we've been given a reference." (video at 10:05 of 16:27)
         // "The words area different matter." (video at 10:15 of 16:27)
+
+        
         // Split up the words in text and store each as a word object in the list _words. (video at 10:25 of 16:27)
         // Example:
         // start of code testing
