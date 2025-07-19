@@ -19,6 +19,9 @@ public class Scripture
         {
             Word w = new Word(t);
             _words.Add(w);
+            //this showed the scriptures added. It ended up being both scriptures.
+            // It worked, that's good, however, how do I get the display text to see what's in the list?
+            Console.Write($"{t} ");
         }
         // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
         // https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects
