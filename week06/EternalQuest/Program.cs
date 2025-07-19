@@ -18,33 +18,38 @@ class Program
             Console.WriteLine(" 2. List Goals");
             Console.WriteLine(" 3. Save Goals");
             Console.WriteLine(" 4. Load Goals");
-            Console.WriteLine(" 5. Reocrd Even");
+            Console.WriteLine(" 5. Reocrd Event");
             Console.WriteLine(" 6. Quit");
             Console.WriteLine("What Would you like to do?");
 
             response = Console.ReadLine();
 
-
+            // 1. Create New Goal
             if (response == "1")
             {
 
             }
+            // 2. List Goals
             else if (response == "2")
             {
 
             }
+            // 3. Save Goals
             else if (response == "3")
             {
 
             }
+            // 4. Load Goals
             else if (response == "4")
             {
 
             }
+            // 5. Record Event
             else if (response == "5")
             {
 
             }
+            // 6. Quit
             else if (response == "6")
             {
 
