@@ -12,8 +12,47 @@ class Program
         {
 
             Console.WriteLine($"You have {currentPoints} points.\n");
-            
-            
+
+            Console.WriteLine("Menu Options:");
+            Console.WriteLine(" 1. Create New Goal");
+            Console.WriteLine(" 2. List Goals");
+            Console.WriteLine(" 3. Save Goals");
+            Console.WriteLine(" 4. Load Goals");
+            Console.WriteLine(" 5. Reocrd Even");
+            Console.WriteLine(" 6. Quit");
+            Console.WriteLine("What Would you like to do?");
+
+            response = Console.ReadLine();
+
+
+            if (response == "1")
+            {
+
+            }
+            else if (response == "2")
+            {
+
+            }
+            else if (response == "3")
+            {
+
+            }
+            else if (response == "4")
+            {
+
+            }
+            else if (response == "5")
+            {
+
+            }
+            else if (response == "6")
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("\nInvalid number.");
+            }
 
         }
 
