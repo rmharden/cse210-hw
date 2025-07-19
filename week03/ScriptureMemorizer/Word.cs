@@ -32,6 +32,10 @@ public class Word
         // this needs an if statement.
         if (_isHidden == true)
         {
+            // for (int i = 0; i < _text.Length; i++)
+            // {
+            //     return "_";
+            // }
             return "_";
         }
         else

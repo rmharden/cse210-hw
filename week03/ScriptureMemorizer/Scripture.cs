@@ -1,15 +1,27 @@
+using System.Collections.Generic;
 public class Scripture
 {
     private Reference _reference;
-    private List<Word> _words;
+    //private List<Word> _words;
     // private List<string> _words = new List<string>();
+    
+    private List<Word> _words;
 
     public Scripture(Reference reference, string text)
     {
-
         // "In here we have to initialize a reference but we've been given a reference." (video at 10:05 of 16:27)
         // _reference = reference;
         _reference = reference;
+        List<Word> _words = new List<Word>();
+
+        // okay, I don't if this is how you do this, but I hope so. Chad Macbeth said to create a new object. I couldn't get my strings after they were split into a Word list because the type was Word and not strings...
+        foreach (string t in text.Split(" "))
+        {
+            Word w = new Word(t);
+            _words.Add(w);
+        }
+        // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
+        // https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects
 
         // "The words are a different matter." (video at 10:15 of 16:27)
 
@@ -25,31 +37,6 @@ public class Scripture
         // "Split and loop through each word" (video at 11:40 of 16:27)
         // Create a word object and put it into _words list (video at 11:50 of 16:27)
 
-        // string reference1 = "John 3:16";
-        // if (reference1 == "John 3:16")
-        // {
-        //     text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
-        // }
-        // else
-        // {
-        //     text = "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
-        // }
-        // List<string> _words = new List<string>();
-        //     string[] words = text.Split(" ");
-
-        //     foreach (string word in words)
-        //     {
-        //         _words.AddRange(words);
-        //     }
-        // }
-
-        // Trying something different than the array:
-        // I tested this with the getdisplay text by moving it there and it works there. I don't know if it works other places.
-        List<Word> _words = new List<Word>();
-        foreach (string w in text.Split(" "))
-        {
-            _words.Add(new Word(w));
-        }
     }
 
     public void HideRandomWords(int numberToHide)
@@ -73,15 +60,6 @@ public class Scripture
     // public string GetDisplayText(Reference reference, string text
     public string GetDisplayText()
     {
-
-        //testing here:
-        // List<Word> _words = new List<Word>();
-        // foreach (string w in text.Split(" "))
-        // {
-        //     _words.Add(new Word(w));
-        //     Console.Write($"{w} ");
-        // }
-
         // Display the Reference, all the Words, (video at 13:50 of 16:27)
         // It doesn't worry about if the words are hidden because that is the job of GetDisplayText in the Word class.
         // Example: (video at 14:20 of 16:27)
@@ -91,7 +69,8 @@ public class Scripture
         // I still don't know what to do here.
         // test code when I moved the list here s
         //return "\n" + reference + " " + text;
-        return "\n" + _reference + " " + _words + " ";
+        // Ooooooohhhhhh!! I needed to add the .GetDisplayText() 😭
+        return "\n" + _reference.GetDisplayText() + " ";
     }
 
     public bool IsCompletelyHidden()

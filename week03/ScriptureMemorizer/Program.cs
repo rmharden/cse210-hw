@@ -11,12 +11,17 @@ class Program
         Reference r2 = new Reference("Proverbs", 3, 5, 6);
         Scripture s2= new Scripture(r1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
 
+        // I am testing the word class
+        Word w = new Word("loved");
+        {
+            Console.WriteLine(w.GetDisplayText());
+        }
 
         string userResponse = "";
 
         while (userResponse.ToLower() != "quit")
         {
-            Console.Clear();
+            //Console.Clear();
 
             Console.WriteLine(r2.GetDisplayText());
             Console.WriteLine(s1.GetDisplayText());
