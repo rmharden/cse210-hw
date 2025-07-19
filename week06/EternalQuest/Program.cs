@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Goal g = new Goal(); // You cannot make an object or instances of Goal because of pollymorphism. This is inhereited ? into the other goal classes, right?
         Console.WriteLine("Hello World! This is the EternalQuest Project.");
 
         int currentPoints = 0;
