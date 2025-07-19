@@ -46,3 +46,5 @@ public class Word
 }
 
 // Watched the video from BYU-Idaho Videos by Chad Macbeth to know how to set this up.
+// https://learn.microsoft.com/en-us/dotnet/api/system.string.replace?view=net-9.0
+// https://learn.microsoft.com/en-us/dotnet/api/system.string.length?view=net-9.0
