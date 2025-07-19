@@ -1,9 +1,3 @@
-
-// "This class has a bunch of stuff to do. It is the "brain" of the program. (video at 10:02 of 16:27)
-
-using System.Formats.Asn1;
-using System.Runtime.CompilerServices;
-
 public class Scripture
 {
     private Reference _reference;
@@ -50,7 +44,7 @@ public class Scripture
         // }
 
         // Trying something different than the array:
-
+        // I tested this with the getdisplay text by moving it there and it works there. I don't know if it works other places.
         List<Word> _words = new List<Word>();
         foreach (string w in text.Split(" "))
         {
@@ -76,20 +70,28 @@ public class Scripture
         // Step 3:
         // "To hide the words, use the Hide function" (video at 13:30 of 16:27) When you do that, and you use GetDisplayText, Bro. Macbeth said it works.
     }
-
+    // public string GetDisplayText(Reference reference, string text
     public string GetDisplayText()
     {
+
+        //testing here:
+        // List<Word> _words = new List<Word>();
+        // foreach (string w in text.Split(" "))
+        // {
+        //     _words.Add(new Word(w));
+        //     Console.Write($"{w} ");
+        // }
+
         // Display the Reference, all the Words, (video at 13:50 of 16:27)
         // It doesn't worry about if the words are hidden because that is the job of GetDisplayText in the Word class.
         // Example: (video at 14:20 of 16:27)
         // Combine strings together with a plus sign:
         //string text = "abc" + "def"; //example
 
-
-        // does not work
-        //Console.WriteLine(_reference);
-        //return _reference + " ";
-        return _reference + " " + _words;
+        // I still don't know what to do here.
+        // test code when I moved the list here s
+        //return "\n" + reference + " " + text;
+        return "\n" + _reference + " " + _words + " ";
     }
 
     public bool IsCompletelyHidden()
@@ -97,3 +99,6 @@ public class Scripture
         return false;
     }
 }
+
+
+// "This class has a bunch of stuff to do. It is the "brain" of the program. (video at 10:02 of 16:27)

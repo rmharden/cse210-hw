@@ -5,13 +5,6 @@ public class Reference
     private int _verse;
     private int _endVerse;
 
-    // public Reference(string book, int chapter, int verse)
-    // {
-    //     _book = book;
-    //     _chapter = chapter;
-    //     _verse = verse;
-    // }
-
     public Reference(string book, int chapter, int verse)
     {
         // "This doesn't have an endVerse so we have to decided what to set _endVerse to equal to." (video at 8:52 of 16:27)
@@ -21,6 +14,7 @@ public class Reference
         _book = book;
         _chapter = chapter;
         _verse = verse;
+        _endVerse = _verse; // is this what the video meant?
     }
 
     public Reference(string book, int chapter, int verse, int endVerse)
@@ -37,10 +31,15 @@ public class Reference
         // "There are two ways to return the string:" (video at 9:37 of 16:27)
         // 1 Nephi 3:7
         // 1 Nephi 3:7-9
-
-
-        // This worked! <3
-        //return _book + " " + _chapter + ":" + _verse;
-        return _book + " " + _chapter + ":" + _verse;
+        if (_endVerse == _verse)
+        {
+            // This (by itself) worked! <3
+            return _book + " " + _chapter + ":" + _verse;
+        }
+        else
+        {
+            // This works too, but now it only shows proverbs.
+            return _book + " " + _chapter + ":" + _verse + "-" + _endVerse;
+        }
     }
 }

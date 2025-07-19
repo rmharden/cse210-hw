@@ -7,6 +7,7 @@ class Program
     {
         Reference r1 = new Reference("John", 3, 16);
         Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        
         Reference r2 = new Reference("Proverbs", 3, 5, 6);
         Scripture s2= new Scripture(r1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
 
