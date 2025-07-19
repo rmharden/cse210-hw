@@ -5,6 +5,18 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the EternalQuest Project.");
+
+        int currentPoints = 0;
+        string response = "";
+        while (response != "6")
+        {
+
+            Console.WriteLine($"You have {currentPoints} points.\n");
+            
+            
+
+        }
+
     }
 }
 
