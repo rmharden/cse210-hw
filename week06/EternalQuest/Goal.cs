@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
 
-public class Goal
+public abstract class Goal
 {
     // Attributes (private or protected according to the video)
     private string _shortName;
@@ -15,23 +15,16 @@ public class Goal
         _points = points;
     }
 
-    public int RecordEvent()
-    {
-        return 0;
-    }
+    
+    public abstract int RecordEvent();
 
-    public bool IsComplete()
-    {
-        return false;
-    }
+    public abstract bool IsComplete();
 
     public string GetDetailsString()
     {
+        // virtual?
         return "";
     }
 
-    public string GetRepresentation()
-    {
-        return "";
-    }
+    public abstract string GetRepresentation();
 }
