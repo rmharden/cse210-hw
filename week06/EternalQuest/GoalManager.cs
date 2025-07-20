@@ -72,5 +72,8 @@ public class GoalManager
         // ask user for a file name
         // read each line of the file and split it up
         // use the parts to re-create the goal object
+        SimpleGoal g = new SimpleGoal(name, description, points)
+        // option 1: Create some Set Functions
+        // option 2: Make a 2nd constructor for SimpleGoal and ChecklistGoal
     }
 }

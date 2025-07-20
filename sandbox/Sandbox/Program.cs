@@ -1,342 +1,368 @@
 using System;
-// Week 06: Video: Polymorphism (17:44 mins)
-
-// Method overriding so it can do something different in a derived class
 
 class Program
 {
     static void Main(string[] args)
     {
-        Person p1 = new Person();
-
-        p1.SetFirstName("Bob");
-        p1.SetLastName("Smith");
-
-        // Create the bank reports
-        Console.WriteLine(p1.GetFormalName());
-
-        Student p2 = new Student();
-        p2.SetFirstName("Emily");
-        p2.SetLastName("Jones");
-        p2.SetGpa(3.75);
-
-        Console.WriteLine(p2.GetStudentRecord());
-
-        Teacher p3 = new Teacher();
-        p3.SetFirstName("Michael");
-        p3.SetLastName("Broach");
-
-        Console.WriteLine(p1.GetFullName());
-        Console.WriteLine(p2.GetFullName());
-        Console.WriteLine(p3.GetFullName());
-
-        List<Person> people = new List<Person>();
-        people.Add(p1);
-        people.Add(p2);
-        people.Add(p3);
-
-        Console.WriteLine("\nLooking at the list of people...\n");
-        foreach (Person p in people)
+        // Trying something:
+        string secret = "python";
+        foreach (char letter in secret)
         {
-
-            // 11:08 of 15:06 in the video
-            // this is showing what happens if we don't override
-            // the teacher variable needs to be set.
-            if (p._personType == "teacher")
-            {
-                // needs to say what to do
-            }
-            else
-            {
-                // needs to say what happens otherwise for the regular person
-            }
-            // Without polymorphism, you have to have a bunch of the if statements for each new type of person
-
-
-            Console.WriteLine(p.GetFullName());
+            Console.Write("_");
         }
-    }
-
-    public static void PrintPersonDetails(Person p)
-    {
-        Console.WriteLine(p.GetFullName());
+        Console.WriteLine();
+        for (int i; i < secret.Length; i++)
+        {
+            Console.WriteLine("_");
+        }
+        Console.WriteLine();
     }
 }
 
-
-
-
-
+// This was from Chad Macbeth's video on BYU-I Videos:
+// https://video.byui.edu/media/t/1_86gjzj20
 
 
 
 // using System;
-// using System.Security.Cryptography.X509Certificates;
+// // Week 06: Video: Polymorphism (17:44 mins)
+
+// // Method overriding so it can do something different in a derived class
 
 // class Program
 // {
-// 	static void Main(string[] args)
-// 	{
+//     static void Main(string[] args)
+//     {
+//         Person p1 = new Person();
 
-//         // I used the information from Week 01 about Coverting Types by using the int.Parse() function.
-//         // I also watched the video from Week 05 om Display animations and used the things taught there to do the breathing activity.
-//         Console.Write("\nHow long, in seconds, would you like your session? ");
+//         p1.SetFirstName("Bob");
+//         p1.SetLastName("Smith");
 
-//         string inputString = Console.ReadLine();
-//         int duration = int.Parse(inputString);
+//         // Create the bank reports
+//         Console.WriteLine(p1.GetFormalName());
 
-//         DateTime startTime = DateTime.Now;
-// 		DateTime endTime = startTime.AddSeconds(duration);
+//         Student p2 = new Student();
+//         p2.SetFirstName("Emily");
+//         p2.SetLastName("Jones");
+//         p2.SetGpa(3.75);
 
-//         while (DateTime.Now < endTime)
+//         Console.WriteLine(p2.GetStudentRecord());
+
+//         Teacher p3 = new Teacher();
+//         p3.SetFirstName("Michael");
+//         p3.SetLastName("Broach");
+
+//         Console.WriteLine(p1.GetFullName());
+//         Console.WriteLine(p2.GetFullName());
+//         Console.WriteLine(p3.GetFullName());
+
+//         List<Person> people = new List<Person>();
+//         people.Add(p1);
+//         people.Add(p2);
+//         people.Add(p3);
+
+//         Console.WriteLine("\nLooking at the list of people...\n");
+//         foreach (Person p in people)
 //         {
-//             Console.Write("\nBreathe in... ");
-//             for (int i = 5; i > 0; i--)
-//             {
-//                 Console.Write(i);
-//                 Thread.Sleep(1000);
-//                 Console.Write("\b \b");
-//             }
-//             Console.WriteLine();
-//             Console.Write("Breathe out... ");
-//             for (int i2 = 5; i2 > 0; i2--)
-//             {
-//                 Console.Write(i2);
-//                 Thread.Sleep(1000);
-//                 Console.Write("\b \b");
-//             }
-//             Console.WriteLine();
-// 		}	
 
-// 		Console.WriteLine("\nWell done!\n");
-// 	}
+//             // 11:08 of 15:06 in the video
+//             // this is showing what happens if we don't override
+//             // the teacher variable needs to be set.
+//             if (p._personType == "teacher")
+//             {
+//                 // needs to say what to do
+//             }
+//             else
+//             {
+//                 // needs to say what happens otherwise for the regular person
+//             }
+//             // Without polymorphism, you have to have a bunch of the if statements for each new type of person
+
+
+//             Console.WriteLine(p.GetFullName());
+//         }
+//     }
+
+//     public static void PrintPersonDetails(Person p)
+//     {
+//         Console.WriteLine(p.GetFullName());
+//     }
 // }
 
 
 
-// using System;
-// using System.Security.Cryptography.X509Certificates;
 
-// class Program
-// {
-// 	static void Main(string[] args)
-// 	{
-//         Console.WriteLine("How long, in seconds, would you like your session? ");
 
-//         string inputString = Console.ReadLine();
-//         int duration = int.Parse(inputString);
 
-//         DateTime startTime = DateTime.Now;
-// 		DateTime endTime = startTime.AddSeconds(duration);
+
+
+// // using System;
+// // using System.Security.Cryptography.X509Certificates;
+
+// // class Program
+// // {
+// // 	static void Main(string[] args)
+// // 	{
+
+// //         // I used the information from Week 01 about Coverting Types by using the int.Parse() function.
+// //         // I also watched the video from Week 05 om Display animations and used the things taught there to do the breathing activity.
+// //         Console.Write("\nHow long, in seconds, would you like your session? ");
+
+// //         string inputString = Console.ReadLine();
+// //         int duration = int.Parse(inputString);
+
+// //         DateTime startTime = DateTime.Now;
+// // 		DateTime endTime = startTime.AddSeconds(duration);
+
+// //         while (DateTime.Now < endTime)
+// //         {
+// //             Console.Write("\nBreathe in... ");
+// //             for (int i = 5; i > 0; i--)
+// //             {
+// //                 Console.Write(i);
+// //                 Thread.Sleep(1000);
+// //                 Console.Write("\b \b");
+// //             }
+// //             Console.WriteLine();
+// //             Console.Write("Breathe out... ");
+// //             for (int i2 = 5; i2 > 0; i2--)
+// //             {
+// //                 Console.Write(i2);
+// //                 Thread.Sleep(1000);
+// //                 Console.Write("\b \b");
+// //             }
+// //             Console.WriteLine();
+// // 		}	
+
+// // 		Console.WriteLine("\nWell done!\n");
+// // 	}
+// // }
+
+
+
+// // using System;
+// // using System.Security.Cryptography.X509Certificates;
+
+// // class Program
+// // {
+// // 	static void Main(string[] args)
+// // 	{
+// //         Console.WriteLine("How long, in seconds, would you like your session? ");
+
+// //         string inputString = Console.ReadLine();
+// //         int duration = int.Parse(inputString);
+
+// //         DateTime startTime = DateTime.Now;
+// // 		DateTime endTime = startTime.AddSeconds(duration);
 		
-// 		while (DateTime.Now < endTime)
-// 		{
-// 			Console.Write(".");
-// 			Thread.Sleep(1000);
-// 		}	
+// // 		while (DateTime.Now < endTime)
+// // 		{
+// // 			Console.Write(".");
+// // 			Thread.Sleep(1000);
+// // 		}	
 
-// 		Console.WriteLine("Done");
-// 	}
-// }
-
-
-
-// using System;
-// using System.Security.Cryptography.X509Certificates;
-
-// // Practice as of July 9, 2025 at 11:19 AM
-// // Display Animations Video from CSE 210 W05 Project:
-// // Mindfulness Program
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Console.WriteLine("Hello Sandbox World");
-
-//         // Pausing, sleeping, waiting... 3000 milliseconds.
-//         // 1000 Milliseconds = 1 Second
-
-//         Thread.Sleep(3000);
-
-//         // This is a way to do a countdown:
-
-//         // Console.WriteLine("5");
-//         // Thread.Sleep(1000);
-//         // Console.WriteLine("4");
-//         // Thread.Sleep(1000);
-//         // Console.WriteLine("3");
-//         // Thread.Sleep(1000);
-//         // Cmd + / allows me to comment more than one highlighted line.
-//         // Console.WriteLine("2");
-//         // Thread.Sleep(1000);
-//         // Console.WriteLine("1");
-//         // Thread.Sleep(1000);
+// // 		Console.WriteLine("Done");
+// // 	}
+// // }
 
 
-//         // Here is another way to do a countdown:
-//         // This writes each number on a new line.
 
-//         // for (int i = 5; i > 0; i--)
-//         // {
-//         //     Console.WriteLine(i);
-//         //     Thread.Sleep(1000);
-//         // }
+// // using System;
+// // using System.Security.Cryptography.X509Certificates;
 
-//         // Changed to writing the numbers on one line.
-//         // for (int i = 5; i > 0; i--)
-//         // {
-//         //     Console.Write(i);
-//         //     Thread.Sleep(1000);
-//         // }
+// // // Practice as of July 9, 2025 at 11:19 AM
+// // // Display Animations Video from CSE 210 W05 Project:
+// // // Mindfulness Program
+// // class Program
+// // {
+// //     static void Main(string[] args)
+// //     {
+// //         Console.WriteLine("Hello Sandbox World");
 
-//         // Console.Write("\b");  // "Does a back arrow"
-//         // Console.Write("\b \b");  // "Does a back arrow, overrides it, and goes back"
-//         // this works for single digits. Need to do two back arrows if there are more digits.
-//         // for (int i = 5; i > 0; i--)
-//         // {
-//         //     Console.Write(i);
-//         //     Thread.Sleep(1000);
-//         //     Console.Write("\b \b");
-//         // }
+// //         // Pausing, sleeping, waiting... 3000 milliseconds.
+// //         // 1000 Milliseconds = 1 Second
 
-//         // This one displays a count of dots:
-//         // for (int i = 5; i > 0; i--)
-//         // {
-//         //     Console.Write(".");
-//         //     Thread.Sleep(1000);
-//         // }
+// //         Thread.Sleep(3000);
 
-//         // This is a spinner animation:
-//         // because a backslash is a special character, we have to add two in the quotes so it will display one for this special situation:
+// //         // This is a way to do a countdown:
 
-//         List<string> animationStrings = new List<string>();
-//         animationStrings.Add("|");
-//         animationStrings.Add("/");
-//         animationStrings.Add("-");
-//         animationStrings.Add("\\");
-//         animationStrings.Add("|");
-//         animationStrings.Add("/");
-//         animationStrings.Add("\\");
-
-//         // foreach (string s in animationStrings)
-//         // {
-//         //     Console.Write(s);
-//         //     Thread.Sleep(1000);
-//         //     Console.Write("\b \b");
-//         // }
-
-//         // This creates a way to display by a specific time:
-//         DateTime startTime = DateTime.Now;
-//         DateTime endTime = startTime.AddSeconds(5);
-
-//         // This is starting at the 0 of the index of the list:
-
-//         int i = 0;
-
-//         while (DateTime.Now < endTime)
-//         {
-//             // This is telling the while loop to use the List with the index at 0:
-//             string s = animationStrings[i];
-//             Console.Write(s);
-//             Thread.Sleep(1000);
-//             Console.Write("\b \b");
-
-//             // Advances the "i":
-//             i++;
-
-//             // This prevents the error. It takes the number of items in the index and stops the count when it gets to that number; in this case, the number "8":
-//             // However, because we have a while loop, it will loop through that animation until it reaches the seconds provided.
-
-//             if (i >= animationStrings.Count)
-//             {
-//                 i = 0;
-//             }
-//         }
-
-//         Console.WriteLine("Done.");
-//     }
-// }
-
-// /*
-// // Practice prior to July 9, 2025 at 11:15 AM
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         //Console.WriteLine("\nHello Sandbox World!\n");
-
-//         Blind kitchen = new Blind();
-//         kitchen._width = 60;
-//         kitchen._height = 48;
-//         kitchen._color = "white";
-
-//         Console.WriteLine(kitchen._width);
-
-//         double materialAmountKt = kitchen.GetArea();
-
-//         Console.WriteLine(kitchen.GetArea());
-
-//         Blind livingRoom = new Blind();
-//         livingRoom._width = 83;
-//         livingRoom._height = 48;
-//         livingRoom._color = "eggshell";
-
-//         double materialAmountLr = livingRoom.GetArea();
-
-//         Console.WriteLine(livingRoom.GetArea());
-
-//         House johnsonHome = new House();
-//         johnsonHome._owner = "Johnson Family";
-
-//         johnsonHome._kitchen._width = 60;
-
-//         Console.WriteLine(johnsonHome._kitchen._width);
+// //         // Console.WriteLine("5");
+// //         // Thread.Sleep(1000);
+// //         // Console.WriteLine("4");
+// //         // Thread.Sleep(1000);
+// //         // Console.WriteLine("3");
+// //         // Thread.Sleep(1000);
+// //         // Cmd + / allows me to comment more than one highlighted line.
+// //         // Console.WriteLine("2");
+// //         // Thread.Sleep(1000);
+// //         // Console.WriteLine("1");
+// //         // Thread.Sleep(1000);
 
 
-//         foreach (Blind b in johnsonHome._blinds)
-//         {
-//             double amount = b.GetArea();
-//         }
+// //         // Here is another way to do a countdown:
+// //         // This writes each number on a new line.
 
-//         int[] numbers = { 10, 30, 44, 21, 51, 21, 61, 24, 14 };
-//         Array.IndexOf(numbers, 21);
-//         int ans = Array.IndexOf(numbers, 21);
-//         Console.WriteLine(ans);
+// //         // for (int i = 5; i > 0; i--)
+// //         // {
+// //         //     Console.WriteLine(i);
+// //         //     Thread.Sleep(1000);
+// //         // }
 
-//         int[] source = { 12, 1, 5, -2, 16, 14 };
-//         int[] dest = { 1, 2, 3, 4 };
+// //         // Changed to writing the numbers on one line.
+// //         // for (int i = 5; i > 0; i--)
+// //         // {
+// //         //     Console.Write(i);
+// //         //     Thread.Sleep(1000);
+// //         // }
 
-//         Array.Copy(source, dest, 3);
+// //         // Console.Write("\b");  // "Does a back arrow"
+// //         // Console.Write("\b \b");  // "Does a back arrow, overrides it, and goes back"
+// //         // this works for single digits. Need to do two back arrows if there are more digits.
+// //         // for (int i = 5; i > 0; i--)
+// //         // {
+// //         //     Console.Write(i);
+// //         //     Thread.Sleep(1000);
+// //         //     Console.Write("\b \b");
+// //         // }
 
-//         int[] numbers2 = { 12, 1, 5, -2, 16, 14 };
-//         Array.Sort(numbers2);
+// //         // This one displays a count of dots:
+// //         // for (int i = 5; i > 0; i--)
+// //         // {
+// //         //     Console.Write(".");
+// //         //     Thread.Sleep(1000);
+// //         // }
 
-//         string message = "Hello World";
-//         string anotherMessage = "";
-//         string myName = "Hello World, " + "name is Jamie";
-//         string myName2 = "Hello world, my name is Jamie";
+// //         // This is a spinner animation:
+// //         // because a backslash is a special character, we have to add two in the quotes so it will display one for this special situation:
 
-//         Console.WriteLine("Hello World".Length);
+// //         List<string> animationStrings = new List<string>();
+// //         animationStrings.Add("|");
+// //         animationStrings.Add("/");
+// //         animationStrings.Add("-");
+// //         animationStrings.Add("\\");
+// //         animationStrings.Add("|");
+// //         animationStrings.Add("/");
+// //         animationStrings.Add("\\");
 
-//         string newMessage = message.Substring(2, 5);
-//         Console.WriteLine(newMessage);
+// //         // foreach (string s in animationStrings)
+// //         // {
+// //         //     Console.Write(s);
+// //         //     Thread.Sleep(1000);
+// //         //     Console.Write("\b \b");
+// //         // }
 
-//         string firstString = "This is Jamie";
-//         string secondString = "Hello.";
+// //         // This creates a way to display by a specific time:
+// //         DateTime startTime = DateTime.Now;
+// //         DateTime endTime = startTime.AddSeconds(5);
 
-//         firstString.Equals("This is Jamie");
-//         secondString.Equals("This is Jamie");
+// //         // This is starting at the 0 of the index of the list:
 
-//         string[] separator = { ",", ";" };
-//         string names = "Peter, John, Andy, , David";
-//         string[] substrings = names.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-//         Console.WriteLine(names);
+// //         int i = 0;
 
-//         List<string> _prompts = new List<string> { "Who was the most interesting person I interacted with today?", "What was the best part of my day?", "How did I see the hand of the Lord in my life today?", "What was the strongest emotion I felt today?", "If I had one thing I could do over today, what would it be?" };
+// //         while (DateTime.Now < endTime)
+// //         {
+// //             // This is telling the while loop to use the List with the index at 0:
+// //             string s = animationStrings[i];
+// //             Console.Write(s);
+// //             Thread.Sleep(1000);
+// //             Console.Write("\b \b");
 
-//         Console.WriteLine(_prompts[0] + _prompts[1] + _prompts[2] + _prompts[3] + _prompts[4]);
-//         Console.WriteLine(_prompts.Count);
-//     }
+// //             // Advances the "i":
+// //             i++;
 
-// }
-// */
+// //             // This prevents the error. It takes the number of items in the index and stops the count when it gets to that number; in this case, the number "8":
+// //             // However, because we have a while loop, it will loop through that animation until it reaches the seconds provided.
+
+// //             if (i >= animationStrings.Count)
+// //             {
+// //                 i = 0;
+// //             }
+// //         }
+
+// //         Console.WriteLine("Done.");
+// //     }
+// // }
+
+// // /*
+// // // Practice prior to July 9, 2025 at 11:15 AM
+// // class Program
+// // {
+// //     static void Main(string[] args)
+// //     {
+// //         //Console.WriteLine("\nHello Sandbox World!\n");
+
+// //         Blind kitchen = new Blind();
+// //         kitchen._width = 60;
+// //         kitchen._height = 48;
+// //         kitchen._color = "white";
+
+// //         Console.WriteLine(kitchen._width);
+
+// //         double materialAmountKt = kitchen.GetArea();
+
+// //         Console.WriteLine(kitchen.GetArea());
+
+// //         Blind livingRoom = new Blind();
+// //         livingRoom._width = 83;
+// //         livingRoom._height = 48;
+// //         livingRoom._color = "eggshell";
+
+// //         double materialAmountLr = livingRoom.GetArea();
+
+// //         Console.WriteLine(livingRoom.GetArea());
+
+// //         House johnsonHome = new House();
+// //         johnsonHome._owner = "Johnson Family";
+
+// //         johnsonHome._kitchen._width = 60;
+
+// //         Console.WriteLine(johnsonHome._kitchen._width);
+
+
+// //         foreach (Blind b in johnsonHome._blinds)
+// //         {
+// //             double amount = b.GetArea();
+// //         }
+
+// //         int[] numbers = { 10, 30, 44, 21, 51, 21, 61, 24, 14 };
+// //         Array.IndexOf(numbers, 21);
+// //         int ans = Array.IndexOf(numbers, 21);
+// //         Console.WriteLine(ans);
+
+// //         int[] source = { 12, 1, 5, -2, 16, 14 };
+// //         int[] dest = { 1, 2, 3, 4 };
+
+// //         Array.Copy(source, dest, 3);
+
+// //         int[] numbers2 = { 12, 1, 5, -2, 16, 14 };
+// //         Array.Sort(numbers2);
+
+// //         string message = "Hello World";
+// //         string anotherMessage = "";
+// //         string myName = "Hello World, " + "name is Jamie";
+// //         string myName2 = "Hello world, my name is Jamie";
+
+// //         Console.WriteLine("Hello World".Length);
+
+// //         string newMessage = message.Substring(2, 5);
+// //         Console.WriteLine(newMessage);
+
+// //         string firstString = "This is Jamie";
+// //         string secondString = "Hello.";
+
+// //         firstString.Equals("This is Jamie");
+// //         secondString.Equals("This is Jamie");
+
+// //         string[] separator = { ",", ";" };
+// //         string names = "Peter, John, Andy, , David";
+// //         string[] substrings = names.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+// //         Console.WriteLine(names);
+
+// //         List<string> _prompts = new List<string> { "Who was the most interesting person I interacted with today?", "What was the best part of my day?", "How did I see the hand of the Lord in my life today?", "What was the strongest emotion I felt today?", "If I had one thing I could do over today, what would it be?" };
+
+// //         Console.WriteLine(_prompts[0] + _prompts[1] + _prompts[2] + _prompts[3] + _prompts[4]);
+// //         Console.WriteLine(_prompts.Count);
+// //     }
+
+// // }
+// // */

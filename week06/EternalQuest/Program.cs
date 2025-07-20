@@ -6,12 +6,14 @@ class Program
     {
         //Goal g = new Goal(); // You cannot make an object or instances of abstract Goal because of pollymorphism. This is inhereited ? into the other goal classes, right?
 
-        List<Goal> goals = new List<Goal>();
-        SimpleGoal sg = new SimpleGoal();
-        goals.Add(sg);
+        // List<Goal> goals = new List<Goal>();
+        // SimpleGoal sg = new SimpleGoal();
+        // goals.Add(sg);
 
-        Goal g = goals[0];
-        g.GetDetailsString();
+        // Goal g = goals[0];
+        // g.GetDetailsString();
+
+        //Create the goalmanager function and the start function. that's it
 
 
 
