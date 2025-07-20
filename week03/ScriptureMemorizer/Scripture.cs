@@ -1,12 +1,15 @@
 public class Scripture // Like week 2 Resumes?
 {
+    public Reference _reference;
     public string _text;
 
     public List<Word> _words = new List<Word>();
 
-    public Scripture(string text)
+    public Scripture(Reference reference, string text)
     {
+        _reference = reference;
         _text = text;
+
 
         string[] splitText = text.Split(" ");
         for (int i = 0; i < splitText.Length; i++)
@@ -52,6 +55,7 @@ public class Scripture // Like week 2 Resumes?
     }
     public void GetDisplayText() //this is supposed to be a string
     {
+        _reference.GetDisplayText()
         Console.WriteLine();
         foreach (Word word in _words)
         {
