@@ -13,6 +13,7 @@ public class Program
             
             //Word aWord = new Word();
             Scripture aScripture = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+            Reference r1 = new Reference("John", 3, 16);
 
             Console.Clear();
             aScripture.GetDisplayText();
