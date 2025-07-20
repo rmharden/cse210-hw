@@ -1,0 +1,4 @@
+825
+SimpleGoal|Temple|Go to the temple|100|True
+EternalGoal|Prayer|Say morning prayers|25
+ChecklistGoal|Wake up|Wake up at 5am|10|5|5|500
