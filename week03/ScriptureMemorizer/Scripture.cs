@@ -15,7 +15,7 @@ public class Scripture
         }
 
         HideRandomWords(6);
-        Console.WriteLine(GetDisplayText());
+        // Console.WriteLine(GetDisplayText());
     }
 
     public void HideRandomWords(int numberToHide)
@@ -35,13 +35,14 @@ public class Scripture
         // "To hide the words, use the Hide function" (video at 13:30 of 16:27) When you do that, and you use GetDisplayText, Bro. Macbeth said it works.
     }
 
-    public string GetDisplayText()
-    {
-        foreach (Word w in _words)
-        {
-            return "\n" + _reference.GetDisplayText() + " " + w.GetDisplayText() + " ";
-        }
-        //return "\n" + _reference.GetDisplayText();
-        return "";
-    }
+    // public string GetDisplayText()
+    // {
+    //     // foreach (Word w in _words)
+    //     // {
+    //     // return "\n" + _reference.GetDisplayText() + " " + w.GetDisplayText() + " ";
+    //     // }
+    //     //return "\n" + _reference.GetDisplayText();
+    //     // return "";
+    //     return "\n" + _reference.GetDisplayText();
+    // }
 }
