@@ -5,18 +5,25 @@ public class Program
 {
     static void Main(string[] args)
     {
-        //Word aWord = new Word();
-        Scripture aScripture = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        string userResponse = "";
 
-        //aScripture._text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+        while (userResponse != "quit")
+        {
+            Console.Clear();
+            
+            //Word aWord = new Word();
+            Scripture aScripture = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
-        Console.Clear();
-        aScripture.GetDisplayText();
-        Console.WriteLine();
+            Console.Clear();
+            aScripture.GetDisplayText();
 
-
-        //aScripture._words.Add(aWord);
-    }
+            // This doesn't make a new line and it has something to do with the scripture class and its method.
+            // It works now, don't know why.
+            Console.WriteLine();
+            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+            userResponse = Console.ReadLine();
+        }
+    }    
 }
 //     public class Word // Like week to Job??
 //     {

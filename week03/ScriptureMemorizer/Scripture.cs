@@ -18,7 +18,7 @@ public class Scripture // Like week 2 Resumes?
 
             // vhttps://learn.microsoft.com/en-us/dotnet/csharp/misc/cs1503?f1url=%3FappId%3Droslyn%26k%3Dk(CS1503)
         }
-        
+
     }
     public void HideRandomWords(int numberToHide)
     {
@@ -41,7 +41,7 @@ public class Scripture // Like week 2 Resumes?
             Console.Write("_");
         }
         Console.WriteLine();
-        
+
         // This was from Chad Macbeth's video on BYU-I Videos:
         // https://video.byui.edu/media/t/1_86gjzj20
 
@@ -57,5 +57,10 @@ public class Scripture // Like week 2 Resumes?
         {
             word.Display();
         }
+    }
+
+    public bool IsHidden()
+    {
+        return false;
     }
 }
