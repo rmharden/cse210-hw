@@ -16,6 +16,8 @@ class Program
         }
         Console.WriteLine();
     }
+    // These both do the samething. I think.
+    // How I use this to make the hidden words work in the scripture memorizer?
 
 }
 
