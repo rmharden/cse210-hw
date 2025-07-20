@@ -10,7 +10,15 @@ public class Scripture // Like week 2 Resumes?
         _reference = reference;
         _text = text;
 
+        // Split up the words in text and store each as a word object in the list _words:
+        // example from BYUI, Chad Macbeth: 
+        string name = "John Deere";
+        string[] words = name.Split(" ");
+        Console.WriteLine(words[0]);
+        Console.WriteLine(words[1]);
 
+        // split and then loop through each word
+            // create word object and put it into _words:
         string[] splitText = text.Split(" ");
         for (int i = 0; i < splitText.Length; i++)
         {
@@ -18,10 +26,9 @@ public class Scripture // Like week 2 Resumes?
             Word aWord = new Word(splitText[i]);
 
             _words.Add(aWord);
-
-            // vhttps://learn.microsoft.com/en-us/dotnet/csharp/misc/cs1503?f1url=%3FappId%3Droslyn%26k%3Dk(CS1503)
         }
 
+            // vhttps://learn.microsoft.com/en-us/dotnet/csharp/misc/cs1503?f1url=%3FappId%3Droslyn%26k%3Dk(CS1503)
     }
     public void HideRandomWords(int numberToHide)
     {

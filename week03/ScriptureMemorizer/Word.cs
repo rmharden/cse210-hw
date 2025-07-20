@@ -11,7 +11,7 @@ public class Word // Like week to Job??
 
     public void Hide()
     {
-
+        _isHidden = true;
     }
     public void Show()
     {
@@ -26,6 +26,7 @@ public class Word // Like week to Job??
     {
         // Needs to return the word if it is visiable or return underscores ____ if hidden.
         // How do I do that???
+        // This is an if statement.
         Console.Write($"{_text} ");
     }   
 }
