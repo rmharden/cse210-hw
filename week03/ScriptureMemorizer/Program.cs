@@ -1,37 +1,164 @@
-
 using System;
-
-class Program
+using System.ComponentModel;
+public class Program
 {
     static void Main(string[] args)
     {
-        // Reference r1 = new Reference("John", 3, 16);
-        // Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+        Word aWord = new Word();
+        Scripture aScripture = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
-        // Reference r2 = new Reference("Proverbs", 3, 5, 6);
-        // Scripture s2= new Scripture(r2, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
-
-        // // I am testing the word class
-        // Word w = new Word("loved");
-        // {
-        //     Console.WriteLine(w.GetDisplayText());
-        // }
+        //aScripture._text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
 
 
-        string userResponse = "";
 
-        while (userResponse.ToLower() != "quit")
+        //aScripture._words.Add(aWord);
+    }
+    public class Word // Like week to Job??
+    {
+        public string _text;
+
+        public void Display()
         {
-            //Console.Clear();
+            Console.Write($"{_text} ");
+        }
+    }
+    public class Scripture // Like week 2 Resumes?
+    {
+        public string _text;
 
-            //Console.WriteLine(r1.GetDisplayText());
-            // Console.WriteLine(s1.GetDisplayText());
-   
-            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
-            userResponse = Console.ReadLine();
+        public List<Word> _words = new List<Word>();
+
+        public Scripture(string text)
+        {
+            _text = text;
+
+            string[] splitText = text.Split(" ");
+            for (int i = 0; i < splitText.Length; i++)
+            {
+                //Console.WriteLine($"{i}: {splitText[i]}");
+                // _words.Add(splitText[i]);
+            }
+        }
+        public void GetDisplayText() //this is supposed to be a string
+        {
+            foreach (Word word in _words)
+            {
+                word.Display();
+            }
         }
     }
 }
+
+
+// using System;
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Blind kitchen = new Blind();
+
+//         kitchen._width = 60;
+//         kitchen._height = 48;
+//         kitchen._color = "white";
+
+//         //Console.WriteLine(kitchen._width);
+
+//         //double materialAmount = kitchen.GetArea();
+
+
+//         // initializing the blinds to their new values after creating a new House object:
+//         House johnsonHome = new House();
+
+//         johnsonHome._kitchen = new Blind();
+//         johnsonHome._livingRoom = new Blind();
+//         johnsonHome._owner = "Johnson Family";
+
+//         // After the new house object is created, you can access the member variables using the "dot" operator.
+//         johnsonHome._kitchen._width = 60;
+
+//         // I think this is something that I might need for the Journal and Scriptures and Word class, but I am not sure... I don't know...
+
+//         // List of Custom Types:
+//         // Do you add to the list here when it's in another class??
+//         // how do I know what this means?
+//         // the House class has the variables for _owner, _kitchen, and _livingroom. It also has the custom Blind list... however, there is a Blind class... are they connected??? We made a new House object called johnsonHome. We already had a new Blind object called kitchen, but then we assigned variables all the house variables to a new Blind object??? and the Blind object has _width, _height, _color... with a GetArea() method...
+//         // when we added the House object to the _blinds list, we're specifically adding the kitchen new Blind object
+
+//         johnsonHome._blinds.Add(kitchen);
+//         foreach (Blind b in johnsonHome._blinds)
+//         {
+//             Console.WriteLine(b.GetArea());
+//         }
+
+
+//     }
+//     public class Blind
+//     {
+//         public double _width;
+//         public double _height;
+//         public string _color;
+
+//         public double GetArea()
+//         {
+//             return _width * _height;
+//         }
+//     }
+//     public class House
+//     {
+//         // Custom types for member variables.
+//         public string _owner;
+//         public Blind _kitchen;
+//         public Blind _livingRoom;
+
+//         // List of Custom Types:
+//         public List<Blind> _blinds = new List<Blind>();
+
+//         // or you can initialize the variables in the class definition:
+//         /*
+//         public string _owner = "";
+//         public Blind _kitchen = new Blind();
+//         public Blind _livingRoom = new Blind();
+//         */
+
+//     }
+// }
+
+
+
+// using System;
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         // Reference r1 = new Reference("John", 3, 16);
+//         // Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+
+//         // Reference r2 = new Reference("Proverbs", 3, 5, 6);
+//         // Scripture s2= new Scripture(r2, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
+
+//         // // I am testing the word class
+//         // Word w = new Word("loved");
+//         // {
+//         //     Console.WriteLine(w.GetDisplayText());
+//         // }
+
+
+//         string userResponse = "";
+
+//         while (userResponse.ToLower() != "quit")
+//         {
+//             //Console.Clear();
+
+//             //Console.WriteLine(r1.GetDisplayText());
+//             // Console.WriteLine(s1.GetDisplayText());
+   
+//             Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+//             userResponse = Console.ReadLine();
+//         }
+//     }
+// }
 
 
 // Watched video:
