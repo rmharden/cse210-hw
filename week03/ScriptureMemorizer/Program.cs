@@ -11,15 +11,15 @@ public class Program
             Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
         string userResponse = "";
         // Loop, Display, Hide, check if we need to quit
-        while (userResponse != "quit" && s1.IsCompletelyHidden() == true)
+        // this doesn't work like I think it should.
+        // while (userResponse != "quit" && s1.IsCompletelyHidden() != false)
+        while (userResponse != "quit")
         {
             Console.Clear();
 
             Console.Clear();
             s1.GetDisplayText();
 
-            // This doesn't make a new line and it has something to do with the scripture class and its method.
-            // It works now, don't know why.
             Console.WriteLine();
             Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
             userResponse = Console.ReadLine();
