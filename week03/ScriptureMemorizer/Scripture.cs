@@ -44,10 +44,6 @@ public class Scripture // Like week 2 Resumes?
 
         // I chose to make the number of words hidden random... though, how do I pick random words??
 
-        Random randNumber = new Random();
-        int hideNo = randNumber.Next(1, 3);
-
-        numberToHide = hideNo;
 
         Random randomWord = new Random();
         int i = randomWord.Next(_words.Count);
