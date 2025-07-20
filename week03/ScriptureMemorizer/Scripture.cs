@@ -32,6 +32,16 @@ public class Scripture // Like week 2 Resumes?
     }
     public void HideRandomWords(int numberToHide)
     {
+        // Goal: Set the state of randomly selecetd group of words to be hidden.
+
+        // Need to find find a set of visible words... Chad Macbeth said that the Word class as IsHidden... so how do I use that here? A loop? How do I use that? That is confusing.. :`(
+
+        // Need to randomly select a 'numberToHide' of those words.
+        // loops, if statements, call IsVisible function.
+
+        // Use the Hide function - to hide visible words.
+
+
         // I chose to make the number of words hidden random... though, how do I pick random words??
 
         Random randNumber = new Random();

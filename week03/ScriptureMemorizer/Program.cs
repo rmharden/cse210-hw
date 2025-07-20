@@ -13,10 +13,10 @@ public class Program
 
             //Word aWord = new Word();
             Reference r1 = new Reference("John", 3, 16);
-            Scripture aScripture = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
+            Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
             Console.Clear();
-            aScripture.GetDisplayText();
+            s1.GetDisplayText();
 
             // This doesn't make a new line and it has something to do with the scripture class and its method.
             // It works now, don't know why.
