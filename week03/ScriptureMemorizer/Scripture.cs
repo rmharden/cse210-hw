@@ -63,7 +63,7 @@ public class Scripture // Like week 2 Resumes?
         }
     }
 
-    public bool IsHidden()
+    public bool IsCompletelyHidden()
     {
         return false;
     }
