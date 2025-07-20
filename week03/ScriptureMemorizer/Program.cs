@@ -4,11 +4,14 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Word aWord = new Word();
+        // Word aWord = new Word();
         Scripture aScripture = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
         //aScripture._text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
 
+        Console.Clear();
+        aScripture.GetDisplayText();
+        Console.WriteLine();
 
 
         //aScripture._words.Add(aWord);
@@ -16,6 +19,11 @@ public class Program
     public class Word // Like week to Job??
     {
         public string _text;
+
+        public Word(string text)
+        {
+            _text = text;             
+        }
 
         public void Display()
         {
@@ -32,12 +40,18 @@ public class Program
         {
             _text = text;
 
+            Console.WriteLine();
             string[] splitText = text.Split(" ");
             for (int i = 0; i < splitText.Length; i++)
             {
-                //Console.WriteLine($"{i}: {splitText[i]}");
-                // _words.Add(splitText[i]);
+                // Console.Write($"{splitText[i]} ");
+                Word aWord = new Word(splitText[i]);
+
+                _words.Add(aWord);
+
+                // vhttps://learn.microsoft.com/en-us/dotnet/csharp/misc/cs1503?f1url=%3FappId%3Droslyn%26k%3Dk(CS1503)
             }
+            Console.WriteLine();
         }
         public void GetDisplayText() //this is supposed to be a string
         {
