@@ -55,8 +55,8 @@ public class Scripture // Like week 2 Resumes?
     }
     public void GetDisplayText() //this is supposed to be a string
     {
-        _reference.GetDisplayText()
-        Console.WriteLine();
+        
+        Console.WriteLine(_reference.GetDisplayText());
         foreach (Word word in _words)
         {
             word.Display();
