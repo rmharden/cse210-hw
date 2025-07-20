@@ -25,8 +25,18 @@ public class Word // Like week to Job??
     public void GetDisplayText()
     {
         // Needs to return the word if it is visiable or return underscores ____ if hidden.
-        // How do I do that???
+        // How do I do that??? - ??? Would this work??
         // This is an if statement.
-        Console.Write($"{_text} ");
+        if (_isHidden == false)
+        {
+            Console.Write($"{_text} ");
+        }
+        else
+        {
+            for (int i2 = 0; i2 < _text.Length; i2++)
+            {
+                Console.Write("_");
+            }
+        }
     }   
 }
