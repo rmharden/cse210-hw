@@ -23,7 +23,7 @@ public class Scripture
         Random r = new Random();
         int wordIndex = r.Next(_words.Count);
         Word randomWord = _words[wordIndex];
-        Console.WriteLine(randomWord);
+       // Console.WriteLine(randomWord);
 
         
 

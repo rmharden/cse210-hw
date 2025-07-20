@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
@@ -13,7 +14,55 @@ class Program
         while (userResponse.ToLower() != "quit")
         {
             //Console.Clear();
-            Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+            List<Word> _words = new List<Word>();
+            string _scripture = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+            string[] s = _scripture.Split(" ");
+            // why does this specifically print the actual text of each item???
+            foreach (string word in s)
+            {
+                _words.Add(new Word(word));
+                // This shows the words
+                //Console.Write($"{word} ");
+            }
+            Console.WriteLine(_words.Count);
+
+            // foreach (Word w in _words)
+            // {
+            //     Console.WriteLine(w);
+            // }
+            for (int i = 0; i < _words.Count; i++)
+            {
+                Console.Write(_words[i]);
+            }
+
+
+
+            // this also displays the object "Word" and not the word
+                // Word firstWord = _words[0]; Console.Write(firstWord);
+                // Console.Write(_words[1]);
+                // This prints numbers/ the item index in a list
+                // for (int i = 0; i < _words.Count; i++)
+                // {
+                //     Console.Write($"{i} ");
+                // }
+                // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators
+                // This also displays the object type for every item, not the item:
+                // foreach (Word w in _words)
+                // {
+                //     Console.Write(w.ToString() + " ");
+                // }
+
+
+
+
+                // Found something about "new":
+                // https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.add?view=net-9.0
+
+                // Random r = new Random();
+                // int wordIndex = r.Next(_words.Count);
+                // Word randomWord = _words[wordIndex];
+                // Console.WriteLine(randomWord);
+                Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
             userResponse = Console.ReadLine();
         }     
     }
