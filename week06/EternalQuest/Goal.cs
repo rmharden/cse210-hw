@@ -23,8 +23,9 @@ public abstract class Goal
     public string GetDetailsString()
     {
         // virtual?
+        // he said watch a demo on how to build a string.
         return "";
     }
 
-    public abstract string GetRepresentation();
+    public abstract string GetStringRepresentation();
 }
