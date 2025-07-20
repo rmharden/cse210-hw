@@ -59,7 +59,7 @@ public class Scripture // Like week 2 Resumes?
         Console.WriteLine(_reference.GetDisplayText());
         foreach (Word word in _words)
         {
-            word.Display();
+            word.GetDisplayText();
         }
     }
 
