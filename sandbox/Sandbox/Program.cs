@@ -1,22 +1,22 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        // Trying something:
-        string secret = "python";
-        foreach (char letter in secret)
+        string _secret = "python";
+        // letter is a variable
+        foreach (char _letter in _secret)
         {
             Console.Write("_");
         }
         Console.WriteLine();
-        for (int i; i < secret.Length; i++)
+        for (int i = 0; i < _secret.Length; i++)
         {
-            Console.WriteLine("_");
+            Console.Write("_");
         }
         Console.WriteLine();
     }
+
 }
 
 // This was from Chad Macbeth's video on BYU-I Videos:
