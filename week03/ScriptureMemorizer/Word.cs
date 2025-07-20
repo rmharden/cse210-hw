@@ -6,6 +6,7 @@ public class Word // Like week to Job??
     public Word(string text)
     {
         _text = text;
+        _isHidden = false;
     }
 
     public void Hide()
@@ -14,7 +15,7 @@ public class Word // Like week to Job??
     }
     public void Show()
     {
-        
+
     }
     public bool IsHidden()
     {
@@ -24,6 +25,5 @@ public class Word // Like week to Job??
     public void Display()
     {
         Console.Write($"{_text} ");
-    }
-    
+    }   
 }
