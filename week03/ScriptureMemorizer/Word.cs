@@ -15,7 +15,7 @@ public class Word // Like week to Job??
     }
     public void Show()
     {
-
+        _isHidden = false;
     }
     public bool IsHidden()
     {
@@ -33,7 +33,7 @@ public class Word // Like week to Job??
         }
         else
         {
-            for (int i2 = 0; i2 < _text.Length; i2++)
+            for (int i2 = 0; i2 < _text.Length; i2++) // this does every word... how do you fix that for one word?
             {
                 Console.Write("_");
             }

@@ -5,15 +5,15 @@ public class Program
 {
     static void Main(string[] args)
     {
+            // Moved here because I couldn't do the is completely hidden without moving it.
+            //Word aWord = new Word();
+        Reference r1 = new Reference("John", 3, 16);
+            Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
         string userResponse = "";
-
-        while (userResponse != "quit")
+        // Loop, Display, Hide, check if we need to quit
+        while (userResponse != "quit" && s1.IsCompletelyHidden() == true)
         {
             Console.Clear();
-
-            //Word aWord = new Word();
-            Reference r1 = new Reference("John", 3, 16);
-            Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
             Console.Clear();
             s1.GetDisplayText();

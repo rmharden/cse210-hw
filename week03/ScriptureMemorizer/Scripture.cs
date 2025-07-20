@@ -51,7 +51,7 @@ public class Scripture // Like week 2 Resumes?
 
         Random randomWord = new Random();
         int i = randomWord.Next(_words.Count);
-        Word useThisWord = _words[i];
+        //Word useThisWord = _words[i];
         // string aHiddenWord = useThisWord.ToString();
 
         // //int lettersToHide = aHiddenWord.Length;
