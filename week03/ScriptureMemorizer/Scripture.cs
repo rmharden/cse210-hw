@@ -12,10 +12,10 @@ public class Scripture // Like week 2 Resumes?
 
         // Split up the words in text and store each as a word object in the list _words:
         // example from BYUI, Chad Macbeth: 
-        string name = "John Deere";
-        string[] words = name.Split(" ");
-        Console.WriteLine(words[0]);
-        Console.WriteLine(words[1]);
+        // string name = "John Deere";
+        // string[] words = name.Split(" ");
+        // Console.WriteLine(words[0]);
+        // Console.WriteLine(words[1]);
 
         // split and then loop through each word
             // create word object and put it into _words:
