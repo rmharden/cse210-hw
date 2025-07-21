@@ -30,7 +30,7 @@ public class Running
         _pace = _minutes / _distance;
         return Math.Round(_pace, 1);
     }
-    public  string GetSummary()
+    public string GetSummary()
     {
         return $"{_date} {_name} ({_minutes} min)- Distance: {_distance} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
