@@ -17,14 +17,17 @@ public class Running
     }
     public int GetDistance()
     {
-        return 0;
+        return _distance;
     }
-    public int GetSpeed()
+    public decimal GetSpeed()
     {
-        return 0;
+        // Speed (mph or kph) = (distance / minutes) * 60
+        _speed = _distance / _time * 60;
+        return _speed;
     }
     public int GetPace()
     {
+        _pace = 
         return 0;
     }
     public  string GetSummary()
