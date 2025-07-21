@@ -2,12 +2,12 @@ public abstract class Activity
 {
     private string _date;
     private string _name;
-    private int _time;
+    private decimal _time;
     private decimal _distance;
     private decimal _speed;
-    private int _pace;
+    private decimal _pace;
     // This is the parent/base class
-    public Activity(string date, string name, int time, decimal distance, decimal speed, int pace)
+    public Activity(string date, string name, int time, decimal distance, decimal speed, decimal pace)
     {
         _date = date;
         _name = name;
@@ -37,8 +37,8 @@ public abstract class Activity
         _name = name;
     } 
 
-    public abstract double GetDistance();
-    public abstract double GetSpeed();
-    public abstract double GetPace();
-    public abstract string GetSummary();
+    public abstract decimal GetDistance();
+    public abstract decimal GetSpeed();
+    public abstract decimal GetPace();
+    public abstract decimal GetSummary();
 }

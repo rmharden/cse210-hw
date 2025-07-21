@@ -21,17 +21,17 @@ public class Swmming
         double _stepOne = _laps * _poolLength;
         double _stepTwo = 1000.00 * 0.52;
         _distance = _stepOne / _stepTwo;
-        return _distance;
+        return Math.Round(_distance, 1);
     }
     public double GetSpeed()
     {
         _speed = GetDistance() / _minutes;
-        return _speed;
+        return Math.Round(_speed, 1);
     }
     public double GetPace()
     {
         _pace = _minutes / GetDistance();
-        return _pace;
+        return Math.Round(_pace, 1);
     }
     public string GetSummary()
     {

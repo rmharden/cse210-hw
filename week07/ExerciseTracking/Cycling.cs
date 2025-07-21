@@ -2,28 +2,28 @@ public class Cycling
 {
     private string _date;
     private string _name;
-    private double _minutes;
-    private double _distance;
-    private double _speed;
-    private double _pace;
-    private double _stepOne;
-    public Cycling(string date, string name, double minutes, double distance)
+    private decimal _minutes;
+    private decimal _distance;
+    private decimal _speed;
+    private decimal _pace;
+    private decimal _stepOne;
+    public Cycling(string date, string name, decimal minutes, decimal distance)
     {
         _date = date;
         _name = name;
         _minutes = minutes;
         _distance = distance;
     }
-    public double GetSpeed()
+    public decimal GetSpeed()
     {
         _stepOne = _distance / _minutes;
         _speed = _stepOne * 60;
-        return _speed;
+        return Math.Round(_speed, 1);
     }
-    public double GetPace()
+    public decimal GetPace()
     {
         _pace = _minutes / _distance;
-        return _pace;
+        return Math.Round(_pace, 1);
     }
     public  string GetSummary()
     {
