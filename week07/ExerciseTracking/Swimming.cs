@@ -19,6 +19,9 @@ public class Swmming : Activity
         return Math.Round(_distance, 2);
         // I'm pretty sure my math is right.
     }
+    // Cycling and Running have the same math...
+    // I wonder if I am supposed to make these in the base, Activity, and then Swimming, specifically is supposed to override the GetSpeed and GetPace..
+    // Also, GetDistance is different for just Swimming. Maybe that is the same, also, where I need to override only in Swimming.
     public override decimal GetSpeed()
     {
         decimal minutes = base.GetMinutes();
@@ -34,6 +37,17 @@ public class Swmming : Activity
     public override string GetSummary()
     {
         return base.GetSummary();
+
+        // Output example:
+        // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
+    }
+}
+    
+
+
+    // This was my code before learning to make the summary in the base class.
+    // public override string GetSummary()
+    // {
         // string date = base.GetDate();
         // decimal minutes = base.GetMinutes();
         // string name = base.GetName();
@@ -41,5 +55,4 @@ public class Swmming : Activity
 
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
-    }
-}
+    // }

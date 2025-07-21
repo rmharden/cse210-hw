@@ -50,7 +50,4 @@ public abstract class Activity
     {
         return $"{GetDate()} {GetName()} ({GetMinutes()} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
     }
-
-    // The GetSummary method is definied in the base class and calls virtual methods for getting the distance, speed, and pace....
-    // How do I do that??
 }

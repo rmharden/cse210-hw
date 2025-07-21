@@ -28,6 +28,16 @@ public class Cycling : Activity
     public override string GetSummary()
     {
         return base.GetSummary();
+       
+        // Output example:
+        // 03 Nov 2022 Cycling (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
+    }
+}
+
+
+// THis was my code before moving the GetSummary()
+    // public override string GetSummary()
+    // {
         // string date = base.GetDate();
         // decimal minutes = base.GetMinutes();
         // string name = base.GetName();
@@ -35,5 +45,4 @@ public class Cycling : Activity
         // Output example:
         // 03 Nov 2022 Cycling (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
 
-    }
-}
+    // }
