@@ -4,6 +4,7 @@ public class Cycling
     {
 
     }
+
     public abstract double GetDistance();
     public abstract double GetSpeed();
     public abstract double GetPace();
