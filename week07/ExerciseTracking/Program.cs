@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 
 class Program
 {
@@ -32,7 +31,6 @@ class Program
         {
             Console.WriteLine($"{activity}\n");
         }
-
     }
 }
 

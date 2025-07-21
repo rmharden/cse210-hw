@@ -43,16 +43,13 @@ public abstract class Activity
         _minutes = minutes;
     }
 
-    public abstract decimal GetDistance(); 
+    public abstract decimal GetDistance();
     public abstract decimal GetSpeed();
     public abstract decimal GetPace();
-    public abstract string GetSummary();
-
-
-    // public virtual string GetSummary()
-    // {
-    //     return $"{_date} {_name} ({_minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
-    // }
+    public virtual string GetSummary()
+    {
+        return $"{GetDate()} {GetName()} ({GetMinutes()} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+    }
 
     // The GetSummary method is definied in the base class and calls virtual methods for getting the distance, speed, and pace....
     // How do I do that??
