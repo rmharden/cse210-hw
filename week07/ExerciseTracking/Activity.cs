@@ -43,7 +43,7 @@ public abstract class Activity
         _minutes = minutes;
     }
 
-    public abstract decimal GetCalcDistance(); // Only Swimming needs this one.
+    public abstract decimal GetDistance(); 
     public abstract decimal GetSpeed();
     public abstract decimal GetPace();
     public abstract string GetSummary();

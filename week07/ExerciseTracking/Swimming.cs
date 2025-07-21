@@ -10,7 +10,7 @@ public class Swmming : Activity
         _laps = laps;
     }
 
-    public override decimal GetCalcDistance()
+    public override decimal GetDistance()
     {
         // 50 is the length of the pool in meters
         decimal _stepOne = _laps * 50;
@@ -22,13 +22,13 @@ public class Swmming : Activity
     public override decimal GetSpeed()
     {
         decimal minutes = base.GetMinutes();
-        _speed = GetCalcDistance() / minutes;
+        _speed = GetDistance() / minutes;
         return Math.Round(_speed, 2);
     }
     public override decimal GetPace()
     {
         decimal minutes = base.GetMinutes();
-        _pace = minutes / GetCalcDistance();
+        _pace = minutes / GetDistance();
         return Math.Round(_pace, 2);
     }
     public override string GetSummary()
@@ -36,7 +36,7 @@ public class Swmming : Activity
         string date = base.GetDate();
         decimal minutes = base.GetMinutes();
         string name = base.GetName();
-        return $"{date} {name} ({minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return $"{date} {name} ({minutes} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
     }

@@ -21,7 +21,7 @@ public class Cycling : Activity
         _pace = minutes / _distance;
         return Math.Round(_pace, 2);
     }
-    public override decimal GetCalcDistance()
+    public override decimal GetDistance()
     {
         return _distance;
     }
@@ -30,7 +30,7 @@ public class Cycling : Activity
         string date = base.GetDate();
         decimal minutes = base.GetMinutes();
         string name = base.GetName();
-        return $"{date} {name} ({minutes} min)- Distance: {_distance} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return $"{date} {name} ({minutes} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Cycling (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
 
