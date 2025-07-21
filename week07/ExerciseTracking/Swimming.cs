@@ -15,7 +15,7 @@ public class Swmming
         _name = name;
         _minutes = minutes;
     }
-    public double GetDistance()
+    public double GetCalcDistance()
     {
         _poolLength = 50;
         double _stepOne = _laps * _poolLength;
@@ -25,17 +25,17 @@ public class Swmming
     }
     public double GetSpeed()
     {
-        _speed = GetDistance() / _minutes;
+        _speed = GetCalcDistance() / _minutes;
         return Math.Round(_speed, 1);
     }
     public double GetPace()
     {
-        _pace = _minutes / GetDistance();
+        _pace = _minutes / GetCalcDistance();
         return Math.Round(_pace, 1);
     }
     public string GetSummary()
     {
-        return $"{_date} {_name} ({_minutes} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return $"{_date} {_name} ({_minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
     }
