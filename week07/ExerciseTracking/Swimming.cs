@@ -1,21 +1,19 @@
-using System.Collections.Specialized;
-
 public class Swmming
 {
     private string _date;
     private string _name;
-    private double _time;
+    private double _minutes;
     private double _distance;
     private double _speed;
     private double _pace;
     private double _laps;
     private double _poolLength;
-    public Swmming(double laps, string date, string name, double time)
+    public Swmming(double laps, string date, string name, double minutes)
     {
-         _laps = laps;
+        _laps = laps;
         _date = date;
         _name = name;
-        _time = time;
+        _minutes = minutes;
     }
     public double GetDistance()
     {
@@ -27,17 +25,17 @@ public class Swmming
     }
     public double GetSpeed()
     {
-        _speed = GetDistance() / _time;
+        _speed = GetDistance() / _minutes;
         return _speed;
     }
     public double GetPace()
     {
-        _pace = _time / GetDistance();
+        _pace = _minutes / GetDistance();
         return _pace;
     }
-    public  string GetSummary()
+    public string GetSummary()
     {
-        return $"{_date} {_name} ({_time} min)- Distance {_distance} miles, Speed {_speed} mph, Pace: {_pace} min per mile";
+        return $"{_date} {_name} ({_minutes} min)- Distance {GetDistance()} miles, Speed {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
     }
