@@ -13,5 +13,8 @@ class Program
 
         Swmming s1 = new Swmming(20, dateText, "Swimming", 30);
         Console.WriteLine($"{s1.GetSummary()}\n");
+
+        Running r1 = new Running(dateText, "Running", 82, 4.37);
+        Console.WriteLine($"{r1.GetSummary()}\n");
     }
 }
