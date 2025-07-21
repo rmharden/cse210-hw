@@ -1,40 +1,43 @@
 using System.Globalization;
 
-public class Running
+public class Running : Activity
 {
-    private string _date;
-    private string _name;
-    private decimal _minutes;
     private decimal _distance;
     private decimal _speed;
     private decimal _pace;
     private decimal _stepOne;
-
-    public Running(string date, string name, decimal minutes, decimal distance)
+    
+    public Running(string date, string name, decimal minutes, decimal distance) : base(date, name, minutes)
     {
-        _date = date;
-        _name = name;
-        _minutes = minutes;
         _distance = distance;
     }
-    public decimal GetSpeed()
+    public override decimal GetSpeed()
     {
-        _stepOne = _distance / _minutes;
+        decimal minutes = base.GetMinutes();
+        _stepOne = _distance / minutes;
         _speed = _stepOne * 60;
 
         return Math.Round(_speed, 1);
         // https://learn.microsoft.com/en-us/dotnet/api/system.math?view=net-9.0
     }
-    public decimal GetPace()
+    public override decimal GetPace()
     {
-        _pace = _minutes / _distance;
+        decimal minutes = base.GetMinutes();
+        _pace = minutes / _distance;
         return Math.Round(_pace, 1);
     }
-    public string GetSummary()
+    public override decimal GetCalcDistance()
     {
-        return $"{_date} {_name} ({_minutes} min)- Distance: {_distance} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return _distance;
+    }
+    public override string GetSummary()
+    {
+        string date = base.GetDate();
+        decimal minutes = base.GetMinutes();
+        string name = base.GetName();
+        return $"{date} {name} ({minutes} min)- Distance: {_distance} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Running (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
-    
+
     }
 }

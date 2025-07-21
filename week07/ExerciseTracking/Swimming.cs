@@ -1,41 +1,41 @@
-public class Swmming
+public class Swmming : Activity
 {
-    private string _date;
-    private string _name;
-    private double _minutes;
-    private double _distance;
-    private double _speed;
-    private double _pace;
-    private double _laps;
-    private double _poolLength;
-    public Swmming(double laps, string date, string name, double minutes)
+    private decimal _distance;
+    private decimal _speed;
+    private decimal _pace;
+    private decimal _laps;
+    
+    public Swmming(decimal laps, string date, string name, decimal minutes) : base(date, name, minutes)
     {
-        _laps = laps;
-        _date = date;
-        _name = name;
-        _minutes = minutes;
+        _laps = laps;  
     }
-    public double GetCalcDistance()
+
+    public override decimal GetCalcDistance()
     {
-        _poolLength = 50;
-        double _stepOne = _laps * _poolLength;
-        double _stepTwo = 1000.00 * 0.52;
+        decimal _poolLength = 50;
+        decimal _stepOne = _laps * _poolLength;
+        decimal _stepTwo = 1000.00m * 0.52m;
         _distance = _stepOne / _stepTwo;
         return Math.Round(_distance, 1);
     }
-    public double GetSpeed()
+    public override decimal GetSpeed()
     {
-        _speed = GetCalcDistance() / _minutes;
+        decimal minutes = base.GetMinutes(); 
+        _speed = GetCalcDistance() / minutes;
         return Math.Round(_speed, 1);
     }
-    public double GetPace()
+    public override decimal GetPace()
     {
-        _pace = _minutes / GetCalcDistance();
+        decimal minutes = base.GetMinutes(); 
+        _pace = minutes / GetCalcDistance();
         return Math.Round(_pace, 1);
     }
-    public string GetSummary()
+    public override string GetSummary()
     {
-        return $"{_date} {_name} ({_minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        string date = base.GetDate();
+        decimal minutes = base.GetMinutes();
+        string name = base.GetName();
+        return $"{date} {name} ({minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
     }

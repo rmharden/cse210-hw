@@ -3,15 +3,14 @@ public abstract class Activity
     private string _date;
     private string _name;
     private decimal _minutes;
-    private decimal _distance;
+
 
     // This is the parent/base class
-    public Activity(string date, string name, decimal minutes, decimal distance)
+    public Activity(string date, string name, decimal minutes)
     {
         _date = date;
         _name = name;
         _minutes = minutes;
-        _distance = distance;
     }
 
     public string GetDate()
@@ -42,15 +41,6 @@ public abstract class Activity
     public void SetMinutes(decimal minutes)
     {
         _minutes = minutes;
-    }
-        public decimal GetDistance()
-    {
-        return _distance;
-    }
-
-    public void SetDistance(decimal distance)
-    {
-        _distance = distance;
     }
 
     public abstract decimal GetCalcDistance(); // Only Swimming has this one.
