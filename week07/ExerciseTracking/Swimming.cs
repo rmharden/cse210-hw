@@ -35,7 +35,7 @@ public class Swmming
     }
     public string GetSummary()
     {
-        return $"{_date} {_name} ({_minutes} min)- Distance {GetDistance()} miles, Speed {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return $"{_date} {_name} ({_minutes} min)- Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
         // Output example:
         // 03 Nov 2022 Swimming (30 min)- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile
     }
