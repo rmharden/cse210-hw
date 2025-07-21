@@ -3,11 +3,11 @@ public abstract class Activity
     private string _date;
     private string _name;
     private int _time;
-    private int _distance;
+    private decimal _distance;
     private decimal _speed;
     private int _pace;
     // This is the parent/base class
-    public Activity(string date, string name, int time, int distance, decimal speed, int pace)
+    public Activity(string date, string name, int time, decimal distance, decimal speed, int pace)
     {
         _date = date;
         _name = name;

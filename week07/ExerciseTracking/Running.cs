@@ -17,18 +17,20 @@ public class Running
     }
     public int GetDistance()
     {
+        // Established in the main program?
         return _distance;
     }
     public decimal GetSpeed()
     {
         // Speed (mph or kph) = (distance / minutes) * 60
-        _speed = _distance / _time * 60;
+        _speed = (_distance / _time) * 60;
         return _speed;
     }
     public int GetPace()
     {
-        _pace = 
-        return 0;
+        // Pace(min per mile) = minutes / distance
+        _pace = _time / _distance;
+        return _pace;
     }
     public  string GetSummary()
     {

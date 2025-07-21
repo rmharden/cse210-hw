@@ -1,13 +1,19 @@
-public class Swimming
+using System.Collections.Specialized;
+
+public class Swmming
 {
     private string _date;
     private string _name;
-    private int _time;
-    private int _distance;
-    private decimal _speed;
-    private int _pace;
-    public Swimming(string date, string name, int time, int distance, decimal speed, int pace)
+    private double _time;
+    private double _distance;
+    private double _speed;
+    private double _pace;
+    private double _laps;
+    private double _poolLength;
+    public Swmming(double poolLength, double laps, string date, string name, double time, double distance, double speed, double pace)
     {
+        _poolLength = poolLength;
+        _laps = laps;
         _date = date;
         _name = name;
         _time = time;
@@ -15,17 +21,22 @@ public class Swimming
         _speed = speed;
         _pace = pace;
     }
-    public int GetDistance()
+    public double GetDistance()
     {
-        return 0;
+        _poolLength = 50;
+        double _stepOne = _laps * _poolLength;
+        double _stepTwo = 1000.00 * 0.52;
+        _distance = _stepOne / _stepTwo;
+        // Established in the main program?
+        return _distance;
     }
-    public int GetSpeed()
+    public double GetSpeed()
     {
-        return 0;
+        return _speed;
     }
-    public int GetPace()
+    public double GetPace()
     {
-        return 0;
+        return _pace;
     }
     public  string GetSummary()
     {

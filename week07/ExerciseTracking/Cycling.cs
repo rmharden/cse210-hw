@@ -17,15 +17,16 @@ public class Cycling
     }
     public int GetDistance()
     {
-        return 0;
+        // Established in the main program?
+        return _distance;
     }
-    public int GetSpeed()
+    public decimal GetSpeed()
     {
-        return 0;
+        return _speed;
     }
     public int GetPace()
     {
-        return 0;
+        return _pace;
     }
     public  string GetSummary()
     {
