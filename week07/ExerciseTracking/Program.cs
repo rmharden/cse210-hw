@@ -19,9 +19,6 @@ class Program
         Swmming s1 = new Swmming(20, dateText, "Swimming", 30);
         //Console.WriteLine($"{s1.GetSummary()}\n");
 
-        // It's not finished.
-        // Once you have the classes in place, write a program that creates at least one activity of each type. Put each of these activities in the same list. Then iterate through this list and call the GetSummary method on each item and display the results.
-
         List<string> _activities = new List<string>();
         _activities.Add(c1.GetSummary());
         _activities.Add(r1.GetSummary());
