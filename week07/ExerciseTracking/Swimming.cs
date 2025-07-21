@@ -17,6 +17,7 @@ public class Swmming : Activity
         decimal _stepTwo = 1000.00m * 0.62m;
         _distance = _stepOne / _stepTwo;
         return Math.Round(_distance, 2);
+        // I'm pretty sure my math is right.
     }
     public override decimal GetSpeed()
     {

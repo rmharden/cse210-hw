@@ -12,16 +12,16 @@ class Program
 
         // The example video had different dates for each one... Should I do that?
         
-        Cycling c1 = new Cycling(dateText, "Cycling", 90, 3m);
-        // Cycling c1 = new Cycling(dateText, "Cycling", 45, 8.75m);
+        //Cycling c1 = new Cycling(dateText, "Cycling", 90, 3m);
+        Cycling c1 = new Cycling(dateText, "Cycling", 45, 6.75m);
         //Console.WriteLine($"{c1.GetSummary()}\n");
 
-        Running r1 = new Running(dateText, "Running", 60, 15m);
-        // Running r1 = new Running(dateText, "Running", 88, 4.38m);
+        //Running r1 = new Running(dateText, "Running", 60, 15m);
+        Running r1 = new Running(dateText, "Running", 88, 4.38m);
         //Console.WriteLine($"{r1.GetSummary()}\n");
 
-        Swmming s1 = new Swmming(2, dateText, "Swimming", 20);
-        // Swmming s1 = new Swmming(20, dateText, "Swimming", 30);
+        //Swmming s1 = new Swmming(10, dateText, "Swimming", 20);
+        Swmming s1 = new Swmming(20, dateText, "Swimming", 30);
         //Console.WriteLine($"{s1.GetSummary()}\n");
 
         List<string> _activities = new List<string>();
