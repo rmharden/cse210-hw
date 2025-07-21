@@ -13,7 +13,7 @@ public class Program
 
         Random randNumber = new Random();
         int hideNo = randNumber.Next(1, 3);
-        
+
         // Loop, Display, Hide, check if we need to quit
 
 
@@ -21,7 +21,7 @@ public class Program
         // while (userResponse != "quit" || s1.IsCompletelyHidden() != false)
 
         string userResponse = "";
-
+// I don't think this works exactly if I change IsCompletelyHidden to true it doesn't end.
         while (s1.IsCompletelyHidden() != false || userResponse.ToLower() != "quit")
         {
             Console.Clear();

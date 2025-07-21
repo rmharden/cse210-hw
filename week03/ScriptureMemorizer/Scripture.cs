@@ -41,7 +41,7 @@ public class Scripture // Like week 2 Resumes?
 
         // Use the Hide function - to hide visible words.
 
-
+// I left off here... I do not know what to do next!!
         // I chose to make the number of words hidden random... though, how do I pick random words??
 
         Random randomWord = new Random();
@@ -78,6 +78,7 @@ public class Scripture // Like week 2 Resumes?
 
     public bool IsCompletelyHidden()
     {
+        // I don't think this is working... I need to see what the video said here. Does this need an if statement?
         foreach (Word word in _words)
         {
             if (word.IsHidden() == false)
