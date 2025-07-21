@@ -5,44 +5,55 @@ public class Program
 {
     static void Main(string[] args)
     {
+
         // Moved here because I couldn't do the is completely hidden without moving it.
         //Word aWord = new Word();
         Reference r1 = new Reference("John", 3, 16);
         Scripture s1 = new Scripture(r1, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.");
 
-
+        Random randNumber = new Random();
+        int hideNo = randNumber.Next(1, 3);
+        
         // Loop, Display, Hide, check if we need to quit
 
 
         // this doesn't work like I think it should.
-        // while (userResponse != "quit" && s1.IsCompletelyHidden() != false)
+        // while (userResponse != "quit" || s1.IsCompletelyHidden() != false)
 
         string userResponse = "";
 
-        while (s1.IsCompletelyHidden() == false)
+        while (s1.IsCompletelyHidden() != false || userResponse.ToLower() != "quit")
         {
-            if (userResponse == "quit")
-            {
+            Console.Clear();
 
-                Random randNumber = new Random();
-                int hideNo = randNumber.Next(1, 3);
-
-                s1.HideRandomWords(hideNo);
-            }
+            s1.HideRandomWords(hideNo);
 
             s1.GetDisplayText();
 
             Console.WriteLine();
             Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+
             userResponse = Console.ReadLine();
-
-            Console.Clear();
-
-            Console.Clear();
         }
-        Console.ReadKey();
-    }    
+    }
 }
+
+            
+            // Random randNumber = new Random();
+            // int hideNo = randNumber.Next(1, 3);
+            // s1.HideRandomWords(hideNo);
+
+            // Console.Clear();
+
+            // s1.GetDisplayText();
+
+            // Console.WriteLine();
+            // Console.WriteLine("\nPress enter to continue or type 'quit' to finish:\n");
+            // userResponse = Console.ReadLine();
+        //}
+        // Console.ReadKey();
+  
+
 //     public class Word // Like week to Job??
 //     {
 //         public string _text;

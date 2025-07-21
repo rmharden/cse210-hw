@@ -34,7 +34,7 @@ public class Scripture // Like week 2 Resumes?
     {
         // Goal: Set the state of randomly selecetd group of words to be hidden.
 
-        // Need to find find a set of visible words... Chad Macbeth said that the Word class as IsHidden... so how do I use that here? A loop? How do I use that? That is confusing.. :`(
+        // Need to find find a set of visible words... BYUI Video Chad Macbeth said that the Word class as IsHidden... so how do I use that here? A loop? How do I use that? That is confusing.. :`(
 
         // Need to randomly select a 'numberToHide' of those words.
         // loops, if statements, call IsVisible function.
@@ -44,27 +44,27 @@ public class Scripture // Like week 2 Resumes?
 
         // I chose to make the number of words hidden random... though, how do I pick random words??
 
-
         Random randomWord = new Random();
         int i = randomWord.Next(_words.Count);
+
         //Word useThisWord = _words[i];
         // string aHiddenWord = useThisWord.ToString();
 
-        // //int lettersToHide = aHiddenWord.Length;
-        // // hidding letters in a word:
-        // for (int i2 = 0; i2 < aHiddenWord.Length; i2++)
-        // {
-        //     Console.Write("_");
-        // }
-        // Console.WriteLine();
+            // //int lettersToHide = aHiddenWord.Length;
+            // // hidding letters in a word:
+            // for (int i2 = 0; i2 < aHiddenWord.Length; i2++)
+            // {
+            //     Console.Write("_");
+            // }
+            // Console.WriteLine();
 
-        // This was from Chad Macbeth's video on BYU-I Videos:
-        // https://video.byui.edu/media/t/1_86gjzj20
+            // This was from Chad Macbeth's video on BYU-I Videos:
+            // https://video.byui.edu/media/t/1_86gjzj20
 
 
-        // https://learn.microsoft.com/en-us/dotnet/api/system.string.tostring?view=net-9.0
+            // https://learn.microsoft.com/en-us/dotnet/api/system.string.tostring?view=net-9.0
 
-        // https://learn.microsoft.com/en-us/dotnet/api/system.string.length?view=net-9.0
+            // https://learn.microsoft.com/en-us/dotnet/api/system.string.length?view=net-9.0
     }
     public void GetDisplayText() //this is supposed to be a string
     {
@@ -78,6 +78,13 @@ public class Scripture // Like week 2 Resumes?
 
     public bool IsCompletelyHidden()
     {
-        return false;
+        foreach (Word word in _words)
+        {
+            if (word.IsHidden() == false)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
