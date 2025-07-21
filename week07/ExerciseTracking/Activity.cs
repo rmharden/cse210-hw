@@ -11,7 +11,6 @@ public abstract class Activity
         _date = date;
         _name = name;
         _minutes = minutes;
-        // _distance = distance; // I think this needs to be here because all derived classes have distance, however, cycling is the only one that calculates distance... but I think we are supposed to override an attribute? //nvm - the rubric says that distance, speed, number of laps are not stored in the base class. Good!
     }
 
     public string GetDate()
@@ -48,6 +47,12 @@ public abstract class Activity
     public abstract decimal GetSpeed();
     public abstract decimal GetPace();
     public abstract string GetSummary();
+
+
+    // public virtual string GetSummary()
+    // {
+    //     return $"{_date} {_name} ({_minutes} min)- Distance: {GetCalcDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+    // }
 
     // The GetSummary method is definied in the base class and calls virtual methods for getting the distance, speed, and pace....
     // How do I do that??

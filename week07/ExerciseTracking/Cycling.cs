@@ -13,13 +13,13 @@ public class Cycling : Activity
         decimal minutes = base.GetMinutes();
         _stepOne = _distance / minutes;
         _speed = _stepOne * 60;
-        return Math.Round(_speed, 1);
+        return Math.Round(_speed, 2);
     }
     public override decimal GetPace()
     {
         decimal minutes = base.GetMinutes();
         _pace = minutes / _distance;
-        return Math.Round(_pace, 1);
+        return Math.Round(_pace, 2);
     }
     public override decimal GetCalcDistance()
     {
