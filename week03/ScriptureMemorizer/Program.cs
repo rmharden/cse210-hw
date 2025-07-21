@@ -1,6 +1,5 @@
 using System;
-using System.ComponentModel;
-using System.Globalization;
+
 public class Program
 {
     static void Main(string[] args)
