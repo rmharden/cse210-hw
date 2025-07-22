@@ -13,7 +13,10 @@ public class Product
         _id = id;
         _price = price;
         _quantity = quantity;
-
+    }
+    public GetTotalPrice()
+    {
+        
     }
 }
 
