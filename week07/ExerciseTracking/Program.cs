@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Clear();
+        //Console.Clear();
 
         DateTime theCurrentTime = DateTime.Now;
         string dateText = theCurrentTime.ToString("dd MMM yyyy");

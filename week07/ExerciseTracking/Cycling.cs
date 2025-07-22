@@ -25,7 +25,7 @@ public class Cycling : Activity
     {
         return _distance;
     }
-    public override string GetSummary()
+    public virtual string GetSummary()
     {
         return base.GetSummary();
        

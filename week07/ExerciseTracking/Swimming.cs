@@ -34,7 +34,7 @@ public class Swmming : Activity
         _pace = minutes / GetDistance();
         return Math.Round(_pace, 2);
     }
-    public override string GetSummary()
+    public virtual string GetSummary()
     {
         return base.GetSummary();
 
