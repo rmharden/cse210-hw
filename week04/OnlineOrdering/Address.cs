@@ -30,9 +30,25 @@ public class Address
     {
         return _city;
     }
+    public void SetStateOrProv(string stateOrProv)
+    {
+        _stateOrProv = stateOrProv;
+    }
+    public string GetStateOrProv()
+    {
+        return _stateOrProv;
+    }
+    public void SetCountry(string country)
+    {
+        _country = country;
+    }
+    public string GetCountry()
+    {
+        return _country;
+    }
     public string GetAddress()
     {
-        return GetSreet() + "\n" + GetCity();
+        return GetSreet() + "\n" + GetCity() + " " + GetStateOrProv() + " " + " " + GetCountry();
     }
 }
 
