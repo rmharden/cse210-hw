@@ -1,25 +1,199 @@
+// Week 3 Encapsulation Lesson/Study cont...
+
 using System;
 class Program
 {
     static void Main(string[] args)
     {
-        string _secret = "python";
-        // letter is a variable
-        foreach (char _letter in _secret)
-        {
-            Console.Write("_");
-        }
-        Console.WriteLine();
-        for (int i = 0; i < _secret.Length; i++)
-        {
-            Console.Write("_");
-        }
-        Console.WriteLine();
-    }
-    // These both do the samething. I think.
-    // How I use this to make the hidden words work in the scripture memorizer?
+        // // calling a setter
+        // Person p = new Person(); // This calls a no-argument constructor and doesn't need any information.
 
+        // p.SetFirstName("Peter");
+
+        // Console.WriteLine(p.GetFirstName());
+
+        Person p1 = new Person(); // Don't pass any information to get the default values
+        Person p2 = new Person("Jane", "Doe"); // pass the first and last names
+        Person p3 = new Person("Mrs.", "Jane", "Doe"); // Pass all three variables
+    }
+    public class Account
+    {
+        private List<int> _transactions = new List<int>();
+
+        public void Deposit(int amount)
+        {
+            _transactions.Add(amount);
+        }
+    }
+    public class Person
+    {
+        private string _title;
+        private string _firstName;
+        private string _lastName;
+        public Person() // A constructor that sets up default values for all new Person objects.
+        {
+            _title = "";
+            _firstName = "Anonymous";
+            _lastName = "Unknown";
+        }
+        public Person(string first, string last)
+        {
+            _title = "";
+            _firstName = first;
+            _lastName = last;
+        }
+        public Person(string title, string first, string last)
+        {
+            _title = title;
+            _firstName = first;
+            _lastName = last;
+        }
+        public string GetInformalSignature()
+        {
+            return "Thanks," + _firstName;
+        }
+        public string GetFormalSignature()
+        {
+            return "Sincerely, " + GetFullName();
+        }
+        private string GetFullName()
+        {
+            return _title + " " + _firstName + " " + _lastName;
+        }
+        // This is a getter
+        public string GetFirstName()
+        {
+            return _firstName;
+        }
+        // This is a setter
+        public void SetFirstName(string firstName)
+        {
+            _firstName = firstName;
+        }
+    
+    }
 }
+
+
+// // Week 3 Encapsulation Lesson Video:
+
+// using System;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         // This whole thing from the example written just like this doesn't show what is in the list and it doesn't show the 50 that was deposited. It returns 0. I don't know why.
+
+//         // an instance of the Account class
+//         Account savings = new Account();
+//         // this puts the 50 in the object, _balance
+
+//         //savings._balance = 50; //changing the code to private in the Account classes, makes this unable to accesses the object _balance. It can only access the method and then the method can access the private area.
+
+//         // accessors or mutators or getters and setters will help access the private area in Account.
+
+//         // This isn't a good way because it exposes data. So there are better methods to use.
+//         // savings.SetBalance(50);
+
+//         // Using the Deposit into the list instead of SetBalance:
+//         savings.Deposit(50);
+
+//         // member function
+//         int money = savings.GetBalance();
+//         Console.WriteLine(money);
+//         foreach(int item in savings._transactions)
+//     }
+//     public class Account
+//     {
+//         // need to change this to Private access
+//         // public int _balance;
+//         //private int _balance;
+//         private int _amount;
+
+//         // Example:
+//         private List<int> _transactions = new List<int>();
+
+//         // New approach:
+//         public void Deposit(int amount)
+//         {
+//             _transactions.Add(amount);
+//         }
+
+//         // First approach:
+//         // public void Deposit(int amount)
+//         // {
+//         //     _balance = _balance + amount;
+//         // }
+//         public void SetBalance(int amount)
+//         {
+//             _amount = amount;
+//         }
+//         public int GetBalance()
+//         {
+//             return _amount;
+//         }
+       
+//     }
+// }
+
+
+// This is from the Week 3 Encapsulation Lesson
+
+// using System;
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Account savings = new Account();
+//         savings._balance = 50; // this stops working with example two.
+//         savings.Deposit(100); // this continues to work.
+//     }
+
+//     public class Account
+//     {
+//         // Example one:
+//         // public int _balance = 0;
+//         // public void Deposit(int amount)
+//         // {
+//         //     _balance = _balance + amount;
+//         // }
+
+//         // Example two:
+//         public List<int> _transactions = new List<int>();
+//         public void Deposit(int amount)
+//         {
+//             _transactions.Add(amount);
+//         }
+//     }
+// }
+
+
+
+
+// For the scripture memorizer:
+// using System;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         string _secret = "python";
+//         // letter is a variable
+//         foreach (char _letter in _secret)
+//         {
+//             Console.Write("_");
+//         }
+//         Console.WriteLine();
+//         for (int i = 0; i < _secret.Length; i++)
+//         {
+//             Console.Write("_");
+//         }
+//         Console.WriteLine();
+//     }
+//     // These both do the samething. I think.
+//     // How I use this to make the hidden words work in the scripture memorizer?
+
+// }
 
 // This was from Chad Macbeth's video on BYU-I Videos:
 // https://video.byui.edu/media/t/1_86gjzj20

@@ -3,7 +3,7 @@ public class Product
     private string _productName;
     private string _productId;
     private double _productPrice;
-    private double _productQty;
+    private int _productQty;
 
     public Product(string productName, string productId, int productPrice, int productQty)
     {
