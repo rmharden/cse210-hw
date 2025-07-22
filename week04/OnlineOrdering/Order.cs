@@ -1,6 +1,12 @@
 // ENCAPSULATION
 
 
+public class Order
+{
+    List<Product> _products;
+}
+
+
 // public class Order
 // {
 //     private List<Order> _product;

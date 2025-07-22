@@ -1,6 +1,12 @@
 // ENCAPSULATION
 
+public class Product
+{
+    private string _name;
+    private string _id;
 
+    
+}
 
 
 // public class Product
