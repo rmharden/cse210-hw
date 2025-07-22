@@ -32,7 +32,7 @@ public class Product
     }
     public double GetTotalPrice()
     {
-        return _price * _quantity;
+        return GetPrice() * GetQty();
     }
 }
 

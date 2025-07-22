@@ -2,7 +2,38 @@
 
 public class Address
 {
-    
+    private string _street;
+    private string _city;
+    private string _stateOrProv;
+    private string _country;
+
+    public Address(string street, string city, string stateOrProv, string country)
+    {
+        _street = street;
+        _city = city;
+        _stateOrProv = stateOrProv;
+        _country = country;
+    }
+    public void SetStreet(string street)
+    {
+        _street = street;
+    }
+    public string GetSreet()
+    {
+        return _street;
+    }
+    public void SetCity(string city)
+    {
+        _city = city;
+    }
+    public string GetCity()
+    {
+        return _city;
+    }
+    public string GetAddress()
+    {
+        return GetSreet() + "\n" + GetCity();
+    }
 }
 
 
