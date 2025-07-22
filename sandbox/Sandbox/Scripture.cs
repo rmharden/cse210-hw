@@ -15,7 +15,6 @@ public class Scripture
         _reference = reference;
         _text = text;
         _text2 = text2;
-
     }
     public string GetDisplayText()
     {
