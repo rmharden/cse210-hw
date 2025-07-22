@@ -12,6 +12,14 @@ public class Address
         _stateOrProvince = stateOrProvince;
         _country = country;
     }
+    public string GetCountry()
+    {
+        return _country;
+    }
+    public void SetCountry(string country)
+    {
+        _country = country;
+    }
     public bool IsAddressUSA()
     {
         if (_country.ToLower() == "usa")
@@ -25,8 +33,8 @@ public class Address
     }
     public string CompleteAddress()
     {
-        Console.WriteLine(_street);
-        Console.WriteLine($"{_city}, {_stateOrProvince}, {_country}");
+        // Console.WriteLine(_street);
+        // Console.WriteLine($"{_city}, {_stateOrProvince}, {_country}");
         return _street + _city + _stateOrProvince + _country;
     }
 }

@@ -29,17 +29,11 @@ class Program
         double secondOrderCost = productTotal2.GetTotalProductCost();
         Console.WriteLine($"Order 2: ${secondOrderCost}.00");
 
-        Address a1 = new Address();
-        a1._street = "Bentsensvej 24";
-        a1._city = "Hvalso";
-        a1._stateOrProvince = "Sjælland";
-        a1._country = "Denmark";
+        Customer c1 = new Customer("Sisde Madsen");
+        Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Denmark");
 
-        string isAddUSA1 = a1.IsAddressUSA();
-        Console.WriteLine($"Is the address in the USA? {isAddUSA1}.");
 
-        string addressLabel1 = a1.CompleteAddress();
-        Console.WriteLine();
+        Customer c2 = new Customer("Hugh Falconer");
 
         Address a2 = new Address();
         a2._street = "50 Village Dr";
