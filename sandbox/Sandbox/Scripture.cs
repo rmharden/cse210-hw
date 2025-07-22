@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.Marshalling;
+
 public class Scripture
 {
     private Reference _reference;
@@ -22,13 +24,18 @@ public class Scripture
         _text = text;
         _text2 = text2;
         string multiVerse = text + " " + text2;
+
         List<Word> _words2 = new List<Word>(); //not sure about this
         foreach (string m in multiVerse.Split(" "))
         {
             Word w = new Word(m);
-            _words2.Add(w);            
+            _words2.Add(w);
+            Random r = new Random();
+            
         }
+
     }
+
     public string GetDisplayText()
     {
         if (_text2 == _text)
@@ -38,8 +45,9 @@ public class Scripture
         }
         else
         {
+            Word w = new Word();
             Reference r2 = new Reference("Proverbs", 3, 4, 6);
-            return r2.GetDisplayText() + "\n" + _text + " " + _text2;
+            return r2.GetDisplayText() + "\n" + _text + " " + _text2 + " " + w1.GetDisplay();
         }
     }
 }

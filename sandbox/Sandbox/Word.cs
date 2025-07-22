@@ -5,4 +5,8 @@ public class Word
     {
         _text = text;
     }
+    public string GetDisplay()
+    {
+        return _text;
+    }
 }
