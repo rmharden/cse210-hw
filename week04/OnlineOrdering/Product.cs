@@ -14,9 +14,25 @@ public class Product
         _price = price;
         _quantity = quantity;
     }
-    public GetTotalPrice()
+    public double GetPrice()
     {
-        
+        return _price;
+    }
+    public void SetPrice(double price)
+    {
+        _price = price;
+    }
+    public double GetQty()
+    {
+        return _quantity;
+    }
+    public void SetQty(double quantity)
+    {
+        _quantity = quantity;
+    }
+    public double GetTotalPrice()
+    {
+        return _price * _quantity;
     }
 }
 
