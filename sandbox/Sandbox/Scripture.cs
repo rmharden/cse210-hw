@@ -1,5 +1,7 @@
-public class Scripture()
+public class Scripture
 {
+    private Reference _reference;
+    private List<Word> _words;
     private string _text;
     private string _text2;
     public Scripture(string text)
@@ -11,6 +13,7 @@ public class Scripture()
     {
         _text = text;
         _text2 = text2;
+
     }
     public string GetDisplayText()
     {
