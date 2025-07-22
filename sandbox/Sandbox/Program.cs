@@ -10,89 +10,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Scripture s1 = new Scripture();
-        Console.WriteLine(s1.GetDisplayText());
-
-
-        Scripture s2 = new Scripture();
+        Scripture s2 = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life. ");
         Console.WriteLine(s2.GetDisplayText());
+        Reference r2 = new Reference("John", 3, 16);
 
-
-        Scripture s3 = new Scripture();
+        Scripture s3 = new Scripture("Trust in the Lord with all thine heart; and lean not unto thine own understanding.", "In all thy ways, acknowledge him, and he shall direct thy paths.");
         Console.WriteLine(s3.GetDisplayText());
-
-
-        Scripture s4 = new Scripture();
-        Console.WriteLine(s4.GetDisplayText());
-        
-    }
-}
-public class Scripture
-{
-    Reference _reference;
-    List<Word> _words;
-    public Scripture()
-    {
-        _text = "";
-    }
-    public Scripture(string text)
-    {
-        _text = text;
-    }
-    public Scripture(string text)
-    {
-        _text = text;
-    }
-
-    public double GetDisplayText()
-    {
-        // notice that this is not stored as a member variable.
-        // It will recompute each time it is called.
-        return $"{_reference}\n{_text}"; // what is the type in ()?
+        Reference r3 = new Reference("Proverbs", 3, 4, 6);        
     }
 }
 public class Word()
 {
-
-}
-
-public class Reference()
-{
-    private string _book;
-    private int _chapter;
-    private int _verse;
-    private int _endVerse;
-    // public Reference()
-    // {
-    //     _book = "";
-    //     _chapter = 0;
-    //     _verse = 0;
-    //     _endVerse = 0;
-    // }
-    public Reference(string book, int chapter, int verse)
-    {
-        _book = book;
-        _chapter = chapter;
-        _verse = verse;
-    }
-    public Reference(string book, int chapter, int verse, int endVerse)
-    {
-        _book = book;
-        _chapter = chapter;
-        _verse = verse;
-        _endVerse = verse; //not sure
-    }
-    public string GetDisplayText()
-    {
-        if (_endVerse == _verse)
-        {
-            return _book + " " + _chapter + " " + _verse;
-        }
-        else
-        {
-            return _book + " " + _chapter + " " + _verse + "-" + _endVerse;
-        }
-    }
 
 }
 
