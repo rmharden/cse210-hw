@@ -4,13 +4,14 @@ public class Customer
 {
     private string _customerName;
 
-    public Customer(string customerName)
+    public Customer(string customerName, string street, string city, string stateOrProvince, string country)
     {
         _customerName = customerName;
     }
     public bool IsCustUSA()
     {
-        if (Address.IsAddressUSA() == true)
+
+        if ( == true)
         {
             return true;
         }
@@ -21,6 +22,6 @@ public class Customer
     }
     public string GetCustomer()
     {
-        return _customerName + Address.CompleteAddress();
+        return _customerName + "";
     }
 }
