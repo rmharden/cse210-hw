@@ -2,10 +2,19 @@
 
 public class Product
 {
-    private string _name;
+    private string _productName;
     private string _id;
+    private double _price;
+    private double _quantity;
 
-    
+    public Product(string productName, string id, double price, double quantity)
+    {
+        _productName = productName;
+        _id = id;
+        _price = price;
+        _quantity = quantity;
+
+    }
 }
 
 
