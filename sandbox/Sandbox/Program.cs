@@ -1,78 +1,140 @@
-// Week 3 Encapsulation Lesson/Study cont...
+// Week 3 Homework Practice
 
 using System;
 class Program
 {
     static void Main(string[] args)
     {
-        // // calling a setter
-        // Person p = new Person(); // This calls a no-argument constructor and doesn't need any information.
+        Fraction f1 = new Fraction();
+        Console.WriteLine(f1.GetFractionString());
+        Console.WriteLine(f1.GetDecimalValue());
 
-        // p.SetFirstName("Peter");
+        Fraction f2 = new Fraction(5);
+        Console.WriteLine(f2.GetFractionString());
+        Console.WriteLine(f2.GetDecimalValue());
 
-        // Console.WriteLine(p.GetFirstName());
+        Fraction f3 = new Fraction(3, 4);
+        Console.WriteLine(f3.GetFractionString());
+        Console.WriteLine(f3.GetDecimalValue());
 
-        Person p1 = new Person(); // Don't pass any information to get the default values
-        Person p2 = new Person("Jane", "Doe"); // pass the first and last names
-        Person p3 = new Person("Mrs.", "Jane", "Doe"); // Pass all three variables
-    }
-    public class Account
-    {
-        private List<int> _transactions = new List<int>();
-
-        public void Deposit(int amount)
-        {
-            _transactions.Add(amount);
-        }
-    }
-    public class Person
-    {
-        private string _title;
-        private string _firstName;
-        private string _lastName;
-        public Person() // A constructor that sets up default values for all new Person objects.
-        {
-            _title = "";
-            _firstName = "Anonymous";
-            _lastName = "Unknown";
-        }
-        public Person(string first, string last)
-        {
-            _title = "";
-            _firstName = first;
-            _lastName = last;
-        }
-        public Person(string title, string first, string last)
-        {
-            _title = title;
-            _firstName = first;
-            _lastName = last;
-        }
-        public string GetInformalSignature()
-        {
-            return "Thanks," + _firstName;
-        }
-        public string GetFormalSignature()
-        {
-            return "Sincerely, " + GetFullName();
-        }
-        private string GetFullName()
-        {
-            return _title + " " + _firstName + " " + _lastName;
-        }
-        // This is a getter
-        public string GetFirstName()
-        {
-            return _firstName;
-        }
-        // This is a setter
-        public void SetFirstName(string firstName)
-        {
-            _firstName = firstName;
-        }
-    
+        Fraction f4 = new Fraction(1, 3);
+        Console.WriteLine(f4.GetFractionString());
+        Console.WriteLine(f4.GetDecimalValue());
     }
 }
+public class Fraction
+{
+    private int _top;
+    private int _bottom;
+    public Fraction()
+    {
+        // Default class that takes no parameters?
+        _top = 1;
+        _bottom = 1;
+
+    }
+    public Fraction(int wholeNumber)
+    {
+        _top = wholeNumber; // I didn't have to write this at the top?
+        _bottom = 1;
+    }
+    public Fraction(int top, int bottom)
+    {
+        _top = top;
+        _bottom = bottom;
+    }
+    public string GetFractionString()
+    {
+        // notice that this is not stored as a member variable.
+        // It is just a temporary, local variable that will be recomputed each time this is called.
+        string text = $"{_top}/{_bottom}";
+        return text;
+    }
+    public double GetDecimalValue()
+    {
+        // notice that this is not stored as a member variable.
+        // It will recompute each time it is called.
+        return (double)_top / (double)_bottom; // what is the type in ()?
+    }
+
+
+}
+
+// // Week 3 Encapsulation Lesson/Study cont...
+
+// using System;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         // // calling a setter
+//         // Person p = new Person(); // This calls a no-argument constructor and doesn't need any information.
+
+//         // p.SetFirstName("Peter");
+
+//         // Console.WriteLine(p.GetFirstName());
+
+//         Person p1 = new Person(); // Don't pass any information to get the default values
+//         Person p2 = new Person("Jane", "Doe"); // pass the first and last names
+//         Person p3 = new Person("Mrs.", "Jane", "Doe"); // Pass all three variables
+//     }
+//     public class Account
+//     {
+//         private List<int> _transactions = new List<int>();
+
+//         public void Deposit(int amount)
+//         {
+//             _transactions.Add(amount);
+//         }
+//     }
+//     public class Person
+//     {
+//         private string _title;
+//         private string _firstName;
+//         private string _lastName;
+//         public Person() // A constructor that sets up default values for all new Person objects.
+//         {
+//             _title = "";
+//             _firstName = "Anonymous";
+//             _lastName = "Unknown";
+//         }
+//         public Person(string first, string last)
+//         {
+//             _title = "";
+//             _firstName = first;
+//             _lastName = last;
+//         }
+//         public Person(string title, string first, string last)
+//         {
+//             _title = title;
+//             _firstName = first;
+//             _lastName = last;
+//         }
+//         public string GetInformalSignature()
+//         {
+//             return "Thanks," + _firstName;
+//         }
+//         public string GetFormalSignature()
+//         {
+//             return "Sincerely, " + GetFullName();
+//         }
+//         private string GetFullName()
+//         {
+//             return _title + " " + _firstName + " " + _lastName;
+//         }
+//         // This is a getter
+//         public string GetFirstName()
+//         {
+//             return _firstName;
+//         }
+//         // This is a setter
+//         public void SetFirstName(string firstName)
+//         {
+//             _firstName = firstName;
+//         }
+    
+//     }
+// }
 
 
 // // Week 3 Encapsulation Lesson Video:

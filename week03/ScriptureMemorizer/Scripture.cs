@@ -2,6 +2,12 @@ public class Scripture
 {
     private Reference _reference;
     private List<Word> _words;
+    private string _text;
+    public Scripture()
+    {
+        _reference = Reference._book; // I don't know what to put here.
+        _text = "";
+    }
     public Scripture(Reference reference, string text)
     {
         _reference = reference;

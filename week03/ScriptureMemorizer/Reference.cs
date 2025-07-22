@@ -24,6 +24,14 @@ public class Reference
         _verse = verse;
         _endVerse = endVerse;
     }
+    public void SetBook(string book)
+    {
+        _book = book;
+    }
+    public string GetBook()
+    {
+        return _book;
+    }
 
     public string GetDisplayText()
     {
