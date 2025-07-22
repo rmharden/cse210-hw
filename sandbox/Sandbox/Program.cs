@@ -10,13 +10,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Scripture s2 = new Scripture("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life. ");
-        Console.WriteLine(s2.GetDisplayText());
         Reference r2 = new Reference("John", 3, 16);
+        Scripture s2 = new Scripture(r2, "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life. ");
+        Console.WriteLine(s2.GetDisplayText());
 
-        Scripture s3 = new Scripture("Trust in the Lord with all thine heart; and lean not unto thine own understanding.", "In all thy ways, acknowledge him, and he shall direct thy paths.");
+
+        Reference r3 = new Reference("Proverbs", 3, 4, 6);
+        Scripture s3 = new Scripture(r3, "Trust in the Lord with all thine heart; and lean not unto thine own understanding.", "In all thy ways, acknowledge him, and he shall direct thy paths.");
         Console.WriteLine(s3.GetDisplayText());
-        Reference r3 = new Reference("Proverbs", 3, 4, 6);        
     }
 }
 public class Word()
