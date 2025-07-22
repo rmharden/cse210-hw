@@ -1,5 +1,10 @@
 // ENCAPSULATION
 
+public class Address
+{
+    
+}
+
 
 // public class Address
 // {

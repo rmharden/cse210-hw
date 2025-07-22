@@ -2,7 +2,20 @@
 
 public class Customer
 {
+    private string _customerName;
+    private Address _address;
 
+    public Customer(string customerName, Address address)
+    {
+        _customerName = customerName;
+        _address = address;
+    }
+    public string CustomerUSA()
+    {
+        // This needs to call a method.
+        // I'm not sure how I want to handle this yet.
+        return "";
+    }
 }
 
 
