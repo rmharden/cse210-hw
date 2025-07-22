@@ -33,8 +33,6 @@ public class Address
     }
     public string CompleteAddress()
     {
-        // Console.WriteLine(_street);
-        // Console.WriteLine($"{_city}, {_stateOrProvince}, {_country}");
         return _street + _city + _stateOrProvince + _country;
     }
 }
