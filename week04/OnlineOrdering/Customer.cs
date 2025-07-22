@@ -2,7 +2,25 @@ using System.Runtime.InteropServices;
 
 public class Customer
 {
-    public string _name;
+    private string _customerName;
 
-
+    public Customer(string customerName)
+    {
+        _customerName = customerName;
+    }
+    public bool IsCustUSA()
+    {
+        if (Address.IsAddressUSA() == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public string GetCustomer()
+    {
+        return _customerName + Address.CompleteAddress();
+    }
 }

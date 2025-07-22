@@ -1,22 +1,28 @@
 public class Address
 {
-    public string _street;
-    public string _city;
-    public string _stateOrProvince;
-    public string _country;
-    public string _isUSA;
+    private string _street;
+    private string _city;
+    private string _stateOrProvince;
+    private string _country;
 
-    public string IsAddressUSA()
+    public Address(string street, string city, string stateOrProvince, string country)
     {
-        if (_country == "USA")
+        _street = street;
+        _city = city;
+        _stateOrProvince = stateOrProvince;
+        _country = country;
+    }
+    public bool IsAddressUSA()
+    {
+        if (_country.ToLower() == "usa")
         {
-            _isUSA = "yes";
+            return true;
         }
         else
         {
-            _isUSA = "no";
+            return false;
         }
-        return _isUSA;
+
     }
     public string CompleteAddress()
     {
