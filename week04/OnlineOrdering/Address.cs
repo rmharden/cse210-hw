@@ -46,6 +46,17 @@ public class Address
     {
         return _country;
     }
+    public bool IsCountryUSA()
+    {
+        if (GetCountry().ToLower() == "usa")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     public string GetAddress()
     {
         return GetSreet() + "\n" + GetCity() + " " + GetStateOrProv() + " " + " " + GetCountry();
