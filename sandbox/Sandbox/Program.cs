@@ -1,64 +1,163 @@
-// Week 3 Homework Practice
+// John 3:16
+// For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life. 
+
+
+// Proverbs 3:5-6
+// Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways, acknowledge him, and he shall direct thy paths.
 
 using System;
 class Program
 {
     static void Main(string[] args)
     {
-        Fraction f1 = new Fraction();
-        Console.WriteLine(f1.GetFractionString());
-        Console.WriteLine(f1.GetDecimalValue());
+        Scripture s1 = new Scripture();
+        Console.WriteLine(s1.GetDisplayText());
 
-        Fraction f2 = new Fraction(5);
-        Console.WriteLine(f2.GetFractionString());
-        Console.WriteLine(f2.GetDecimalValue());
 
-        Fraction f3 = new Fraction(3, 4);
-        Console.WriteLine(f3.GetFractionString());
-        Console.WriteLine(f3.GetDecimalValue());
+        Scripture s2 = new Scripture();
+        Console.WriteLine(s2.GetDisplayText());
 
-        Fraction f4 = new Fraction(1, 3);
-        Console.WriteLine(f4.GetFractionString());
-        Console.WriteLine(f4.GetDecimalValue());
+
+        Scripture s3 = new Scripture();
+        Console.WriteLine(s3.GetDisplayText());
+
+
+        Scripture s4 = new Scripture();
+        Console.WriteLine(s4.GetDisplayText());
+        
     }
 }
-public class Fraction
+public class Scripture
 {
-    private int _top;
-    private int _bottom;
-    public Fraction()
+    Reference _reference;
+    List<Word> _words;
+    public Scripture()
     {
-        // Default class that takes no parameters?
-        _top = 1;
-        _bottom = 1;
+        _text = "";
+    }
+    public Scripture(string text)
+    {
+        _text = text;
+    }
+    public Scripture(string text)
+    {
+        _text = text;
+    }
 
-    }
-    public Fraction(int wholeNumber)
-    {
-        _top = wholeNumber; // I didn't have to write this at the top?
-        _bottom = 1;
-    }
-    public Fraction(int top, int bottom)
-    {
-        _top = top;
-        _bottom = bottom;
-    }
-    public string GetFractionString()
-    {
-        // notice that this is not stored as a member variable.
-        // It is just a temporary, local variable that will be recomputed each time this is called.
-        string text = $"{_top}/{_bottom}";
-        return text;
-    }
-    public double GetDecimalValue()
+    public double GetDisplayText()
     {
         // notice that this is not stored as a member variable.
         // It will recompute each time it is called.
-        return (double)_top / (double)_bottom; // what is the type in ()?
+        return $"{_reference}\n{_text}"; // what is the type in ()?
     }
-
+}
+public class Word()
+{
 
 }
+
+public class Reference()
+{
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+    // public Reference()
+    // {
+    //     _book = "";
+    //     _chapter = 0;
+    //     _verse = 0;
+    //     _endVerse = 0;
+    // }
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+    }
+    public Reference(string book, int chapter, int verse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = verse; //not sure
+    }
+    public string GetDisplayText()
+    {
+        if (_endVerse == _verse)
+        {
+            return _book + " " + _chapter + " " + _verse;
+        }
+        else
+        {
+            return _book + " " + _chapter + " " + _verse + "-" + _endVerse;
+        }
+    }
+
+}
+
+
+
+
+// Week 3 Homework Practice
+
+// using System;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Fraction f1 = new Fraction();
+//         Console.WriteLine(f1.GetFractionString());
+//         Console.WriteLine(f1.GetDecimalValue());
+
+//         Fraction f2 = new Fraction(5);
+//         Console.WriteLine(f2.GetFractionString());
+//         Console.WriteLine(f2.GetDecimalValue());
+
+//         Fraction f3 = new Fraction(3, 4);
+//         Console.WriteLine(f3.GetFractionString());
+//         Console.WriteLine(f3.GetDecimalValue());
+
+//         Fraction f4 = new Fraction(1, 3);
+//         Console.WriteLine(f4.GetFractionString());
+//         Console.WriteLine(f4.GetDecimalValue());
+//     }
+// }
+// public class Fraction
+// {
+//     private int _top;
+//     private int _bottom;
+//     public Fraction()
+//     {
+//         // Default class that takes no parameters?
+//         _top = 1;
+//         _bottom = 1;
+
+//     }
+//     public Fraction(int wholeNumber)
+//     {
+//         _top = wholeNumber; // I didn't have to write this at the top?
+//         _bottom = 1;
+//     }
+//     public Fraction(int top, int bottom)
+//     {
+//         _top = top;
+//         _bottom = bottom;
+//     }
+//     public string GetFractionString()
+//     {
+//         // notice that this is not stored as a member variable.
+//         // It is just a temporary, local variable that will be recomputed each time this is called.
+//         string text = $"{_top}/{_bottom}";
+//         return text;
+//     }
+//     public double GetDecimalValue()
+//     {
+//         // notice that this is not stored as a member variable.
+//         // It will recompute each time it is called.
+//         return (double)_top / (double)_bottom; // what is the type in ()?
+//     }
+// }
 
 // // Week 3 Encapsulation Lesson/Study cont...
 
