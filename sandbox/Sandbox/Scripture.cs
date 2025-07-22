@@ -9,12 +9,25 @@ public class Scripture
         _reference = reference;
         _text = text;
         _text2 = _text;
+        List<Word> _words = new List<Word>();
+        foreach (string t in text.Split(" "))
+        {
+            Word w = new Word(t);
+            _words.Add(w);            
+        }
     }
     public Scripture(Reference reference, string text, string text2)
     {
         _reference = reference;
         _text = text;
         _text2 = text2;
+        string multiVerse = text + " " + text2;
+        List<Word> _words2 = new List<Word>(); //not sure about this
+        foreach (string m in multiVerse.Split(" "))
+        {
+            Word w = new Word(m);
+            _words2.Add(w);            
+        }
     }
     public string GetDisplayText()
     {

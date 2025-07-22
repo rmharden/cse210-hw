@@ -20,10 +20,6 @@ class Program
         Console.WriteLine(s3.GetDisplayText());
     }
 }
-public class Word()
-{
-
-}
 
 
 
