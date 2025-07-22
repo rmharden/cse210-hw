@@ -10,11 +10,16 @@ public class Customer
         _customerName = customerName;
         _address = address;
     }
-    public string CustomerUSA()
+    public double CustomerUSA()
     {
-        // This needs to call a method.
-        // I'm not sure how I want to handle this yet.
-        return "";
+        if (_address.IsCountryUSA() == true)
+        {
+            return 5;
+        }
+        else
+        {
+            return 35;
+        }
     }
 }
 
