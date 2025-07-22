@@ -1,26 +1,29 @@
-public class Order
-{
-    private List<Order> _product;
-    private Customer _customer;
+// ENCAPSULATION
 
 
-    public Order(Customer customer, List<Product> product)
-    {
-        _customer = customer;
+// public class Order
+// {
+//     private List<Order> _product;
+//     private Customer _customer;
 
-    }
-    public Customer GetCustomer()
-    {
-        return _customer;
-    }
 
-    public void AddProduct()
-    {
+//     public Order(Customer customer, List<Product> product)
+//     {
+//         _customer = customer;
 
-    }
-    public void GetTotalPrice()
-    {
+//     }
+//     public Customer GetCustomer()
+//     {
+//         return _customer;
+//     }
+
+//     public void AddProduct()
+//     {
+
+//     }
+//     public void GetTotalPrice()
+//     {
     
 
-    }
-}
+//     }
+// }
