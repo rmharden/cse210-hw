@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
         Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Danmark");
-        Customer c1 = new Customer("Sidse Thøhgersdatter Madsen", a1);
+        Customer c1 = new Customer("Sidse Thøgersdatter Madsen", a1);
 
         List<Product> products1 = new List<Product>();
 
