@@ -13,27 +13,37 @@ public class Order
         _products = products;
         _customer = customer;
     }
-    
-    public void SetProduct(List<Product> products)
+
+    public double GetTotalPrice()
     {
-        _products = products;
+        double _totalPrice = 0;
+        foreach (Product product in _products)
+        {
+            _totalPrice = product.GetPrice() + _customer.IsCustomerUSA();
+        }
+        return _totalPrice;
     }
-    public List<Product> GetProducts()
-    {
-        return _products;
-    }
+
     public void GetPackingLabel()
     {
         Console.WriteLine($"\n{_customer.GetCustomerName()}\n");
         foreach (Product product in _products)
         {
-            Console.WriteLine($"{product.GetId}: {product.GetProductName}");
+            Console.WriteLine($"Product Id: {product.GetId()}: Item: {product.GetProductName()}, ${product.GetPrice()}");
         }
 
     }
     public void GetShippingLabel()
     {
         Console.WriteLine($"\n{_customer.GetCustomerName()}\n{_customer.CustAddress()}\n");
+    }
+        public void SetProduct(List<Product> products)
+    {
+        _products = products;
+    }
+    public List<Product> GetProducts()
+    {
+        return _products;
     }
 
 }

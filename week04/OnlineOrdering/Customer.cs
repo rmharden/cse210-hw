@@ -26,7 +26,7 @@ public class Customer
     {
         return _address;
     }
-    public double CustomerUSA()
+    public double IsCustomerUSA()
     {
         if (_address.IsCountryUSA() == "yes")
         {
