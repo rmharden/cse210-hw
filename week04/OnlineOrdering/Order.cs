@@ -28,7 +28,7 @@ public class Order
         double _itemPrice = 0;
         foreach (Product product in _products)
         {
-            _itemPrice += product.GetPrice();
+            _itemPrice += product.GetTotalPrice();
         }
         double _productPrice = _itemPrice;
         double _totalPrice = _productPrice + shipping;
