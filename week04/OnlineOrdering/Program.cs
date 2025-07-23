@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Denmark");
+        Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Danmark");
         Customer c1 = new Customer("Sisde Madsen", a1);
 
         List<Product> products = new List<Product>();

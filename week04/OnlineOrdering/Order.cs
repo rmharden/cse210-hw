@@ -20,7 +20,7 @@ public class Order
     }
     public void GetShippingLabel()
     {
-        Console.WriteLine($"{_customer.GetCustomerName()}\n{_customer.CustAddress()}");
+        Console.WriteLine($"\n{_customer.GetCustomerName()}\n{_customer.CustAddress()}\n");
     }  
 }
 
