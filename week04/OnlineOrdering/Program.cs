@@ -12,10 +12,10 @@ class Program
         List<Product> products = new List<Product>();
 
         Product p1 = new Product("lamps", "la1234", 50, 5);
-        products.Add(p1); // I don't think this is working
+        products.Add(p1); 
 
         Product p2 = new Product("chairs", "ch1234", 250, 2);
-        products.Add(p2); // I don't think this is working
+        products.Add(p2); 
 
         Order o1 = new Order(products, c1);
         o1.GetShippingLabel();
@@ -27,10 +27,10 @@ class Program
         Customer c2 = new Customer("Hugh Falconer", a2);
 
         Product p3 = new Product("chair", "ch1234", 250, 1);
-        products.Add(p3); // I don't think this is working
+        products.Add(p3); 
 
         Product p4 = new Product("sofa", "sf9874", 1885, 1);
-        products.Add(p4); // I don't think this is working
+        products.Add(p4); 
 
         Order o2 = new Order(products, c2);
         o2.GetShippingLabel();
