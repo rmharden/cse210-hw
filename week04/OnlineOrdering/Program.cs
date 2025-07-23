@@ -15,10 +15,11 @@ class Program
         products.Add(p1);
 
         Product p2 = new Product("chairs", "ch1234", 250, 2);
-        products.Add(p1);
+        products.Add(p2);
 
         Order o1 = new Order(products, c1);
         o1.GetShippingLabel();
+        o1.GetPackingLabel();
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
         Customer c2 = new Customer("Hugh Falconer", a1);

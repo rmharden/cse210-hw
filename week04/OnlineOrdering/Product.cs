@@ -14,6 +14,22 @@ public class Product
         _price = price;
         _quantity = quantity;
     }
+    public string GetId()
+    {
+        return _id;
+    }
+    public void SetId(string id)
+    {
+        _id = id;
+    }
+    public string GetProductName()
+    {
+        return _productName;
+    }
+    public void SetProductName(string productName)
+    {
+        _productName = productName;
+    }
     public double GetPrice()
     {
         return _price;

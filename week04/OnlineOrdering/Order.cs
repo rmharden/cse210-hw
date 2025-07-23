@@ -13,15 +13,28 @@ public class Order
         _products = products;
         _customer = customer;
     }
-
-    public string GetPackingLabel()
+    public void SetProduct(List<Product> products)
     {
-        return "";
+        _products = products;
+    }
+    public List<Product> GetProducts()
+    {
+        return _products;
+    }
+    public void GetPackingLabel()
+    {
+        Console.WriteLine($"\n{_customer.GetCustomerName()}\n");
+        foreach (Product product in _products)
+        {
+            Console.WriteLine($"{product.GetId}: {product.GetProductName}");
+        }
+
     }
     public void GetShippingLabel()
     {
         Console.WriteLine($"\n{_customer.GetCustomerName()}\n{_customer.CustAddress()}\n");
-    }  
+    }
+
 }
 
 
