@@ -35,6 +35,9 @@ class Program
         Product p4 = new Product("sofa", "sf9874", 1885, 1);
         products2.Add(p4); 
 
+        Product p5 = new Product("bookshelf", "bk6478", 120, 1);
+        products2.Add(p5); 
+
         Order o2 = new Order(products2, c2);
         o2.GetShippingLabel();
         o2.GetPackingLabel();
