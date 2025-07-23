@@ -8,6 +8,9 @@ class Program
     {
         Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Denmark");
         Customer c1 = new Customer("Sisde Madsen", a1);
+        Order o1 = new Order();
+        Console.WriteLine(o1.GetShippingLabel());
+
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
         Customer c2 = new Customer("Hugh Falconer", a1);

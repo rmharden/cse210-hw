@@ -10,6 +10,22 @@ public class Customer
         _customerName = customerName;
         _address = address;
     }
+    public void SetCustomerName(string customerName)
+    {
+        _customerName = customerName;
+    }
+    public string GetCustomerName()
+    {
+        return _customerName;
+    }
+    public void SetCountry(Address address)
+    {
+        _address = address;
+    }
+    public Address GetAddress()
+    {
+        return _address;
+    }
     public double CustomerUSA()
     {
         if (_address.IsCountryUSA() == true)
