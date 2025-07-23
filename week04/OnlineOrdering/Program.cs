@@ -18,9 +18,7 @@ class Program
         products.Add(p1);
 
         Order o1 = new Order(products, c1);
-
-        
-
+        o1.GetShippingLabel();
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
         Customer c2 = new Customer("Hugh Falconer", a1);

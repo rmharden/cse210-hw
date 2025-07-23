@@ -46,20 +46,20 @@ public class Address
     {
         return _country;
     }
-    public bool IsCountryUSA()
+    public string IsCountryUSA()
     {
         if (GetCountry().ToLower() == "usa")
         {
-            return true;
+            return "yes";
         }
         else
         {
-            return false;
+            return "true";
         }
     }
     public string GetAddress()
     {
-        return GetSreet() + "\n" + GetCity() + " " + GetStateOrProv() + " " + " " + GetCountry();
+        return GetSreet() + "\n" + GetCity() + ", " + GetStateOrProv() + ", " + GetCountry();
     }
 }
 

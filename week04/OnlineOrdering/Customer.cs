@@ -18,7 +18,7 @@ public class Customer
     {
         return _customerName;
     }
-    public void SetCountry(Address address)
+    public void SetAddress(Address address)
     {
         _address = address;
     }
@@ -28,7 +28,7 @@ public class Customer
     }
     public double CustomerUSA()
     {
-        if (_address.IsCountryUSA() == true)
+        if (_address.IsCountryUSA() == "yes")
         {
             return 5;
         }
@@ -36,6 +36,10 @@ public class Customer
         {
             return 35;
         }
+    }
+    public string CustAddress()
+    {
+        return _address.GetAddress();
     }
 }
 
