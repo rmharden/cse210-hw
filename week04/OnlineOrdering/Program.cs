@@ -21,9 +21,17 @@ class Program
         o1.GetShippingLabel();
         o1.GetPackingLabel();
 
+
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
         Customer c2 = new Customer("Hugh Falconer", a2);
-        Order o2 = new Order(products, c1);
+
+        Product p3 = new Product("chair", "ch1234", 250, 1);
+        products.Add(p3); // I don't think this is working
+
+        Product p4 = new Product("sofa", "sf9874", 1885, 1);
+        products.Add(p4); // I don't think this is working
+
+        Order o2 = new Order(products, c2);
         o2.GetShippingLabel();
         o2.GetPackingLabel();
     }

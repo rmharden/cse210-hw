@@ -13,6 +13,7 @@ public class Order
         _products = products;
         _customer = customer;
     }
+    
     public void SetProduct(List<Product> products)
     {
         _products = products;
