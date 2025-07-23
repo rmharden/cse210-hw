@@ -35,6 +35,6 @@ class Program
         Order o2 = new Order(products, c2);
         o2.GetShippingLabel();
         o2.GetPackingLabel();
-        Console.WriteLine($"\nTotal Price: ${o2.GetTotalPrice()}");
+        Console.WriteLine($"\nTotal Price: ${o2.GetTotalPrice()}\n");
     }
 }

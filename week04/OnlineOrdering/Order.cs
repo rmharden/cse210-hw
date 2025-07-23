@@ -29,7 +29,7 @@ public class Order
         Console.WriteLine($"\n{_customer.GetCustomerName()}\n");
         foreach (Product product in _products)
         {
-            Console.WriteLine($"Product Id: {product.GetId()}: Item: {product.GetProductName()}, ${product.GetPrice()}");
+            Console.WriteLine($"Product Id: {product.GetId()}, Item: {product.GetProductName()}, ${product.GetPrice()}");
         }
 
     }
