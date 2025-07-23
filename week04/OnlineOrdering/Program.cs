@@ -12,17 +12,20 @@ class Program
         List<Product> products = new List<Product>();
 
         Product p1 = new Product("lamps", "la1234", 50, 5);
-        products.Add(p1);
+        products.Add(p1); // I don't think this is working
 
         Product p2 = new Product("chairs", "ch1234", 250, 2);
-        products.Add(p2);
+        products.Add(p2); // I don't think this is working
 
         Order o1 = new Order(products, c1);
         o1.GetShippingLabel();
         o1.GetPackingLabel();
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
-        Customer c2 = new Customer("Hugh Falconer", a1);
+        Customer c2 = new Customer("Hugh Falconer", a2);
+        Order o2 = new Order(products, c1);
+        o2.GetShippingLabel();
+        o2.GetPackingLabel();
     }
 }
 
