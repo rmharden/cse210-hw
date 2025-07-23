@@ -13,15 +13,28 @@ public class Order
         _products = products;
         _customer = customer;
     }
+    // public void AddProductsToOrder()
+    // {
+    //     foreach (Product product in _products)
+    //     {
+    //         _products.Add(product.GetProductName());
+    //     }
+    // } // I don't know how to add products here.
 
     public double GetTotalPrice()
     {
-        double _totalPrice = 0;
+        double shipping = _customer.IsCustomerUSA();
+        // double _totalPrice = 0;
+        double _itemPrice = 0;
         foreach (Product product in _products)
         {
-            _totalPrice = product.GetPrice() + _customer.IsCustomerUSA();
+            _itemPrice += product.GetPrice();
         }
+        double _productPrice = _itemPrice;
+        double _totalPrice = _productPrice + shipping;
         return _totalPrice;
+        // This link showed how to add items in a list with +=
+        // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/addition-operator
     }
 
     public void GetPackingLabel()
@@ -31,6 +44,7 @@ public class Order
         {
             Console.WriteLine($"Product Id: {product.GetId()}, Item: {product.GetProductName()}, ${product.GetPrice()}");
         }
+        Console.WriteLine($"\nShipping: ${_customer.IsCustomerUSA()}");
 
     }
     public void GetShippingLabel()
