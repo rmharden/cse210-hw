@@ -8,23 +8,24 @@ public class Order
     private List<Product> _products;
     private Customer _customer;
 
-    public Order()
+    public Order(List<Product> products, Customer customer)
     {
-        List<Product> _products = new List<Product>();
-
+        _products = products;
+        _customer = customer;
     }
     public Order(List<Product> products)
     {
         List<Product> _products = products;
     }
+    
 
     public string GetPackingLabel()
     {
         return "";
     }
-    public Customer GetShippingLabel()
+    public void GetShippingLabel()
     {
-        return _customer._address;
+        Console.WriteLine($"{_customer.GetCustomerName()}\n{_customer.GetAddress()}");
     }
     
 }

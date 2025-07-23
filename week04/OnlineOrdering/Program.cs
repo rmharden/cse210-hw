@@ -6,10 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<Product> products = new List<Product>();
         Address a1 = new Address("Bentsensvej 24", "Hvalso", "Sjælland", "Denmark");
         Customer c1 = new Customer("Sisde Madsen", a1);
-        Order o1 = new Order();
-        Console.WriteLine(o1.GetShippingLabel());
+        Order o1 = new Order(products, c1);
+        o1.GetShippingLabel();
 
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");
