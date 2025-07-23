@@ -17,7 +17,9 @@ class Program
         Product p2 = new Product("chairs", "ch1234", 250, 2);
         products.Add(p1);
 
-        Order o1 = new Order(products, c1);      
+        Order o1 = new Order(products, c1);
+
+        
 
 
         Address a2 = new Address("50 Village Dr", "Winter Park", "Colorado", "USA");

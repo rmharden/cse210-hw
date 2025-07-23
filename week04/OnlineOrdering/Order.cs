@@ -13,11 +13,6 @@ public class Order
         _products = products;
         _customer = customer;
     }
-    public Order(List<Product> products)
-    {
-        List<Product> _products = products;
-    }
-    
 
     public string GetPackingLabel()
     {
@@ -26,8 +21,7 @@ public class Order
     public void GetShippingLabel()
     {
         Console.WriteLine($"{_customer.GetCustomerName()}\n{_customer.GetAddress()}");
-    }
-    
+    }  
 }
 
 
